@@ -1,6 +1,6 @@
 {
-    "label": "opBNB for Developers",
-    "position": 2,
+    "label": "opBNB for Operators",
+    "position": 3,
     "link": {
       "type": "generated-index",
       "description": "For dApp developers on opBNB"
