@@ -21,3 +21,8 @@ The opBNB is a layer 2 scaling solution built on top of BSC (a layer 1 blockchai
 The rollup has a modular design, so the data availability interface and settlement layer can be implemented with different solutions. The data availability layer can be replaced with solutions like Greenfield, Arweave, and others, instead of relying only on BSC. Likewise, the settlement layer can be replaced with other EVM-compatible chains besides BSC, such as the Ethereum mainnet. 
 
 The rollup is secured by its settlement chain as transaction data is posted on-chain, benefits from its consensus, and uses its data availability solutions. It is decentralized and permissionless. The rollup provides faster and cheaper transactions than BSC while still being secured.
+
+
+
+![image-20230605092452839](../static/img/opBNB-arch.png)
+
