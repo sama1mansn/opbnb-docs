@@ -30,7 +30,10 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items:[
-        "guide/getting-started/overview",
+        'for-developers/getting-started',
+        "for-developers/opbnb-testnet-information",
+        "for-developers/deposit-to-opbnb",
+        "for-developers/wallet-configuration",
       ],
     },
     {
@@ -39,12 +42,12 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items:[
-        "guide/getting-started/overview",
+        "faq/opbnb-faq",
       ],
-    },
-    {
-      type: 'doc', id:'guide/resources'
     }
+    //{
+    //  type: 'doc', id:'guide/resources'
+    //}
   ]
 
 };
