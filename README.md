@@ -1,41 +1,58 @@
-# Website
+# BNB Greenfield Official Documentation
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+## Overview
+BNB Greenfield is an innovative blockchain and storage platform that seeks to unleash the power of decentralized technology on data ownership and the data economy. This is the GitHub repo of the official documentation and API refernce for BNB Greenfield. This app is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. 
 
-### Installation
+### Prerequisites
 
+  - **Node** _version >= 16 or above_
+    - _node -v_
+      - v16.14.0
+
+  - **Yarn** _version >= 1.5 _
+    - _yarn --version_
+      - 1.22.19
+
+### How to Run Locally
+
+Clone the reository and run the following commands.
+
+### Installing Dependencies
+
+* Install the packages.
+
+```bash
+$ yarn install
 ```
-$ yarn
-```
 
-### Local Development
+* Start local development server
 
-```
+
+```bash
 $ yarn start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ### Build
+We recommend to use the yarn package for building and deploying this website.
 
-```
+```bash
 $ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
+### Build and Serve locally
 
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+$ yarn start 
 ```
 
-Not using SSH:
+### Serve Locally after build is created
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+```bash
+$ yarn serve
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+The website is run locally on your default browser on http://localhost:3000.
