@@ -42,6 +42,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items:[
+        'tech-specs/architecture',
+        'tech-specs/why-opbnb',
         'tech-specs/why-opstack',
         'tech-specs/parameters',
         'tech-specs/plans',
@@ -54,6 +56,7 @@ const sidebars = {
       collapsed: true,
       items:[
         'rollup-economics/rollup-economis-explained',
+        'rollup-economics/gas-and-fees',
       ],
     },
     {
