@@ -6,6 +6,10 @@ dir:
   order: 2
 ---
 
+:::caution 
+This is a living document and is susceptible to changes. 
+:::
+
 # Deposit tokens to opBNB
 
 Before building or deploying any applications on the opBNB network, you must first deposit tokens from BNB Smart Chain to opBNB. You can do this using the [opBNB bridge dApp](https://opbnb-testnet-bridge.bnbchain.org/). 

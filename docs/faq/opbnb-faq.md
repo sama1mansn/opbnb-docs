@@ -6,6 +6,10 @@ dir:
   order: 8
 ---
 
+:::caution 
+This is a living document and is susceptible to changes. 
+:::
+
 # FAQ
 ### How do you expect the TPS of the opBNB?
 The TPS of opBNB can be estimated to be around 4,761 transactions per second based on the calculations. This is significantly higher than Ethereum's current TPS and can enable more frequent daily transactions.

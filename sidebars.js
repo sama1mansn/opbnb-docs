@@ -38,6 +38,17 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Technology Specs",
+      collapsible: true,
+      collapsed: true,
+      items:[
+        'tech-specs/why-opstack',
+        'tech-specs/parameters',
+        'tech-specs/plans',
+      ],
+    },
+    {
+      type: "category",
       label: "FAQ",
       collapsible: true,
       collapsed: true,
