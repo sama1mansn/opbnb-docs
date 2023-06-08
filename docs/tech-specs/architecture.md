@@ -19,5 +19,5 @@ The rollup is secured by its settlement chain as transaction data is posted on-c
 
 
 
-![image-20230605092452839](../static/img/opBNB-arch.png)
+![image-20230605092452839](../../static/img/opBNB-arch.png)
 
