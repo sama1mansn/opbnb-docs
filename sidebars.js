@@ -49,6 +49,15 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Rollup Economics",
+      collapsible: true,
+      collapsed: true,
+      items:[
+        'rollup-economics/rollup-economis-explained',
+      ],
+    },
+    {
+      type: "category",
       label: "FAQ",
       collapsible: true,
       collapsed: true,
