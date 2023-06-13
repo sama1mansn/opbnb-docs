@@ -11,8 +11,25 @@ This is a living document and is susceptible to changes.
 
 # opBNB - High-performance layer 2 solution 
 
-The opBNB network is a Layer 2 scaling solution built on top of the BNB Smart Chain. It works by offloading transaction processing and resource usage from the BNB Smart Chain, while still posting data to the underlying mainnet. Users interact with the opBNB network by depositing funds from BSC and using applications and contracts on opBNB. Sequencers then aggregate transactions, compute state transitions and submit them to the rollup contract on BSC. Provers generate cryptographic proofs that prove the validity of these state transitions, and Verifiers check the proofs to verify the opBNB state is correct. At its core, opBNB allows users to deposit and withdraw funds, use smart contracts, and view network data with high throughput and low fees. By leveraging Layer 2, opBNB is able to scale beyond the constraints of the BNB Smart Chain and provide an improved experience for users.
+The opBNB network is the Layer 2 scaling solution for the BNB Smart Chain powered by [bedrock version](https://community.optimism.io/docs/developers/bedrock/) of Optimism opStack. It works by offloading transaction processing and resource usage from the BNB Smart Chain, while still posting data to the underlying mainnet. Users interact with the opBNB network by depositing funds from BSC and using applications and contracts on opBNB. Sequencers then aggregate transactions, compute state transitions and submit them to the rollup contract on BSC. Provers generate cryptographic proofs that prove the validity of these state transitions, and Verifiers check the proofs to verify the opBNB state is correct. At its core, opBNB allows users to deposit and withdraw funds, use smart contracts, and view network data with high throughput and low fees. By leveraging Layer 2, opBNB is able to scale beyond the constraints of the BNB Smart Chain and provide an improved experience for users.
 
 ![image-20230601121044423](../static/img/opBNB-intro.png)
 
+Besides the [differentiators of bedrock](https://community.optimism.io/docs/developers/bedrock/differences/), opBNB is the solution that we aims to provide the best optimisitic solution on the BSC. 
+
+- Capacity can reach to > 100m gas per second, which is mucher higher than other layer 2 solutions on the Ethereum.
+- Gas fee of transfer can reach as low as $0.005 on average.
+- block time is 1 second.
+
+
+
+| **Parameter**                         | **opBNB value** | **Optimism value** | **Ethereum value (for reference)** |
+| ------------------------------------- | --------------- | ------------------ | ---------------------------------- |
+| Block gas limit                       | 100,000,000 gas | 30,000,000 gas     | 30,000,000 gas                     |
+| Block gas target                      | TBD             | 5,000,000 gas      | 15,000,000 gas                     |
+| EIP-1559 elasticity multiplier        | TBD             | 6                  | 2                                  |
+| EIP-1559 denominator                  | TBD             | 50                 | 8                                  |
+| Maximum base fee increase (per block) | TBD             | 10%                | 12.5%                              |
+| Maximum base fee decrease (per block) | TBD             | 2%                 | 12.5%                              |
+| Block time in seconds                 | 1               | 2                  | 12                                 |
 
