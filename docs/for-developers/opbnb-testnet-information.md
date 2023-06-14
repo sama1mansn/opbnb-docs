@@ -18,7 +18,10 @@ Network Information
 BSC testnet RPC endpoint: "https://data-seed-prebsc-1-s1.binance.org:8545"
 BSC testnet chain ID: 97
 
-opBNB testnet RPC endpoint: "https://op-bnb-testnet-l2.nodereal.io"
-opBNB testnet chain ID: 91735
+opBNB testnet RPC endpoint: "https://opbnb-testnet-rpc.bnbchain.org"
+opBNB testnet chain ID: 5611
+
+opBNB bridge URL:
+https://opbnb-testnet-bridge.bnbchain.org/
 
 ```

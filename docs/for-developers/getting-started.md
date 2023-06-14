@@ -35,8 +35,8 @@ BSC testnet chain ID: 97
 Symbol: BNB
 
 Network Name: opBNB TestNet
-BSC testnet RPC endpoint: "https://op-bnb-testnet-l2.nodereal.io"
-BSC testnet chain ID: 91735
+BSC testnet RPC endpoint: "https://opbnb-testnet-rpc.bnbchain.org"
+BSC testnet chain ID: 5611
 Symbol: BNB
 
 Step 2: Deposit your tBNB token to the opBNB
