@@ -34,6 +34,7 @@ const sidebars = {
         "for-developers/opbnb-testnet-information",
         "for-developers/deposit-to-opbnb",
         "for-developers/wallet-configuration",
+        "for-developers/running-a-testnet-node",
       ],
     },
     {
