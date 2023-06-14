@@ -1,0 +1,1 @@
+# Solidity differences from Ethereum and BSC

@@ -26,10 +26,10 @@ Besides the [differentiators of bedrock](https://community.optimism.io/docs/deve
 | **Parameter**                         | **opBNB value** | **Optimism value** | **Ethereum value (for reference)** |
 | ------------------------------------- | --------------- | ------------------ | ---------------------------------- |
 | Block gas limit                       | 100,000,000 gas | 30,000,000 gas     | 30,000,000 gas                     |
-| Block gas target                      | TBD             | 5,000,000 gas      | 15,000,000 gas                     |
-| EIP-1559 elasticity multiplier        | TBD             | 6                  | 2                                  |
-| EIP-1559 denominator                  | TBD             | 50                 | 8                                  |
-| Maximum base fee increase (per block) | TBD             | 10%                | 12.5%                              |
-| Maximum base fee decrease (per block) | TBD             | 2%                 | 12.5%                              |
+| Block gas target                      | 50,000,000      | 5,000,000 gas      | 15,000,000 gas                     |
+| EIP-1559 elasticity multiplier        | 2               | 6                  | 2                                  |
+| EIP-1559 denominator                  | 8               | 50                 | 8                                  |
+| Maximum base fee increase (per block) | 12.5%           | 10%                | 12.5%                              |
+| Maximum base fee decrease (per block) | 12.5%           | 2%                 | 12.5%                              |
 | Block time in seconds                 | 1               | 2                  | 12                                 |
 
