@@ -17,61 +17,70 @@ const sidebars = {
   guideSidebar:[
     {
       type: "category",
-      label: "Introduction",
-      link: {type: 'doc', id: 'intro'},
+      label: "📜 Introduction",
+      //link: {type: 'doc', id: 'intro'},
       collapsible: true,
       collapsed: true,
       items:[
+        'intro',
+        'intro/why-opstack',
       ],
     },
     {
       type: "category",
-      label: "For Developers",
+      label: "🕶️ Core Concepts",
       collapsible: true,
       collapsed: true,
       items:[
-        'for-developers/getting-started',
-        "for-developers/opbnb-testnet-information",
-        "for-developers/deposit-to-opbnb",
-        "for-developers/wallet-configuration",
-        "for-developers/running-a-testnet-node",
+        'core-concepts/architecture',
+        'core-concepts/why-opbnb',
       ],
     },
     {
       type: "category",
-      label: "Technology Specs",
+      label: "💰 Economics",
       collapsible: true,
       collapsed: true,
       items:[
-        'tech-specs/architecture',
-        'tech-specs/why-opbnb',
-        'tech-specs/why-opstack',
-        'tech-specs/parameters',
-        'tech-specs/plans',
+        'economics/rollup-economis-explained',
+        'economics/gas-and-fees',
       ],
     },
     {
       type: "category",
-      label: "Rollup Economics",
+      label: "🎯 Build on zkBNB",
       collapsible: true,
       collapsed: true,
       items:[
-        'rollup-economics/rollup-economis-explained',
-        'rollup-economics/gas-and-fees',
+        'build-on-opbnb/opbnb-testnet-information',
+        'build-on-opbnb/getting-started',
+        'build-on-opbnb/deposit-to-opbnb',
+        'build-on-opbnb/wallet-configuration',
       ],
     },
     {
       type: "category",
-      label: "FAQ",
+      label: "👩‍🏫 Tutorials",
       collapsible: true,
       collapsed: true,
       items:[
-        "faq/opbnb-faq",
+        'tutorials/running-a-testnet-node',
+        //"faq/opbnb-faq",
       ],
-    }
-    //{
-    //  type: 'doc', id:'guide/resources'
-    //}
+    },
+    {
+      type: "category",
+      label: "🧑‍🔧 Troubleshooting",
+      collapsible: true,
+      collapsed: true,
+      items:[
+        'faq/opbnb-faq',
+        //"faq/opbnb-faq",
+      ],
+    },
+    {
+      type: 'doc', id:'contact', label: '☎️ Contact'
+    },
   ]
 
 };

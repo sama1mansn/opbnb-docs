@@ -1,5 +1,5 @@
 ---
-title: opBNB - High-performance layer 2 solution
+title: What is opBNB
 icon: code
 index: yes
 dir:

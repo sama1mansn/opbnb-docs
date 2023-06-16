@@ -59,40 +59,20 @@ const config = {
           alt: "BNB Optimistic Rollup",
           src: "img/logo.svg"
         },
-        //items: [
-        //  {
-            //type: 'dropdown',
-            //label: "API",
-            //position: "left",
-            //to: "/docs/api-sdk/grpc-rest",
-            /*items:[
-              {
-                type: 'doc',
-                label: 'API Reference',
-                //sidebarid: 'apiReferenceSidebar',
-                docId: 'api-sdk/grpc-rest',
-
-              },
-              {
-                type: 'doc',
-                label: "Greenfield Blockchain API",
-                docId: 'greenfield-api/grpc-rest'
-              },
-            ]*/
-        //  },
-         // {to: 'blog', label: 'Changelog', position: 'left'},
-         // {
-         //   label: "FAQs",
-         //   position: "left",
-         //   to: "/docs/faq/greenfield-faqs"
-         // },
-         // {
-         //   href: 'https://github.com/RumeelHussainbnb/bnbgreenfield-docs',
-         //   position: 'right',
-         //   className: 'header-github-link',
-         //   'aria-label': 'GitHub repository',
-         // },
-        //]
+        items: [
+          {
+            link: {type: 'doc', id: 'intro'},
+            label: "Guide",
+            position: "left",
+            to: "/docs/intro",
+          },
+          {
+            link: {type: 'doc', id: 'openbnb-faq'},
+            label: "FAQs",
+            position: "left",
+            to: "/docs/faq/opbnb-faq",
+          },
+        ],
       },
       footer: {
         /*style: "dark",
