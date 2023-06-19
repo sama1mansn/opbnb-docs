@@ -48,7 +48,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "🎯 Build on zkBNB",
+      label: "🎯 Build on opBNB",
       collapsible: true,
       collapsed: true,
       items:[
