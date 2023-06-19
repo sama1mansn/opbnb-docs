@@ -1,5 +1,5 @@
 ---
-title: Frequent Asked Questions
+title: FAQs
 icon: ask
 sidebar_collapsed: true
 dir:

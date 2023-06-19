@@ -1,5 +1,5 @@
 ---
-title: Rollup Economics Explained 
+title: Economics 
 icon: code
 index: yes
 dir:

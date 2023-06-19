@@ -32,8 +32,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items:[
-        'core-concepts/architecture',
         'core-concepts/why-opbnb',
+        'core-concepts/architecture',
       ],
     },
     {
@@ -52,8 +52,8 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items:[
-        'build-on-opbnb/opbnb-testnet-information',
         'build-on-opbnb/getting-started',
+        'build-on-opbnb/opbnb-testnet-information',
         'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/wallet-configuration',
       ],
