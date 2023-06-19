@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "BNB Optimistic Rollup",
   tagline: "opBNB",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://docs.bnbchain.org",
   baseUrl: "/opbnb-docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "huihzhao", // Usually your GitHub org/user name.
-  projectName: "bnbopbnb-docs", // Usually your repo name.
+  organizationName: "bnb-chain", // Usually your GitHub org/user name.
+  projectName: "opbnb-docs", // Usually your repo name.
 
   presets: [
     [
@@ -36,7 +36,6 @@ const config = {
         blog: {
           showReadingTime: true,
           editUrl: "https://www.bnbchain.org/en/blog/",
-
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css")
@@ -85,12 +84,12 @@ const config = {
         links: [
           {
             title:"Learn",
-            items:[              
-              { 
+            items:[
+              {
                 label: "Whitepaper",
                 to: "https://github.com/bnb-chain/greenfield-whitepaper"
               },
-              { 
+              {
                 label: "Official Website",
                 to: "http://greenfield.bnbchain.org/"
               },
@@ -109,7 +108,7 @@ const config = {
               },
               {
                 label: 'Telegram',
-                href: 'http://t.me/bnbchain',              
+                href: 'http://t.me/bnbchain',
               }
             ]
           },
@@ -131,7 +130,7 @@ const config = {
             ]
           }
         ],
-        
+
         copyright: `Copyright © ${new Date().getFullYear()} BNB Chain`
       */
       },

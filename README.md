@@ -1,7 +1,10 @@
-# BNB Greenfield Official Documentation
+# opBNB Official Documentation
 
 ## Overview
-BNB Greenfield is an innovative blockchain and storage platform that seeks to unleash the power of decentralized technology on data ownership and the data economy. This is the GitHub repo of the official documentation and API refernce for BNB Greenfield. This app is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. 
+
+The opBNB network is the Layer 2 scaling solution for the BNB Smart Chain powered by [bedrock version](https://community.optimism.io/docs/developers/bedrock/) of Optimism opStack.
+
+This is the GitHub repo of the official documentation for opBNB. This app is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Prerequisites
 
