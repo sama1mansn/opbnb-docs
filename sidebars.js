@@ -70,7 +70,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "🧑‍🔧 Troubleshooting",
+      label: "🧑‍🔧 FAQs",
       collapsible: true,
       collapsed: true,
       items:[
