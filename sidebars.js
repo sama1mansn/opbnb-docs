@@ -34,6 +34,7 @@ const sidebars = {
       items:[
         'core-concepts/why-opbnb',
         'core-concepts/architecture',
+        'core-concepts/difference'
       ],
     },
     {
