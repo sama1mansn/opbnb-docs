@@ -30,13 +30,13 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
    
    Select add manual network and enter the network information I mentioned above.
    
-   <img src="../../static/img/add-bsc-metamask.png" alt="image-20230627165414606" style="zoom:30%;" />
+   ![image-20230627171332772](../../static/img/add-bsc-metamask.png)
    
    [Trustwallet](https://chrome.google.com/webstore/detail/trust-wallet/egjidjbpglichdcondbcbdnbeeppgdph)
    
    After you install the Trustwallet in your browser, you can go to settings->network.
    
-   <img src="../../static/img/add-bsc-trustwallet.png" alt="image-20230627170010204" style="zoom:25%;" />
+   ![img-trustwallet](../../static/img/add-bsc-trustwallet.png)
 
 ​		Select add custom network and enter the network information I mentioned above.
 

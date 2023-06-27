@@ -20,6 +20,10 @@ To get some tBNB for testing opBNB, you can join the [BNB discord](http://discor
 
 2. Switch to the BNB smart chain testnet in your wallet and check your balance. 
 
+:::information_desk_person:
+Please note if your wallet balance is larger than 1 tBNB, you can not get new tBNB from the faucet.
+:::
+
 # Deposit tokens to opBNB
 
 Before building or deploying any applications on the opBNB network, you must first deposit tokens from BNB Smart Chain to opBNB. You can do this using the [opBNB bridge dApp](https://opbnb-testnet-bridge.bnbchain.org/). 

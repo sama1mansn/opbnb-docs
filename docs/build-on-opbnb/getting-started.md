@@ -30,13 +30,19 @@ Step 1: Connect your wallet to opBNB
 Connect your wallet to the opBNB testnet and BSC testnet. To do this, click on the network dropdown menu on MetaMask and select "Custom RPC". Then, enter the following details:
 
 Network Name: BSC TestNet
-BSC testnet RPC endpoint: "https://data-seed-prebsc-1-s1.binance.org:8545"
+
+BSC testnet RPC endpoint: "https://data-seed-prebsc-1-s1.bnbchain.org:8545"
+
 BSC testnet chain ID: 97
+
 Symbol: BNB
 
 Network Name: opBNB TestNet
+
 BSC testnet RPC endpoint: "https://opbnb-testnet-rpc.bnbchain.org"
+
 BSC testnet chain ID: 5611
+
 Symbol: BNB
 
 Step 2: Deposit your tBNB token to the opBNB
