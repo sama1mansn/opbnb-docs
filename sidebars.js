@@ -56,6 +56,7 @@ const sidebars = {
         'build-on-opbnb/opbnb-testnet-information',
         'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/wallet-configuration',
+        'build-on-opbnb/withdraw-from-opbnb',
       ],
     },
     {
