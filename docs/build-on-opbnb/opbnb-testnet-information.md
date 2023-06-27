@@ -18,13 +18,13 @@ Network Information
 
 ```shell
 BSC testnet RPC endpoint: 
-"https://data-seed-prebsc-1-s1.binance.org:8545"
-"https://data-seed-prebsc-2-s1.binance.org:8545"
-"https://data-seed-prebsc-1-s2.binance.org:8545"
-"https://data-seed-prebsc-2-s2.binance.org:8545"
-"https://data-seed-prebsc-1-s3.binance.org:8545"
-"https://data-seed-prebsc-2-s3.binance.org:8545"
-"https://bsc-testnet.publicnode.com"
+https://data-seed-prebsc-1-s1.bnbchain.org:8545
+https://data-seed-prebsc-2-s1.bnbchain.org:8545
+https://data-seed-prebsc-1-s2.bnbchain.org:8545
+https://data-seed-prebsc-2-s2.bnbchain.org:8545
+https://data-seed-prebsc-1-s3.bnbchain.org:8545
+https://data-seed-prebsc-2-s3.bnbchain.org:8545
+https://bsc-testnet.publicnode.com
 BSC testnet chain ID: 97
 ```
 
