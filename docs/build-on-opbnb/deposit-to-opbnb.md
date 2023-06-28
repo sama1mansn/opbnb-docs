@@ -10,7 +10,7 @@ dir:
 This is a living document and is susceptible to changes. 
 :::
 
-# Claim tBNB from Discord Faucet
+# Claim tBNB from Faucet
 
 1. There are two ways to claim testing tBNB token, please refer to the BSC [faucet doc](https://docs.bnbchain.org/docs/bsc-faucet).
 
