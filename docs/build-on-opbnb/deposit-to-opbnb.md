@@ -12,17 +12,10 @@ This is a living document and is susceptible to changes.
 
 # Claim tBNB from Discord Faucet
 
-To get some tBNB for testing opBNB, you can join the [BNB discord](http://discord.gg/bnbchain) and go to the test-faucet channel under the faucet section. There you can claim your tBNB for free.
-
-1. Type the command */faucet ${your-wallet-address}*.
-
-![image-20230627160144777](../../static/img/faucet-tbnb.png)
+1. There are two ways to claim testing tBNB token, please refer to the BSC [faucet doc](https://docs.bnbchain.org/docs/bsc-faucet).
 
 2. Switch to the BNB smart chain testnet in your wallet and check your balance. 
 
-:::information_desk_person:
-Please note if your wallet balance is larger than 1 tBNB, you can not get new tBNB from the faucet.
-:::
 
 # Deposit tokens to opBNB
 
