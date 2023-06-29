@@ -17,29 +17,34 @@ const sidebars = {
   guideSidebar:[
     {
       type: "category",
-      label: "📜 Introduction",
+      label: "Introduction",
       //link: {type: 'doc', id: 'intro'},
       collapsible: true,
       collapsed: true,
       items:[
         'intro',
+        'core-concepts/why-opbnb',
         'intro/why-opstack',
+        'core-concepts/difference-BSC-Eth',
+        'core-concepts/difference-L2',
       ],
     },
     {
       type: "category",
-      label: "🕶️ Core Concepts",
+      label: "Getting Started",
       collapsible: true,
       collapsed: true,
       items:[
-        'core-concepts/why-opbnb',
-        'core-concepts/architecture',
-        'core-concepts/difference'
+        'build-on-opbnb/getting-started',
+        'build-on-opbnb/opbnb-testnet-information',
+        'build-on-opbnb/deposit-to-opbnb',
+        'build-on-opbnb/wallet-configuration',
+        'build-on-opbnb/withdraw-from-opbnb',
       ],
     },
     {
       type: "category",
-      label: "💰 Economics",
+      label: "Economics",
       collapsible: true,
       collapsed: true,
       items:[
@@ -49,21 +54,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "🎯 Build on opBNB",
-      collapsible: true,
-      collapsed: true,
-      items:[
-        'build-on-opbnb/getting-started',
-        'build-on-opbnb/opbnb-testnet-information',
-        'build-on-opbnb/bsc-testnet-faucet',
-        'build-on-opbnb/deposit-to-opbnb',
-        'build-on-opbnb/wallet-configuration',
-        'build-on-opbnb/withdraw-from-opbnb',
-      ],
-    },
-    {
-      type: "category",
-      label: "👩‍🏫 Tutorials",
+      label: "Tutorials",
       collapsible: true,
       collapsed: true,
       items:[
@@ -72,17 +63,10 @@ const sidebars = {
       ],
     },
     {
-      type: "category",
-      label: "🧑‍🔧 FAQs",
-      collapsible: true,
-      collapsed: true,
-      items:[
-        'faq/opbnb-faq',
-        //"faq/opbnb-faq",
-      ],
+      type: 'doc', id:'faq/opbnb-faq', label: 'FAQs'
     },
     {
-      type: 'doc', id:'contact', label: '☎️ Contact'
+      type: 'doc', id:'contact', label: 'Contact'
     },
   ]
 
