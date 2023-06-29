@@ -16,7 +16,7 @@ You can use any Etheruem or BSC wallet with opBNB. For instance, I will show you
 
 To configure your wallet to work with opBNB, you will need to add both the BNB smart chain testnet and the opBNB network. Follow these steps: 
 
-1. Add the BNB smart chain testnet to your  wallet. This is the Layer 1 blockchain that opBNB is built on top of.
+1. Add the BNB smart chain testnet to your wallet. This is the Layer 1 blockchain that opBNB is built on top of.
 
    - Network Name: BSC Testnet
    - New RPC URL: [https://data-seed-prebsc-1-s1.bnbchain.org:8545](https://data-seed-prebsc-1-s3.bnbchain.org:8545/)
@@ -37,12 +37,11 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
    After you install the Trustwallet in your browser, you can go to settings->network.
    
    ![img-trustwallet](../../static/img/add-bsc-trustwallet.png)
+   
+   Select add custom network and enter the network information I mentioned above.
 
-​		Select add custom network and enter the network information I mentioned above.
+2. Add the opBNB network to your wallet. This is the actual Layer 2 network you will interact with. You can follow the same steps I mentioned above with the network information below.
 
-​	
-
-2. Add the opBNB network to your  wallet. This is the actual Layer 2 network you will interact with. You can follow the same steps I mentioned above with the network information below.
    - Network Name: opBNB Testnet
    - New RPC URL: [https://opbnb-testnet-rpc.bnbchain.org](https://opbnb-testnet-rpc.bnbchain.org)
    - ChainID: 5611
@@ -51,6 +50,6 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
 
 
 
-:::information_desk_person:
+:::info
 Depending on your location and preference, you can choose from a variety of RPC endpoints for BSC and opBNB. For more information about the endpoints and their features, please refer to the network information document that we have prepared for you. To ensure the best performance and user experience, you can test the latency of each endpoint before you configure it with your wallet.
 :::

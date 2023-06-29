@@ -17,39 +17,21 @@ const sidebars = {
   guideSidebar:[
     {
       type: "category",
-      label: "📜 Introduction",
+      label: "Introduction",
       //link: {type: 'doc', id: 'intro'},
       collapsible: true,
       collapsed: true,
       items:[
         'intro',
-        'intro/why-opstack',
-      ],
-    },
-    {
-      type: "category",
-      label: "🕶️ Core Concepts",
-      collapsible: true,
-      collapsed: true,
-      items:[
         'core-concepts/why-opbnb',
-        'core-concepts/architecture',
-        'core-concepts/difference'
+        'intro/why-opstack',
+        'core-concepts/difference-BSC-Eth',
+        'core-concepts/difference-L2',
       ],
     },
     {
       type: "category",
-      label: "💰 Economics",
-      collapsible: true,
-      collapsed: true,
-      items:[
-        'economics/rollup-economis-explained',
-        'economics/gas-and-fees',
-      ],
-    },
-    {
-      type: "category",
-      label: "🎯 Build on opBNB",
+      label: "Getting Started",
       collapsible: true,
       collapsed: true,
       items:[
@@ -62,7 +44,17 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "👩‍🏫 Tutorials",
+      label: "Economics",
+      collapsible: true,
+      collapsed: true,
+      items:[
+        'economics/rollup-economis-explained',
+        'economics/gas-and-fees',
+      ],
+    },
+    {
+      type: "category",
+      label: "Tutorials",
       collapsible: true,
       collapsed: true,
       items:[
@@ -71,17 +63,10 @@ const sidebars = {
       ],
     },
     {
-      type: "category",
-      label: "🧑‍🔧 FAQs",
-      collapsible: true,
-      collapsed: true,
-      items:[
-        'faq/opbnb-faq',
-        //"faq/opbnb-faq",
-      ],
+      type: 'doc', id:'faq/opbnb-faq', label: 'FAQs'
     },
     {
-      type: 'doc', id:'contact', label: '☎️ Contact'
+      type: 'doc', id:'contact', label: 'Contact'
     },
   ]
 

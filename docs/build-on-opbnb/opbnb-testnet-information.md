@@ -12,32 +12,24 @@ This is a living document and is susceptible to changes.
 
 # Network Information
 
-Network Information
 
-## Testnet
 
-```shell
-BSC testnet RPC endpoint: 
-https://data-seed-prebsc-1-s1.bnbchain.org:8545
-https://data-seed-prebsc-2-s1.bnbchain.org:8545
-https://data-seed-prebsc-1-s2.bnbchain.org:8545
-https://data-seed-prebsc-2-s2.bnbchain.org:8545
-https://data-seed-prebsc-1-s3.bnbchain.org:8545
-https://data-seed-prebsc-2-s3.bnbchain.org:8545
-https://bsc-testnet.publicnode.com
-BSC testnet chain ID: 97
-```
-
+## opBNB Testnet
 
 | Name            | Value                                     |
 |-----------------|-------------------------------------------|
-| Network Name    | opBNB Testnet                             |
+| Network Name    | opBNB testnet                             |
 | Description     | The public testnet for opBNB.             |
 | RPC Endpoint    | https://opbnb-testnet-rpc.bnbchain.org    |
 | Chain ID        | 5611                                      |
 | Currency Symbol | tBNB                                      |
 | Block Explorer  | https://opbnbscan.com/                    |
 | Bridge          | https://opbnb-testnet-bridge.bnbchain.org |
+
+:::info
+The opBNB testnet is the layer2 network on the BSC testnet. For BSC testnet RPC endpoints and related information, please refer to [BSC Testnet page](https://docs.bnbchain.org/docs/rpc) to configure your wallet and developer tools. 
+:::
+
 
 ### opBNB Protocol addresses
 
