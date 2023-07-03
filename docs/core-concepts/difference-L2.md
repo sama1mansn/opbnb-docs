@@ -13,14 +13,14 @@ Compared with other L2 solutions on the Ethereum, like **OP Mainnet** and **Arbi
 
 **Gas Parameter Differences**
 
-| **Parameter**                         | **opBNB value** | **Optimism value** | **Ethereum value** |
-| ------------------------------------- | --------------- | ------------------ | ---------------------------------- |
-| Block gas limit                       | 100,000,000 gas | 30,000,000 gas     | 30,000,000 gas                     |
-| Block gas target                      | 50,000,000      | 5,000,000 gas      | 15,000,000 gas                     |
-| EIP-1559 elasticity multiplier        | 2               | 6                  | 2                                  |
-| EIP-1559 denominator                  | 8               | 50                 | 8                                  |
-| Maximum base fee increase (per block) | 12.5%           | 10%                | 12.5%                              |
-| Maximum base fee decrease (per block) | 12.5%           | 2%                 | 12.5%                              |
+| **Parameter**                         | **opBNB value** | **Optimism value** |
+| ------------------------------------- | --------------- | ------------------ |
+| Block gas limit                       | 100,000,000 gas | 30,000,000 gas     |
+| Block gas target                      | 50,000,000  gas | 5,000,000 gas      |
+| EIP-1559 elasticity multiplier        | 2               | 6                  |
+| EIP-1559 denominator                  | 8               | 50                 |
+| Maximum base fee increase (per block) | 12.5%           | 10%                |
+| Maximum base fee decrease (per block) | 12.5%           | 2%                 |
 
 **Metrics Differences**
 
