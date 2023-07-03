@@ -36,6 +36,7 @@ const sidebars = {
       collapsed: true,
       items:[
         'build-on-opbnb/getting-started',
+        'build-on-opbnb/network-faucet',
         'build-on-opbnb/opbnb-testnet-information',
         'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/wallet-configuration',

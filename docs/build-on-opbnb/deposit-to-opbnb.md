@@ -10,13 +10,6 @@ dir:
 This is a living document and is susceptible to changes. 
 :::
 
-# Claim tBNB from Faucet
-
-1. There are two ways to claim testing tBNB token, please refer to the BSC [faucet doc](https://docs.bnbchain.org/docs/bsc-faucet) for details.
-
-2. Switch to the BNB smart chain testnet in your wallet and check your balance. 
-
-
 # Deposit tokens to opBNB
 
 Before building or deploying any applications on the opBNB network, you must first deposit tokens from BNB Smart Chain to opBNB. You can do this using the [opBNB bridge dApp](https://opbnb-testnet-bridge.bnbchain.org/). 
