@@ -60,6 +60,7 @@ const sidebars = {
       collapsed: true,
       items:[
         'tutorials/running-a-testnet-node',
+        'tutorials/running-a-local-development-environment',
         //"faq/opbnb-faq",
       ],
     },
