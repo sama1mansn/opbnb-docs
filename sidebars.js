@@ -41,6 +41,7 @@ const sidebars = {
         'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/wallet-configuration',
         'build-on-opbnb/withdraw-from-opbnb',
+        'build-on-opbnb/ecosystem',
       ],
     },
     {

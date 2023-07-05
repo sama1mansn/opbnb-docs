@@ -8,3 +8,6 @@ To get help from other developers, discuss ideas, and stay up-to-date on what's 
 
 ## Forum
 You can also join the conversation, connect with other projects, and ask questions in our [BNB Chain Forum](https://forum.bnbchain.org/).
+
+## Bugs
+Your feedbacks are welcome. I will make sure to update the documentation if there is anything wrong. If you find any issues with the documentation, please feel free to open an issue on the [issues tab](https://github.com/bnb-chain/opbnb-docs/issues).
