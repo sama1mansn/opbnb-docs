@@ -12,23 +12,16 @@ This is a living document and is susceptible to changes.
 
 One of our main objectives is to expand the adoption and utility of opBNB as a high performance and low cost Layer 2 chain on the BNB Smart Chain. To achieve this goal, we have to ensure that our underlying technology is robust, scalable and user-friendly. That is why we are committed to developing and improving the core infrastructure and tools that support opBNB and its community of users, hosts and developers. Below are the ecosystem we are building for the opBNB.
 
-| Categories                   | Sub Categories | Confirmed Infraustracture and Toolings              | Existing Players in Optimism, Arbitrum and Base              |
-| ---------------------------- | -------------- | --------------------------------------------------- | ------------------------------------------------------------ |
-| DAO                          | Governance     |                                                     | Tally, Boardroom, DAOhause, Snapshot, Guild                  |
-| Developer Toolings           | Node Provider  | NodeReal                                            | Blast, Blockdaemon, Infura, Quicknode                        |
-|                              | Explorer       | NodeReal, Blockvision                               | Blockscout, Etherscan                                        |
-|                              | ToolChains     | Truffle, Foundry, Hardhat                           | Tirdweb, Truffle, Foundry, Hardhat                           |
-|                              | IDE            | Remix                                               | ChainIDE                                                     |
-| Use Access Tooling           | Wallet         | Metamask, TrustWallet, Particle Network, MathWallet | Rainbow Wallet, Safe, Coinbase Wallet, Metamask, Sequence, Biconomy |
-|                              | Browser        |                                                     | Brave, Opera                                                 |
-|                              | Bridges        | PolyHedra, Celer                                    | Wormhole, Hop Exchange, Celer, Li.Fi                         |
-|                              | dApp Store     | dApp Bay                                            | ArbiProject                                                  |
-| Oracles                      | Price Feeds    | Binance Oracle                                      | Chainlink, Pyth Network                                      |
-| Data Indexing and  Analytics | Data Indexing  | Bware Labs                                          | Goldsky, The Graph, Covalent                                 |
-|                              | Data Analytics | Certik                                              | Nansen, Dune Analytics, Flipside                             |
-| Identity                     | DiD            | Galxe                                               | Galxe, ONT ID                                                |
-|                              | Naming Service | SpaceID                                             | SpaceID, ENS                                                 |
-| Storage                      |                | BNB Greenfield                                      | Pinta, Arweave, Filecoin                                     |
-| Security                     |                | AvengerDAO                                          |                                                              |
-| Payments                     |                |                                                     | Moonpay, Transak, Bitget, Umbra                              |
+| Categories         | Sub Categories      | Infraustracture and Toolings                                 |
+| ------------------ | ------------------- | ------------------------------------------------------------ |
+| DAO Governance     | DAO Governance      |                                                              |
+| Node Providers     | Node Provider       | [NodeReal](https://nodereal.io/meganode)                     |
+| Explorer           | Explorer            | [NodeReal opBNB Scan](https://opbnbscan.com/)                |
+|                    | Developer Platforms | [Truffle](https://trufflesuite.com/), [Foundry](https://book.getfoundry.sh/), [Hardhat](https://hardhat.org/), [Remix](https://remix.ethereum.org/) |
+| Use Access Tooling | Wallet              | [Metamask](https://metamask.io/), [TrustWallet](https://trustwallet.com/), [Particle Network](https://wallet.particle.network/), [MathWallet](https://mathwallet.org/) |
+|                    | Bridges             | [PolyHedra](https://zkbridge.com/)                           |
+|                    | dApp Store          | [dApp Bay(Comming Soon)](https://dappbay.bnbchain.org/)      |
+| Oracles            | Price Feeds         | [Binance Oracle(Comming Soon)](https://oracle.binance.com/)  |
+| Storage            |                     | [BNB Greenfield](https://greenfield.bnbchain.org/en)         |
+| Security           |                     | [AvengerDAO](https://www.avengerdao.org/)                    |
 
