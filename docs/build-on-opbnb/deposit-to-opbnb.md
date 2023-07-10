@@ -31,7 +31,7 @@ Follow these steps to deposit tokens from BNB Smart Chain to opBNB:
 
 The opBNB bridge supports you to transfer your assets from BSC to opBNB. The bridge supports most of the popular tokens, including BEP-20 tokens and wrapped bitcoin. If you want to test your applications that require these tokens, you can use the opBNB bridge to deposit and withdraw them in a simple and convenient way.
 
-![image-20230710114709403](../../static/img/birdge-supported-tokens.png)
+![image-20230710114709403](../../static/img/bridge-supported-tokens.png)
 
 :::info
 
