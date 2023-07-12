@@ -189,7 +189,7 @@ module.exports = {
 truffle migrate --network opBNBTestnet
 ```
 
-![deploy-smart-contract](../../opbnb-docs/static/img/opBNB-deploy-contract.PNG)
+![deploy-smart-contract](../../static/img/opBNB-deploy-contract.PNG)
 
 ### Step#7: Set up the React frontend
 
