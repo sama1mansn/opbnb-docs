@@ -3,7 +3,7 @@
 In this tutorial, we'll deploy a simple HelloWorld smart contract on opBNB and build a Web3 frontend using React to interact with the deployed smart contract, i.e., read from and write to the opBNB blockchain.
 
 ## What are we building
-Recently, BNB Chain launched its optimistic roll-up solution named opBNB. opBNB is essentially an optimized layer-2 solution that delivers lower fees and higher throughput to unlock the full potential of the BNB Chain.
+opBNB is essentially an optimized layer-2 solution that delivers lower fees and higher throughput to unlock the full potential of the BNB Chain.
 
 For this tutorial, we will deploy a simple `HelloWorld` smart contract on the opBNB network and build a frontend using Reactjs to interact with the deployed smart contract for reading and writing data onto the opBNB blockchain. 
 The `HelloWorld` smart contract is a simple string variable message that will be used for storing the user-defined messages, e.g., `Hello, opBNB User`. The `updateMessage` function will be used for updating the message variable to any user-defined string value.
