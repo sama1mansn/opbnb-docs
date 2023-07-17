@@ -62,7 +62,7 @@ const sidebars = {
       items:[
         'tutorials/running-a-testnet-node',
         'tutorials/running-a-local-development-environment',
-        //"faq/opbnb-faq",
+        'tutorials/full-stack-dapp',
       ],
     },
     {
