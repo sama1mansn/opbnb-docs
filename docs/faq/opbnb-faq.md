@@ -40,3 +40,7 @@ Change your wallet RPC endpoint for BSC testnet and try again: https://www.bnbch
 1. Change your wallet RPC endpoint and try again: https://www.bnbchainlist.org/ or https://chainlist.org/?search=bsc&testnets=true
 2. If you're still getting this issue, then make sure to disable the VPN and refresh the opBNB bridge: https://opbnb-testnet-bridge.bnbchain.org/?type=deposit page.
 
+
+### Not able to claim/transfer NFT on zkbridge: https://zkbridge.com/ and galxe: https://galxe.com/polyhedra/campaign/GCW7sUEAyS, and having issues: `Still processing for more than 24 hours`?
+![Error](../../static/img/faqs/zkBridge_issue.png)
+As this is related to `zkbridge`, please check with the appropriate project support team (here: https://discord.com/invite/WkjUe5tfZP), as the service/website you are using is from Polyhedra team.
