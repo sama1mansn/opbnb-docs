@@ -83,28 +83,30 @@ Truffle creates the following directory structure for your project:
     cd frontend
     ```
 
-## Step#2: Install `hdwallet-provider​`
+### Step#2: Install `hdwallet-provider​`
 
 `hdwallet-provider` is a separate package that signs transactions for addresses derived from a 12 or 24-word mnemonic. By default, the `hdwallet-provider` uses the first address generated from the mnemonic. However, this is configurable. For more information, refer to the Truffle `hdwallet-provider` repository. Run the following command to install `hdwallet-provider`
 
-    ```shell
+```shell
     npm install @truffle/hdwallet-provider
-    ```
+```
 
 ### Step#3: Create the `.env` file​
 
 * Install the `dotenv` package using the following command 
 
-    ```shell 
+```shell 
     npm install dotenv
-    ```
+```
+
 * Create a file named `.env` in your project directory to store the Metamask Secret Phrase. Refer to the MetaMask instructions on [how to reveal a secret recovery phrase](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-Reveal-Your-Seed-Phrase). 
 
-    ```
+```js
     MNEMONIC = "<Your-MetaMask-Secret-Recovery-Phrase>"
-    ```
+```
+
 * Ensure you replace the following values in the `.env` file
-    * `<Your-MetaMask-Secret-Recovery-Phrase>` with the mnemonic of your MetaMask wallet. This phrase is used by the [Truffle hdwallet-provider](https://github.com/trufflesuite/truffle/tree/develop/packages/hdwallet-provider) to sign transactions.
+  * `<Your-MetaMask-Secret-Recovery-Phrase>` with the mnemonic of your MetaMask wallet. This phrase is used by the [Truffle hdwallet-provider](https://github.com/trufflesuite/truffle/tree/develop/packages/hdwallet-provider) to sign transactions.
 
 :::danger
 Never disclose your secret recovery phrase. Anyone with your recovery phrase can steal any assets held in your wallet.
@@ -114,7 +116,7 @@ Never disclose your secret recovery phrase. Anyone with your recovery phrase can
 
 Inside the contracts directory, create a new file named `HelloWorld.sol` and add the following code
 
-```jsx 
+```jsx
    // SPDX-License-Identifier: MIT
    pragma solidity ^0.8.19;
 
@@ -176,6 +178,7 @@ module.exports = {
 ```
 
 ### Step#6: Deploy the smart contract on opBNB
+
 1. In the root directory of your project, create a new file named `1_deploy_contract.js` inside the `migrations` directory and add the following code:
 
 ```jsx

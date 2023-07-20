@@ -6,12 +6,11 @@ dir:
   order: 1
 ---
 
-:::caution 
-This is a living document and is susceptible to changes. 
+:::caution
+This is a living document and is susceptible to changes.
 :::
 
-
-## Rollup Economics Explained 
+## Rollup Economics Explained
 
 You probably know that blockchains are not very efficient when it comes to processing transactions. They have to deal with three main costs:
 
