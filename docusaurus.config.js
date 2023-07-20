@@ -30,7 +30,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/bnb-chain/opbnb-docs",
+            "https://github.com/bnb-chain/opbnb-docs/blob/main",
           docLayoutComponent: "@theme/DocPage",
           docItemComponent: "@theme/ApiItem" // Derived from docusaurus-theme-openapi
         },
@@ -45,8 +45,11 @@ const config = {
     ]
   ],
 
+  themes: [ "docusaurus-theme-openapi-docs"],
+
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig } */
     ({
       docs: {
         sidebar: {
@@ -68,13 +71,6 @@ const config = {
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
         externalUrlRegex: 'https://docs.bnbchain.org/',
   
-        // Optional: Algolia search parameters
-        //searchParameters: {},
-  
-        // Optional: path for search page that enabled by default (`false` to disable it)
-      //  searchPagePath: 'search',
-  
-        //... other Algolia params
       },
       navbar: {
         title: "BNB Optimistic Rollup",
@@ -95,69 +91,15 @@ const config = {
             position: "left",
             to: "/docs/faq/opbnb-faq",
           },
+          {
+            href: 'https://github.com/bnb-chain/opbnb-docs',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
+          },
         ],
       },
-      footer: {
-        /*style: "dark",
-        logo: {
-          alt: 'BNB Chain Logo',
-          src: 'img/logo.svg',
-          width: 160,
-          height: 51,
-        },
-        links: [
-          {
-            title:"Learn",
-            items:[
-              {
-                label: "Whitepaper",
-                to: "https://github.com/bnb-chain/greenfield-whitepaper"
-              },
-              {
-                label: "Official Website",
-                to: "http://greenfield.bnbchain.org/"
-              },
-            ]
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Discord",
-                href: "https://discord.com/invite/QRTQvfhADQ"
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/BNBChain"
-              },
-              {
-                label: 'Telegram',
-                href: 'http://t.me/bnbchain',
-              }
-            ]
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "https://www.bnbchain.org/en/blog/"
-              },
-              {
-                label:"Youtube",
-                to: "https://www.youtube.com/channel/UCG9fZu6D4I83DStktBV0Ryw"
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/bnb-chain"
-              },
-            ]
-          }
-        ],
-
-        copyright: `Copyright © ${new Date().getFullYear()} BNB Chain`
-      */
-      },
+      
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
@@ -165,7 +107,7 @@ const config = {
       }
     }),
 
-  themes: ["docusaurus-theme-openapi-docs"]
+  
 };
 
 module.exports = config;

@@ -24,9 +24,6 @@ const sidebars = {
       items:[
         'intro',
         'core-concepts/why-opbnb',
-        'intro/why-opstack',
-        'core-concepts/difference-BSC-Eth',
-        'core-concepts/difference-L2',
       ],
     },
     {
@@ -35,23 +32,26 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items:[
-        'build-on-opbnb/getting-started',
-        'build-on-opbnb/network-faucet',
-        'build-on-opbnb/opbnb-testnet-information',
-        'build-on-opbnb/deposit-to-opbnb',
+       {type: 'doc', label: 'Overview', id:'build-on-opbnb/getting-started'}, 
         'build-on-opbnb/wallet-configuration',
+        'build-on-opbnb/opbnb-testnet-information',
+        'build-on-opbnb/network-faucet',
+        'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/withdraw-from-opbnb',
         'build-on-opbnb/ecosystem',
       ],
     },
     {
       type: "category",
-      label: "Economics",
+      label: "Core Concepts",
       collapsible: true,
       collapsed: true,
       items:[
-        'economics/rollup-economis-explained',
+        //'economics/rollup-economis-explained',
         'economics/gas-and-fees',
+        'intro/why-opstack',
+        'core-concepts/difference-BSC-Eth',
+        'core-concepts/difference-L2',
       ],
     },
     {
@@ -69,7 +69,7 @@ const sidebars = {
       type: 'doc', id:'faq/opbnb-faq', label: 'FAQs'
     },
     {
-      type: 'doc', id:'contact', label: 'Contact'
+      type: 'doc', id:'contribute', label: 'Contribute'
     },
   ]
 

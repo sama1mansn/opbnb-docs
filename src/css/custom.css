@@ -4,6 +4,47 @@
  * work well for content-centric websites.
  */
 
+ :root {
+  --markprompt-background: #ffffff;
+  --markprompt-foreground: #171717;
+  --markprompt-muted: #fafafa;
+  --markprompt-mutedForeground: #737373;
+  --markprompt-border: #e5e5e5;
+  --markprompt-input: #ffffff;
+  --markprompt-primary: #6366f1;
+  --markprompt-primaryForeground: #ffffff;
+  --markprompt-primaryMuted: #8285f4;
+  --markprompt-secondary: #fafafa;
+  --markprompt-secondaryForeground: #171717;
+  --markprompt-primaryHighlight: #ec4899;
+  --markprompt-secondaryHighlight: #a855f7;
+  --markprompt-overlay: #00000010;
+  --markprompt-ring: #0ea5e9;
+  --markprompt-radius: 8px;
+  --markprompt-text-size: 0.875rem;
+  --markprompt-button-icon-size: 1rem;
+  --markprompt-icon-stroke-width: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --markprompt-background: #050505;
+    --markprompt-foreground: #d4d4d4;
+    --markprompt-muted: #171717;
+    --markprompt-mutedForeground: #737373;
+    --markprompt-border: #262626;
+    --markprompt-input: #ffffff;
+    --markprompt-primary: #6366f1;
+    --markprompt-primaryForeground: #ffffff;
+    --markprompt-primaryMuted: #8285f4;
+    --markprompt-secondary: #0e0e0e;
+    --markprompt-secondaryForeground: #ffffff;
+    --markprompt-primaryHighlight: #ec4899;
+    --markprompt-secondaryHighlight: #a855f7;
+    --markprompt-overlay: #00000040;
+    --markprompt-ring: #ffffff;
+  }
+}
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
