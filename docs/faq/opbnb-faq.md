@@ -44,3 +44,7 @@ Change your wallet RPC endpoint for BSC testnet and try again: https://www.bnbch
 ### Not able to claim/transfer NFT on zkbridge: https://zkbridge.com/ and galxe: https://galxe.com/polyhedra/campaign/GCW7sUEAyS, and having issues: `Still processing for more than 24 hours`?
 ![Error](../../static/img/faqs/zkBridge_issue.png)
 As this is related to `zkbridge`, please check with the appropriate project support team (here: https://discord.com/invite/WkjUe5tfZP), as the service/website you are using is from Polyhedra team.
+
+### How to allow smart contract cross chain communication between L1 and L2?
+Directly interacting with smart contract functions that exists on L2(opBNB) from L1(BSC), is not possible as all smart contracts on L2 is isolated from L1.<br/>
+With that said, there is a way for developers to allow arbitrary message sending by writing their own contracts to build their required business logic. More details here: https://community.optimism.io/docs/developers/bridge/messaging/#communication-basics-between-layers
