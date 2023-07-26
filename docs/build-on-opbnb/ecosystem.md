@@ -16,12 +16,12 @@ One of our main objectives is to expand the adoption and utility of opBNB as a h
 | ------------------ | ------------------- | ------------------------------------------------------------ |
 | DAO Governance     | DAO Governance      |                                                              |
 | Node Providers     | Node Provider       | [NodeReal](https://nodereal.io/meganode)                     |
-| Explorer           | Explorer            | [NodeReal opBNB Scan](https://opbnbscan.com/)                |
+| Explorer           | Explorer            | [NodeReal opBNB Scan](https://opbnbscan.com/), [BSCScan](https://opbnb-testnet.bscscan.com/) |
 |                    | Developer Platforms | [Truffle](https://trufflesuite.com/), [Foundry](https://book.getfoundry.sh/), [Hardhat](https://hardhat.org/), [Remix](https://remix.ethereum.org/) |
 | Use Access Tooling | Wallet              | [Metamask](https://metamask.io/), [TrustWallet](https://trustwallet.com/), [Particle Network](https://wallet.particle.network/), [MathWallet](https://mathwallet.org/) |
 |                    | Bridges             | [PolyHedra](https://zkbridge.com/)                           |
 |                    | dApp Store          | [dApp Bay(Comming Soon)](https://dappbay.bnbchain.org/)      |
-| Oracles            | Price Feeds         | [Binance Oracle(Comming Soon)](https://oracle.binance.com/)  |
+| Oracles            | Price Feeds         | [Binance Oracle](https://oracle.binance.com/)                |
 | Storage            |                     | [BNB Greenfield](https://greenfield.bnbchain.org/en)         |
 | Security           |                     | [AvengerDAO](https://www.avengerdao.org/)                    |
 
