@@ -1,5 +1,6 @@
 ---
 title: opBNB Architecture
+description: Learn about the architecture of opBNB
 icon: code
 index: yes
 dir:

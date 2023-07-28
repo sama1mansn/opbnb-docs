@@ -1,15 +1,15 @@
 ---
-title: Differences between opBNB and Layer1 Networks
+title: opBNB vs other Layer1 Networks
+description: Differences between opBNB and other Layer1 Networks
 icon: code
 index: yes
 dir:
   order: 2
 ---
-:::caution 
+
+:::caution
 This is a living document and is susceptible to changes. 
 :::
-
-# Differences between opBNB, BSC, and Ethereum
 
 Our goal is to provide a scaling solution for network congestion problems for highly active applications on the BSC, such as DeFi, NFTs and gaming. opBNB is based on OP Stack and with optimizations of the mining process and the cache data access to achieve a capacity of 100M gas per second, which is much higher than BSC. 
 

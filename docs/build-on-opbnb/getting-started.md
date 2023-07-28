@@ -1,12 +1,9 @@
 ---
 sidebar_label: Overview
+description: Overview of getting started on opBNB
 ---
 
 # Getting Started
-
-:::caution
-This is a living document and is susceptible to changes.
-:::
 
 Developing on opBNB, an optimistic rollup Layer 2 scaling solution for BNB Smart Chain, is nearly the same as building directly on BNB Smart Chain. opBNB uses an EVM execution engine, meaning decentralized applications can be migrated from Ethereum, BNB Smart Chain, Polygon, and other EVM-compatible chains without changing much code. Some key points to highlight:
 
@@ -28,3 +25,9 @@ Step 2: Deposit your tBNB token to opBNB
 Follow the steps of [Deposit Tokens to opBNB](./deposit-to-opbnb.md).
 
 Step 3: Start building by deploying smart contract to opBNB. 
+
+## opBNB SDKs
+
+Following is the list of SDKs for opBNB
+
+- **[OP Stack Client SDK](https://sdk.optimism.io/):** the SDK provides set of tools for interacting with opBNB and also for Interlayer communication. It .

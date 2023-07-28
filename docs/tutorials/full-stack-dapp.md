@@ -1,5 +1,6 @@
 ---
 sidebar_label: Create a Full Stack dapp
+description: Build Full Stack dapp using Truffle and React on opBNB
 ---
 # Create a Full Stack dapp using Truffle and React on opBNB
 

@@ -1,4 +1,9 @@
-# Running a testnet node
+---
+sidebar_label: Run Test Node
+description: Guide to running opBNB Testnet Node
+---
+
+# Running a Testnet Node
 
 If you're looking to build an app on opBNB you'll need access to an opBNB node.
 You can simply use the public testnet node at <https://opbnb-testnet-rpc.bnbchain.org> or run your own.
