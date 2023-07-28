@@ -53,7 +53,7 @@ const config = {
     ({
       docs: {
         sidebar: {
-          hideable: true
+          hideable: true,
         }
       },
       algolia: {
@@ -80,10 +80,22 @@ const config = {
         },
         items: [
           {
-            link: {type: 'doc', id: 'intro'},
-            label: "Guide",
+            link: {type: 'doc', id: 'build-on-opbnb/getting-started'},
+            label: "Getting Started",
             position: "left",
-            to: "/docs/intro",
+            to: "/docs/build-on-opbnb/getting-started",
+          },
+          {
+            link: {type: 'doc', id: '/core-concepts'},
+            label: "Core Concepts",
+            position: "left",
+            to: "/docs/core-concepts",
+          },
+          {
+            link: {type: 'doc', id: '/tutorials'},
+            label: "Tutorials",
+            position: "left",
+            to: "/docs/tutorials",
           },
           {
             link: {type: 'doc', id: 'openbnb-faq'},

@@ -1,14 +1,13 @@
 ---
-title: Why OP Stack as the Foundation of opBNB
+sidebar_label: Why OP Stack for opBNB
+description: Learn why OP Stack is used as the Foundation of opBNB
 icon: code
 index: yes
 dir:
   order: 1
 ---
 
-:::caution 
-This is a living document and is susceptible to changes. 
-:::
+# Why OP Stack as the Foundation of opBNB
 
 Our team had extensive discussions and research before we embarked on the mission of creating a high performance optimistic rollup for BNB Smart Chain. 
 

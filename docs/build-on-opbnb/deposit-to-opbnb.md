@@ -26,6 +26,9 @@ Follow these steps to deposit tokens from BNB Smart Chain to opBNB:
 
 ![image-20230605151226852](../../static/img/opBNB-bridge.png)
 
+<!-- ## What is deposit finality time?
+
+The deposit finality time is XXX . -->
 
 ## opBNB Bridge Supported Tokens
 

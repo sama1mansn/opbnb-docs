@@ -15,6 +15,7 @@
 const sidebars = {
 
   guideSidebar:[
+    
     {
       type: "category",
       label: "Introduction",
@@ -31,10 +32,11 @@ const sidebars = {
       label: "Getting Started",
       collapsible: true,
       collapsed: true,
+      link:{type: 'doc', id:'build-on-opbnb/getting-started'}, 
       items:[
-       {type: 'doc', label: 'Overview', id:'build-on-opbnb/getting-started'}, 
         'build-on-opbnb/wallet-configuration',
-        'build-on-opbnb/opbnb-testnet-information',
+        'build-on-opbnb/opbnb-testnet-info',
+        'build-on-opbnb/cross-chain',
         'build-on-opbnb/network-faucet',
         'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/withdraw-from-opbnb',
@@ -46,12 +48,19 @@ const sidebars = {
       label: "Core Concepts",
       collapsible: true,
       collapsed: true,
+      link: {
+        type: 'generated-index',
+        title: 'Core Concepts',
+        description: 'Learn about the core concepts of opBNB',
+        slug: '/core-concepts',
+      },
       items:[
-        //'economics/rollup-economis-explained',
-        'economics/gas-and-fees',
-        'intro/why-opstack',
+        'core-concepts/why-opstack',
         'core-concepts/difference-BSC-Eth',
         'core-concepts/difference-L2',
+        //'core-concepts/opbnb-contracts',
+        //'core-concepts/challenger',
+        'economics/gas-and-fees',
       ],
     },
     {
@@ -59,20 +68,29 @@ const sidebars = {
       label: "Tutorials",
       collapsible: true,
       collapsed: true,
+      link: {
+        type: 'generated-index',
+        title: 'opBNB Tutorials',
+        description: 'Learn to build dapps on opBNB',
+        slug: '/tutorials',
+      },
       items:[
         'tutorials/running-a-testnet-node',
         'tutorials/running-a-local-development-environment',
         'tutorials/full-stack-dapp',
       ],
     },
-    {
-      type: 'doc', id:'faq/opbnb-faq', label: 'FAQs'
-    },
+    
     {
       type: 'doc', id:'contribute', label: 'Contribute'
     },
-  ]
+  ],
 
+  faqs:[
+    {
+      type: 'doc', id:'faq/opbnb-faq', label: 'FAQs'
+    },
+  ]
 };
 
 module.exports = sidebars;

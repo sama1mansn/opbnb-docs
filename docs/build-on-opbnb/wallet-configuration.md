@@ -1,5 +1,6 @@
 ---
 title: Wallet Configuration
+description: Configure your wallet to work with opBNB
 icon: code
 index: yes
 dir:

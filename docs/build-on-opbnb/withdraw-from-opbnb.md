@@ -32,3 +32,7 @@ There are 2 steps after you submit your withdrawal request.
 :::info:
 The challenge window is shorter on the testnet of opBNB, so you can test the withdrawal process faster. On the mainnet of opBNB, the challenge window will be 7 days long.
 :::
+
+<!-- ## What is the withdrawal confirmation time?
+
+The withdrawal confirmation time is XXX . -->

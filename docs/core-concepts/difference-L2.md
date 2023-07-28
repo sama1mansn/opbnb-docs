@@ -1,10 +1,14 @@
 ---
-title: Differences between opBNB and other Layer2 Networks
+sidebar_label: opBNB vs other Layer2 Networks
+description: Differences between opBNB and other Layer2 Networks
 icon: code
 index: yes
 dir:
   order: 2
 ---
+
+# opBNB vs other Layer2 Networks
+
 :::caution 
 This is a living document and is susceptible to changes. 
 :::

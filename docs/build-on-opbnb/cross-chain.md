@@ -1,51 +1,16 @@
 ---
-title: Network Information
-icon: code
-index: yes
-dir:
-  order: 3
+sidebar_lable: Cross Chain Communication 
 ---
 
-:::caution 
+# Cross Chain Communication
+
+:::caution
 This is a living document and is susceptible to changes. 
 :::
 
-## opBNB RPC Endpoints
+Following are the list of addresses required for cross-chain communication between BSC (L1) and opBNB (L2).
 
-We offer both public and private RPC endpoints to access opBNB. 
-
-### Public opBNB Testnet RPC Endpoints
-
- - https://opbnb-testnet-rpc.bnbchain.org/
- - https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3
- - https://opbnb-testnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5
-
-### Private opBNB Testnet RPC Endpoints
-
- - https://nodereal.io/api-marketplace/opbnb-rpc 
-
-:::note
-To use the above private RPC endpoint, make sure to login to [MegaNode service](https://nodereal.io/meganode) and create your private endpoints.
-:::
-
-## opBNB Testnet
-
-| Name            | Value                                     |
-|-----------------|-------------------------------------------|
-| Network Name    | opBNB testnet                             |
-| Description     | The public testnet for opBNB.             |
-| RPC Endpoint    | [See here](#opbnb-rpc-endpoints)   |
-| Chain ID        | 5611                                      |
-| Currency Symbol | tBNB                                      |
-| Block Explorer  | https://opbnbscan.com/                    |
-| Bridge          | https://opbnb-testnet-bridge.bnbchain.org |
-
-:::info
-The opBNB testnet is the layer2 network on the BSC testnet. For BSC testnet RPC endpoints and related information, please refer to [BSC Testnet page](https://docs.bnbchain.org/docs/rpc) to configure your wallet and developer tools. 
-:::
-
-
-### opBNB Protocol addresses
+## opBNB Protocol addresses
 
 | Name             | Address                                                                                                                      |
 |------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -53,8 +18,7 @@ The opBNB testnet is the layer2 network on the BSC testnet. For BSC testnet RPC 
 | Batch Inbox      | [0xfF00000000000000000000000000000000005611](https://testnet.bscscan.com/address/0xff00000000000000000000000000000000005611) |
 | Output Proposer  | [0x4aE49f1f57358c13A5732cb12e656Cf8C8D986DF](https://testnet.bscscan.com/address/0x4ae49f1f57358c13a5732cb12e656cf8c8d986df) |
 
-
-### L1 Contract Addresses
+## L1 Contract Addresses
 
 | Name | Address                                                                                                                       |
 |------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -78,7 +42,7 @@ The opBNB testnet is the layer2 network on the BSC testnet. For BSC testnet RPC 
 | SystemDictator | [0x281cc8F04AE5bb873bADc3D89059423E4c664834](https://testnet.bscscan.com/address/0x281cc8F04AE5bb873bADc3D89059423E4c664834)  |
 | SystemDictatorProxy | [0xB9Edfded1254ca07085920Af22BeCE0ce905F2AB](https://testnet.bscscan.com/address/0xB9Edfded1254ca07085920Af22BeCE0ce905F2AB)  |
 
-### L2 Contract Addresses
+## L2 Contract Addresses
 
 | Name                            | Address                                                |
 |---------------------------------|--------------------------------------------------------|
