@@ -3,7 +3,7 @@ sidebar_label: Contribute
 hide_table_of_contents: true
 ---
 
-# How to Contribute to opBNB Documentation
+# Contribute to opBNB Open Source Community
 
 Welcome to the opBNB network, a thriving ecosystem driven by the collective power of its community. We believe that innovation knows no bounds, and we warmly welcome you to join us on our mission to shape the future of decentralized web3 economy. 
 
@@ -18,8 +18,15 @@ Following are the channels you can use for providing your valued contributions
 - [Telegram](http://t.me/bnbchain)
 - [Official Forum](https://forum.bnbchain.org/)
 
+## Contribute to opBNB codebase
 
-## Steps for Contributing on GitHub
+[opBNB codebase](https://github.com/bnb-chain/opbnb?ref=binance.ghost.io) is fully open source and all the optimizations in opBNB can be reused in other optimistic rollup implementations as well. We hope that this work will inspire more collaboration and innovation among EVM-compatible blockchain developers and users.
+
+## Contribute to opBNB Documentation
+
+We welcome contributions to our documentation via GitHub. Follow the steps below to conribute successfully.
+
+### Steps for Contributing on GitHub
 
 - Make sure you have a GitHub account.
 - Create a GitHub issue for your contribution, assuming one does not already exist.
@@ -29,18 +36,18 @@ Following are the channels you can use for providing your valued contributions
 - Documentation
 - For small changes to comments and documentation, it is not always necessary to create a new GitHub issue. In this case, it is appropriate to start the first line of a commit with 'doc' instead of an issue number.
 
-## Finding things to work on
+### Finding things to work on
 
 The first place to start is always looking over the current GitHub issues for the project you are interested in contributing to. Issues marked with `help wanted` are usually pretty self-contained and a good place to get started.
 
 Of course, feel free to create a new issue if you think something needs to be added or fixed.
 
-## Making Changes
+### Making Changes
 
 - Create a topic branch from where you want to base your work. This is usually the master branch. Please avoid working directly on the master branch.
 - Make sure you have added the necessary tests for your changes and make sure all tests pass.
 
-## Submitting Changes
+### Submitting Changes
 
 - Submit a pull request to the docs repository in the BNB Chain organization.
 - Include a descriptive `commit message`.
