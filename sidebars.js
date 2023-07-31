@@ -24,7 +24,7 @@ const sidebars = {
       collapsed: true,
       items:[
         'intro',
-        'core-concepts/why-opbnb',
+        'intro/why-opbnb',
       ],
     },
     {
@@ -51,11 +51,13 @@ const sidebars = {
       link: {
         type: 'generated-index',
         title: 'Core Concepts',
-        description: 'Learn about the core concepts of opBNB',
+        //description: 'Learn about the core concepts of opBNB',
         slug: '/core-concepts',
       },
       items:[
+        'core-concepts/need-for-opbnb',
         'core-concepts/why-opstack',
+        'core-concepts/optimization',
         'core-concepts/difference-BSC-Eth',
         'core-concepts/difference-L2',
         //'core-concepts/opbnb-contracts',
@@ -87,9 +89,22 @@ const sidebars = {
   ],
 
   faqs:[
+    
     {
-      type: 'doc', id:'faq/opbnb-faq', label: 'FAQs'
+      type: "category",
+      label: "FAQs",
+      collapsible: true,
+      collapsed: true,
+      link:{
+          type: 'doc', id:'faq/opbnb-faq'
+        }, 
+      items:[
+        'faq/platform-faqs',
+        'faq/gas-and-fees-faqs',
+        'faq/opbnb-bridge-faqs'
+      ],
     },
+    
   ]
 };
 

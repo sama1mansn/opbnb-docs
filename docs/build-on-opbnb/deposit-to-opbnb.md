@@ -24,7 +24,11 @@ Follow these steps to deposit tokens from BNB Smart Chain to opBNB:
 6. Once the transaction is processed, switch your network in your wallet to opBNB testnet. The BNB amount you have deposited will appear in your wallet.
 7. You can now build, deploy, and interact with dApps on the opBNB network using the tBNB you deposited. To withdraw tokens from opBNB back to BNB Smart Chain, simply go to the bridge, enter the amount to withdraw, and confirm the transaction. The bridge will transfer your tokens from the opBNB network back to the BNB Smart Chain testnet.
 
-![image-20230605151226852](../../static/img/opBNB-bridge.png)
+<img
+  src={require('../../static/img/opBNB-bridge.png').default}
+  alt="opBNB-bridge"
+  style={{zoom:"48%"}}
+/>
 
 <!-- ## What is deposit finality time?
 
@@ -34,7 +38,11 @@ The deposit finality time is XXX . -->
 
 The opBNB bridge supports you to transfer your assets from BSC to opBNB. The bridge supports most of the popular tokens, including BEP-20 tokens and wrapped bitcoin. If you want to test your applications that require these tokens, you can use the opBNB bridge to deposit and withdraw them in a simple and convenient way.
 
-![image-20230710114709403](../../static/img/bridge-supported-tokens.png)
+<img
+  src={require('../../static/img/bridge-supported-tokens.png').default}
+  alt="opBNB-bridge-supported-tokens"
+  style={{zoom:"50%"}}
+/>
 
 :::info
 

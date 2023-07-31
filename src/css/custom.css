@@ -4,7 +4,9 @@
  * work well for content-centric websites.
  */
 
-
+ :root { 
+  --doc-sidebar-width: 250px !important;
+}
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
