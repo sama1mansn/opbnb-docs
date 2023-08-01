@@ -39,7 +39,7 @@ const sidebars = {
         'build-on-opbnb/network-faucet',
         'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/withdraw-from-opbnb',
-        'build-on-opbnb/dapp-tools',
+        'build-on-opbnb/developer-tools',
       ],
     },
     {
@@ -50,7 +50,7 @@ const sidebars = {
       items:[
         'core-concepts/need-for-opbnb',
         'core-concepts/why-opstack',
-        'core-concepts/opstack',
+        'core-concepts/optimisations-to-opstack',
         'core-concepts/difference-BSC-Eth',
         'core-concepts/difference-L2',
         'core-concepts/cross-chain',

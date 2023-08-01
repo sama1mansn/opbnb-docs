@@ -1,6 +1,6 @@
 ---
-sidebar_label: Optimization on OP Stack
-title: Optimization on OP Stack
+sidebar_label: Optimizations on OP Stack
+title: Optimizations on OP Stack
 description: Optimizations to OP Stack for enhanced performance & low gas fees
 ---
 
