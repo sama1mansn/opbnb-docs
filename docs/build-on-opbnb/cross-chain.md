@@ -1,15 +1,15 @@
 ---
 sidebar_lable: Cross Chain Communication 
 ---
-## Cross Chain Communication
+# Cross Chain Communication
 
-### opBNB Protocol addresses
+## opBNB Protocol addresses
 
 The opBNB protocol contracts are smart contracts that enable the execution of transactions on the opBNB network. The main contracts are:
 
-- batchInbox: This contract receives batches of transactions from the Sequencer on L1. 
-- batchSender: This contract is the authorized sender of batches to the batchInbox. It can be changed by the SystemConfig contract, which governs the parameters of the opBNB network.
-- outputProposer: This contract proposes outputs for the opBNB nodes to execute. It receives inputs from the batchInbox and other sources, and generates outputs that are consistent with the opBNB protocol rules.
+- **batchInbox:** This contract receives batches of transactions from the Sequencer on L1. 
+- **batchSender:** This contract is the authorized sender of batches to the batchInbox. It can be changed by the SystemConfig contract, which governs the parameters of the opBNB network.
+- **outputProposer:** This contract proposes outputs for the opBNB nodes to execute. It receives inputs from the batchInbox and other sources, and generates outputs that are consistent with the opBNB protocol rules.
 
 | Name             | Address                                                                                                                      |
 |------------------|------------------------------------------------------------------------------------------------------------------------------|

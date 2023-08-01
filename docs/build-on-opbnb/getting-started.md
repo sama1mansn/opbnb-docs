@@ -30,4 +30,4 @@ Step 3: Start building by deploying smart contract to opBNB.
 
 Following is the list of SDKs for opBNB
 
-- **[OP Stack Client SDK](https://sdk.optimism.io/):** the SDK provides set of tools for interacting with opBNB and also for Interlayer communication. It .
+- **[OP Stack Client SDK](https://sdk.optimism.io/):** the SDK provides set of tools for interacting with opBNB and also for Interlayer communication. (_[OP Stack Client SDK](https://stack.optimism.io/docs/build/sdk/) is maintained by OP Stack_)
