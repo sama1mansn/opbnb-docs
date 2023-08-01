@@ -12,8 +12,6 @@ Developing on opBNB, an optimistic rollup Layer 2 scaling solution for BNB Smart
 3. dApps and smart contracts can migrate to opBNB from any other EVM chain like Ethereum, BNB Smart Chain, or Polygon. Again, since opBNB is EVM-compatible, the applications will run as-is on the new network.
 4. Building on opBNB provides the scalability and low costs of a rollup, while still leveraging the security of BNB Smart Chain. dApps get the best of both Layer 1 and Layer 2.
 
-
-
 ## How to use opBNB?
 
 To use opBNB, you need to have an Ethereum wallet like Metamask or Trustwallet. You also need to have some tBNB in your wallet to pay for gas fees.
