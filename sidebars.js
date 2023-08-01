@@ -36,11 +36,10 @@ const sidebars = {
       items:[
         'build-on-opbnb/wallet-configuration',
         'build-on-opbnb/opbnb-testnet-info',
-        'build-on-opbnb/cross-chain',
         'build-on-opbnb/network-faucet',
         'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/withdraw-from-opbnb',
-        'build-on-opbnb/ecosystem',
+        'build-on-opbnb/developer-tools',
       ],
     },
     {
@@ -48,39 +47,14 @@ const sidebars = {
       label: "Core Concepts",
       collapsible: true,
       collapsed: true,
-      link: {
-        type: 'generated-index',
-        title: 'Core Concepts',
-        //description: 'Learn about the core concepts of opBNB',
-        slug: '/core-concepts',
-      },
       items:[
         'core-concepts/need-for-opbnb',
         'core-concepts/why-opstack',
-        'core-concepts/optimization',
+        'core-concepts/optimisations-to-opstack',
         'core-concepts/difference-BSC-Eth',
         'core-concepts/difference-L2',
-        //'core-concepts/opbnb-contracts',
-        //'core-concepts/challenger',
-        'economics/gas-and-fees',
-      ],
-    },
-    {
-      type: "category",
-      label: "Tutorials",
-      collapsible: true,
-      collapsed: true,
-      link: {
-        type: 'generated-index',
-        title: 'opBNB Tutorials',
-        description: 'Learn to build dapps on opBNB',
-        slug: '/tutorials',
-      },
-      items:[
-        'tutorials/running-a-testnet-node',
-        'tutorials/running-a-local-development-environment',
-        'tutorials/full-stack-dapp',
-        'tutorials/opbnbscan-verify-hardhat-truffle',
+        'core-concepts/cross-chain',
+        'core-concepts/gas-and-fees',
       ],
     },
     
@@ -89,6 +63,20 @@ const sidebars = {
     },
   ],
 
+  tutorials:[
+    {
+      type: "category",
+      label: "Tutorials",
+      collapsible: true,
+      collapsed: true,
+      items:[
+        'tutorials/running-a-testnet-node',
+        'tutorials/running-a-local-development-environment',
+        'tutorials/full-stack-dapp',
+        'tutorials/opbnbscan-verify-hardhat-truffle',
+      ],
+    },
+  ],
   faqs:[
     
     {
@@ -100,7 +88,7 @@ const sidebars = {
           type: 'doc', id:'faq/opbnb-faq'
         }, 
       items:[
-        'faq/platform-faqs',
+        'faq/protocol-faqs',
         'faq/gas-and-fees-faqs',
         'faq/opbnb-bridge-faqs'
       ],
