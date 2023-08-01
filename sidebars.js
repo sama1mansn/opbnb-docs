@@ -80,6 +80,7 @@ const sidebars = {
         'tutorials/running-a-testnet-node',
         'tutorials/running-a-local-development-environment',
         'tutorials/full-stack-dapp',
+        'tutorials/opbnbscan-verify-hardhat-truffle',
       ],
     },
     
