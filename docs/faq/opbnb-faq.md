@@ -5,7 +5,7 @@ sidebar_label: FAQs
 
 In this section of the documentation, we cover FAQs related to opBNB. For easy navigation, we have divided the FAQs into multiple categories.
 
-* [Platform](platform-faqs.md)
+* [Protocol](protocol-faqs.md)
 * [Gas and Fees](gas-and-fees-faqs.md)
 * [opBNB Bridge](opbnb-bridge-faqs.md)
 

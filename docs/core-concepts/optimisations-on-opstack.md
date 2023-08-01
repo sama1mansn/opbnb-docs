@@ -1,10 +1,10 @@
 ---
-sidebar_label: Optimizations
-title: Optimizations
-description: Optimizations for enhanced performance & low gas fees
+sidebar_label: Optimizations on OP Stack
+title: Optimizations on OP Stack
+description: Optimizations to OP Stack for enhanced performance & low gas fees
 ---
 
-This document discusses the various optimizations made to opBNB network that enhances its performance and helps in offering super cheap gas fees.
+This document discusses the various optimizations made to OP Stack that enhances its performance and helps in offering super cheap gas fees.
 
 ## opBNB offers enhanced performance and cheap gas fees
 

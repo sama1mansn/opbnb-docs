@@ -1,9 +1,6 @@
 ---
-title: opBNB Ecosystem
-icon: code
+title: Developer Tools
 index: yes
-dir:
-  order: 1
 ---
 
 :::caution 
