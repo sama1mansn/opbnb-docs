@@ -89,13 +89,13 @@ const config = {
             link: {type: 'doc', id: '/core-concepts'},
             label: "Core Concepts",
             position: "left",
-            to: "/docs/core-concepts",
+            to: "/docs/core-concepts/need-for-opbnb",
           },
           {
-            link: {type: 'doc', id: '/tutorials'},
+            link: {type: 'doc', id: '/docs/tutorials/running-a-testnet-node'},
             label: "Tutorials",
             position: "left",
-            to: "/docs/tutorials",
+            to: "/docs/tutorials/running-a-testnet-node",
           },
           {
             link: {type: 'doc', id: 'openbnb-faq'},
