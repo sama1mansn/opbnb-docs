@@ -51,7 +51,7 @@ const sidebars = {
       items:[
         'core-concepts/need-for-opbnb',
         'core-concepts/why-opstack',
-        'core-concepts/optimisations-to-opstack',
+        'core-concepts/optimisations-on-opstack',
         'core-concepts/difference-BSC-Eth',
         'core-concepts/difference-L2',
         'core-concepts/cross-chain',

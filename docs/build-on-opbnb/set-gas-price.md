@@ -1,6 +1,6 @@
 ---
-title: Gas and Fees 
-description: Learn about the Gas and Fees structure of opBNB
+title: Set Gas Price 
+description: How to set the base price and priority price for opBNB transactions
 icon: code
 index: yes
 dir:
