@@ -46,4 +46,4 @@ L1 part gas: 3980, and the gas price of BSC is 3gwei
 
 opBNB Transaction cost = (L1 gas price * 3980 + L2 gas price * 21000) * 0.000000001*BNB Price <= $0.005
 
-So the L2 gas price is set to 0.2 gwei initially. The minimum priority price can be adjusted when the BNB price changes, and the configuration will be managed by BNB Chain community through governance process.
+So the L2 gas price is set to 0.2 gwei initially. The minimum priority price can be adjusted, and the configuration will be managed by BNB Chain community through governance process.
