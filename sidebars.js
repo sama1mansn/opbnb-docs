@@ -35,6 +35,7 @@ const sidebars = {
       link:{type: 'doc', id:'build-on-opbnb/getting-started'}, 
       items:[
         'build-on-opbnb/wallet-configuration',
+        'build-on-opbnb/set-gas-price',
         'build-on-opbnb/opbnb-testnet-info',
         'build-on-opbnb/network-faucet',
         'build-on-opbnb/deposit-to-opbnb',
