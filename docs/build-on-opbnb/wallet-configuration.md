@@ -15,9 +15,11 @@ This is a living document and is susceptible to changes.
 
 You can use any Etheruem or BSC wallet with opBNB. For instance, I will show you how to set up Metamask and Trustwallet for opBNB.
 
-To configure your wallet to work with opBNB, you will need to add both the BNB smart chain testnet and the opBNB network. Follow these steps: 
+To configure your wallet to work with opBNB, you will need to add both the BNB smart chain(Layer 1) and the opBNB network(Layer 2). Follow these steps: 
 
-1. Add the BNB smart chain testnet to your wallet. This is the Layer 1 blockchain that opBNB is built on top of.
+1. Add the BNB smart chain to your wallet. This is the Layer 1 blockchain that opBNB is built on top of.
+
+   #### Testnet
 
    - Network Name: BSC Testnet
    - New RPC URL: [https://data-seed-prebsc-1-s1.bnbchain.org:8545](https://data-seed-prebsc-1-s3.bnbchain.org:8545/)
@@ -25,29 +27,57 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
    - Symbol: tBNB
    - Explorer: [https://testnet.bscscan.com/](https://testnet.bscscan.com/)
 
-   *[Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)*
-   
-   After you install the metamask in your browser, you can go to settings -> networks -> add network page. 
-   
-   Select add manual network and enter the network information I mentioned above.
-   
-   ![image-20230627171332772](../../static/img/add-bsc-metamask.png)
-   
-   [Trustwallet](https://chrome.google.com/webstore/detail/trust-wallet/egjidjbpglichdcondbcbdnbeeppgdph)
-   
-   After you install the Trustwallet in your browser, you can go to settings->network.
-   
-   ![img-trustwallet](../../static/img/add-bsc-trustwallet.png)
-   
-   Select add custom network and enter the network information I mentioned above.
+   #### Mainnet
+
+   - Network Name: BSC Magnet
+   - New RPC URL:  [https://bsc.nodereal.io](https://bsc.nodereal.io)
+   - ChainID: 56
+   - Symbol: BNB
+   - Explorer: [https://bscscan.com/](https://bscscan.com/)
 
 2. Add the opBNB network to your wallet. This is the actual Layer 2 network you will interact with. You can follow the same steps I mentioned above with the network information below.
+
+   #### Testnet
 
    - Network Name: opBNB Testnet
    - New RPC URL: [https://opbnb-testnet-rpc.bnbchain.org](https://opbnb-testnet-rpc.bnbchain.org)
    - ChainID: 5611
    - Symbol: tBNB
    - Explorer: [http://opbnbscan.com/](http://opbnbscan.com/)
+
+   #### Mainnet
+
+   - Network Name: opBNB Testnet
+   - New RPC URL: [https://opbnb-mainnet-rpc.bnbchain.org ](https://opbnb-mainnet-rpc.bnbchain.org)
+   - ChainID: 204
+   - Symbol: tBNB
+   - Explorer: [http://opbnbscan.com/](http://opbnbscan.com/)
+
+## References - How to configure Trustwallet or Metamask
+
+[Trustwallet](https://chrome.google.com/webstore/detail/trust-wallet/egjidjbpglichdcondbcbdnbeeppgdph)
+
+After you install the Trustwallet in your browser, you can go to settings->network.
+
+<img
+  src={require('../../static/img/add-bsc-trustwallet.png').default}
+  alt="opBNB-bridge"
+  style={{zoom:"48%"}}
+/>
+
+Select add custom network and enter the network information I mentioned above.
+
+*[Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)*
+
+After you install the metamask in your browser, you can go to settings -> networks -> add network page. 
+
+Select add manual network and enter the network information.
+
+<img
+  src={require('../../static/img/add-bsc-metamask.png').default}
+  alt="opBNB-bridge"
+  style={{zoom:"48%"}}
+/>
 
 
 
