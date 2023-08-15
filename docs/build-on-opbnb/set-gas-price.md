@@ -29,7 +29,6 @@ Metamask:
      style={{zoom:"48%"}}
    />
 
-   
 
 4. You will see two sliders: one for the **Max base fee(Gwei)** price and one for the **Priority Fee(Gwei)**. The priority price is the amount of opBNB you are willing to pay per unit of gas for your transaction to be included in the next block. The base price is the amount of opBNB you are willing to pay per unit of gas for the gas used by your transaction. The total gas fee is the sum of these two prices multiplied by the gas limit, which is an estimate of how much gas your transaction will use. opBNB minimum priority fee is 0.2 Gwei, and you can set any number that is higher than 0.2 Gwei.
 
