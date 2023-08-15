@@ -22,15 +22,15 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
    #### Testnet
 
    - Network Name: BSC Testnet
-   - New RPC URL: [https://data-seed-prebsc-1-s1.bnbchain.org:8545](https://data-seed-prebsc-1-s3.bnbchain.org:8545/)
+   - RPC URL: [https://data-seed-prebsc-1-s1.bnbchain.org:8545](https://data-seed-prebsc-1-s3.bnbchain.org:8545/)
    - ChainID: 97
    - Symbol: tBNB
    - Explorer: [https://testnet.bscscan.com/](https://testnet.bscscan.com/)
 
    #### Mainnet
 
-   - Network Name: BSC Magnet
-   - New RPC URL:  [https://bsc.nodereal.io](https://bsc.nodereal.io)
+   - Network Name: BSC Mainnet
+   - RPC URL:  [https://bsc.nodereal.io](https://bsc.nodereal.io)
    - ChainID: 56
    - Symbol: BNB
    - Explorer: [https://bscscan.com/](https://bscscan.com/)
@@ -40,15 +40,15 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
    #### Testnet
 
    - Network Name: opBNB Testnet
-   - New RPC URL: [https://opbnb-testnet-rpc.bnbchain.org](https://opbnb-testnet-rpc.bnbchain.org)
+   - RPC URL: [https://opbnb-testnet-rpc.bnbchain.org](https://opbnb-testnet-rpc.bnbchain.org)
    - ChainID: 5611
    - Symbol: tBNB
    - Explorer: [http://opbnbscan.com/](http://opbnbscan.com/)
 
    #### Mainnet
 
-   - Network Name: opBNB Testnet
-   - New RPC URL: [https://opbnb-mainnet-rpc.bnbchain.org ](https://opbnb-mainnet-rpc.bnbchain.org)
+   - Network Name: opBNB Mainnet
+   - RPC URL: [https://opbnb-mainnet-rpc.bnbchain.org ](https://opbnb-mainnet-rpc.bnbchain.org)
    - ChainID: 204
    - Symbol: tBNB
    - Explorer: [http://opbnbscan.com/](http://opbnbscan.com/)

@@ -40,7 +40,7 @@ We offer both public and private RPC endpoints to access opBNB.
 
 ### Private opBNB RPC Endpoints
 
-NodeReal supports the opBNB network, you can create your free opbnb RPC endpoints with your github or discord.
+NodeReal supports the opBNB network, you can create your free opBNB RPC endpoints with your github or discord.
 
  - https://nodereal.io/api-marketplace/opbnb-rpc 
 
