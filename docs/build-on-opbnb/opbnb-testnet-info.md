@@ -20,13 +20,13 @@ This is a living document and is susceptible to changes.
 | RPC Endpoint    | [See here](#opbnb-rpc-endpoints)                             |
 | Chain ID        | 5611(Testnet), 204(Mainnet)                                  |
 | Currency Symbol | tBNB(Testnet) BNB(Mainnet)                                   |
-| Block Explorer  | https://opbnbscan.com/, https://bscscan.com                  |
+| Block Explorer  | https://mainnet.opbnbscan.com, https://opbnbscan.com, https://bscscan.com                  |
 | Bridge          | https://opbnb-testnet-bridge.bnbchain.org, https://opbnb-bridge.bnbchain.org |
 
 
 ## opBNB RPC Endpoints
 
-We offer both public and private RPC endpoints to access opBNB. 
+You can use either public and private RPC endpoints to access opBNB. 
 
 ### Public opBNB Testnet RPC Endpoints(WSS is supported)
 
@@ -48,7 +48,4 @@ NodeReal supports the opBNB network, you can create your free opBNB RPC endpoint
 To use the above private RPC endpoint, make sure to login to [MegaNode service](https://nodereal.io/meganode) and create your private endpoints.
 :::
 
-:::info
-The opBNB testnet is the layer2 network on the BSC testnet. For BSC testnet RPC endpoints and related information, please refer to [BSC Testnet page](https://docs.bnbchain.org/docs/rpc) to configure your wallet and developer tools. 
-:::
 

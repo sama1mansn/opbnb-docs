@@ -35,7 +35,7 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
    - Symbol: BNB
    - Explorer: [https://bscscan.com/](https://bscscan.com/)
 
-2. Add the opBNB network to your wallet. This is the actual Layer 2 network you will interact with. You can follow the same steps I mentioned above with the network information below.
+2. Add the opBNB network to your wallet. 
 
    #### Testnet
 
@@ -50,8 +50,8 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
    - Network Name: opBNB Mainnet
    - RPC URL: [https://opbnb-mainnet-rpc.bnbchain.org ](https://opbnb-mainnet-rpc.bnbchain.org)
    - ChainID: 204
-   - Symbol: tBNB
-   - Explorer: [http://opbnbscan.com/](http://opbnbscan.com/)
+   - Symbol: BNB
+   - Explorer: [http://mainnet.opbnbscan.com/](http://mainnet.opbnbscan.com/)
 
 ## References - How to configure Trustwallet or Metamask
 

@@ -12,7 +12,7 @@ This is a living document and is susceptible to changes.
 
 # Deposit BNB(tBNB) to opBNB
 
-Before building or deploying any applications on the opBNB network, you must first deposit BNB(tBNB) as your gas token from BNB Smart Chain to opBNB. You can do this using the [opBNB bridge dApp(Testnet)](https://opbnb-testnet-bridge.bnbchain.org/) or [opBNB bridge dApp(Mainnet)](https://opbnb-mainnet-bridge.bnbchain.org/). 
+Before building or deploying any applications on the opBNB network, you must first deposit BNB(tBNB) as your gas token from BNB Smart Chain to opBNB. You can do this using the [opBNB bridge dApp(Testnet)](https://opbnb-testnet-bridge.bnbchain.org/) or [opBNB bridge dApp(Mainnet)](https://opbnb-bridge.bnbchain.org). 
 
 Follow these steps to deposit tokens from BNB Smart Chain to opBNB: 
 
