@@ -10,7 +10,7 @@ dir:
 This is a living document and is susceptible to changes. 
 :::
 
-If you want to transfer your tokens from opBNB to BSC network, you can do so by using the [opBNB bridge](https://opbnb-testnet-bridge.bnbchain.org/), which is a tool that allows you to move your tokens across different networks.
+If you want to transfer your tokens from opBNB to BSC network, you can do so by using the [opBNB bridge dApp(Testnet)](https://opbnb-testnet-bridge.bnbchain.org/) or [opBNB bridge dApp(Mainnet)](https://opbnb-bridge.bnbchain.org), which is a tool that allows you to move your tokens across different networks.
 
 Before you initiate the withdrawal process, you need to make sure that you have connected your wallet and switched to the opBNB network.
 
