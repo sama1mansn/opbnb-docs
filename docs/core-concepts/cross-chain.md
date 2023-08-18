@@ -3,21 +3,7 @@ sidebar_lable: Cross Chain Communication
 ---
 # Cross Chain Communication
 
-## opBNB Protocol addresses
-
-The opBNB protocol contracts are smart contracts that enable the execution of transactions on the opBNB network. The main contracts are:
-
-- **batchInbox:** This contract receives batches of transactions from the Sequencer on L1. 
-- **batchSender:** This contract is the authorized sender of batches to the batchInbox. It can be changed by the SystemConfig contract, which governs the parameters of the opBNB network.
-- **outputProposer:** This contract proposes outputs for the opBNB nodes to execute. It receives inputs from the batchInbox and other sources, and generates outputs that are consistent with the opBNB protocol rules.
-
-| Name             | Address                                                                                                                      |
-|------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Batch Sender     | [0x1Fd6A75CC72f39147756A663f3eF1fc95eF89495](https://testnet.bscscan.com/address/0x1fd6a75cc72f39147756a663f3ef1fc95ef89495) |
-| Batch Inbox      | [0xfF00000000000000000000000000000000005611](https://testnet.bscscan.com/address/0xff00000000000000000000000000000000005611) |
-| Output Proposer  | [0x4aE49f1f57358c13A5732cb12e656Cf8C8D986DF](https://testnet.bscscan.com/address/0x4ae49f1f57358c13a5732cb12e656cf8c8d986df) |
-
-### L1 Contract Addresses
+## L1 Contract Addresses
 
 
 
@@ -37,7 +23,7 @@ The opBNB protocol contracts are smart contracts that enable the execution of tr
 
 ![img](../../static/img/L1-L2.png)
 
-### L2 Contract Addresses
+## L2 Contract Addresses
 
 | Contract Name                                                | Address                                    | Description                                                  | Important Variables                                          | Introduced | Deprecated | Proxied |
 | ------------------------------------------------------------ | ------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- | ---------- | ------- |
