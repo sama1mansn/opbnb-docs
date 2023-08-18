@@ -178,3 +178,104 @@ You can compare the block with the one requested from [public mainnet endpoint](
 $ curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","id": 1, "params": ["0x1a", false]}' http://localhost:8545
 $ curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","id": 1, "params": ["0x1a", false]}' https://opbnb-mainnet-rpc.bnbchain.org
 ```
+
+Syncing up for the first time may be time-consuming.
+
+The current sync mechanism is as follows:
+-  Retrieve the blocks from the op-node P2P network for the latest 12 hours.
+-  Retrieve all blocks prior to that from the data availability layer. For opBNB, the data availability layer is L1 (BSC). The op-node scans the L1 chain starting from the genesis height, retrieves the L2 block data from the call data to the [inbox batch address](https://bscscan.com/address/0xff00000000000000000000000000000000000204), composes the blocks, and executes them.
+
+The speed relies on the number of blocks you need to retrieve from the data availability layer and the latency of the L1 RPC endpoint.
+
+You can query the op-node RPC endpoint to check the syncing status:
+
+```bash
+$ curl -X POST -H "Content-Type: application/json" --data \
+    '{"jsonrpc":"2.0","method":"optimism_syncStatus","params":[],"id":1}'  \
+    http://localhost:8546 | jq .
+
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "current_l1": {
+      "hash": "0x86be56c30c6763e1b100a898e53810230d9e097ba0ae8338e6f2c40921e619da",
+      "number": 30760342,
+      "parentHash": "0xf118f4863d35852748b60810432c1a77e742913d3566f77f84325fbf23b653bf",
+      "timestamp": 1691759689
+    },
+    "current_l1_finalized": {
+      "hash": "0xa3bedf57d7403c07e2c72c523d16f83879fe0635e0940838b3b24db8e442b4ba",
+      "number": 30968675,
+      "parentHash": "0x7f5a4c5723f0d41707775ccc4805dc8cc89921c98e02c91096a82ea4a4e0e179",
+      "timestamp": 1692386285
+    },
+    "head_l1": {
+      "hash": "0xa6770b5d90005a07db7f47af3f13ca630667fad6462729d189fb7a8cf8d5d9dc",
+      "number": 30968685,
+      "parentHash": "0x5d834192288e73e5750d0338ed3462dadce38471e1ea8b1227853bd5dc3769ab",
+      "timestamp": 1692386315
+    },
+    "safe_l1": {
+      "hash": "0x4a1e2713393352dd7deb7334b3ee0cd413cf847f76460d193961336ff0374fea",
+      "number": 30968676,
+      "parentHash": "0xa3bedf57d7403c07e2c72c523d16f83879fe0635e0940838b3b24db8e442b4ba",
+      "timestamp": 1692386288
+    },
+    "finalized_l1": {
+      "hash": "0xa3bedf57d7403c07e2c72c523d16f83879fe0635e0940838b3b24db8e442b4ba",
+      "number": 30968675,
+      "parentHash": "0x7f5a4c5723f0d41707775ccc4805dc8cc89921c98e02c91096a82ea4a4e0e179",
+      "timestamp": 1692386285
+    },
+    "unsafe_l2": {
+      "hash": "0xe32740323c90722ea94b582da1e09fe7270525ab4dcf5bbe2824aacd02e7b0ea",
+      "number": 594,
+      "parentHash": "0xbe104ca7a75ff0054368ffc1218f85570fc4fb4caff83419d16b2042c667425f",
+      "timestamp": 1691754317,
+      "l1origin": {
+        "hash": "0x76ede62c33bfe953af6b81a548facc81dd3ded554308f80d9d9aa0b91077452f",
+        "number": 30758555
+      },
+      "sequenceNumber": 0
+    },
+    "safe_l2": {
+      "hash": "0xe32740323c90722ea94b582da1e09fe7270525ab4dcf5bbe2824aacd02e7b0ea",
+      "number": 594,
+      "parentHash": "0xbe104ca7a75ff0054368ffc1218f85570fc4fb4caff83419d16b2042c667425f",
+      "timestamp": 1691754317,
+      "l1origin": {
+        "hash": "0x76ede62c33bfe953af6b81a548facc81dd3ded554308f80d9d9aa0b91077452f",
+        "number": 30758555
+      },
+      "sequenceNumber": 0
+    },
+    "finalized_l2": {
+      "hash": "0x4dd61178c8b0f01670c231597e7bcb368e84545acd46d940a896d6a791dd6df4",
+      "number": 0,
+      "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "timestamp": 1691753723,
+      "l1origin": {
+        "hash": "0x29443b21507894febe7700f7c5cd3569cc8bf1ba535df0489276d8004af81044",
+        "number": 30758357
+      },
+      "sequenceNumber": 0
+    },
+    "queued_unsafe_l2": {
+      "hash": "0x60dc874310e4d0af98a496cd413178a3b2dbb53e6edee6bd96dc65ccfd62cfef",
+      "number": 607114,
+      "parentHash": "0xc456adf577349475921639d73ce9ee36262757ee42a0bbb157b89682a05acc74",
+      "timestamp": 1692360837,
+      "l1origin": {
+        "hash": "0x5ed192fb4146bd47831c5177d4d7be5a6b52835db1f161e291cf0b66a1f2be98",
+        "number": 30960190
+      },
+      "sequenceNumber": 2
+    }
+  }
+}
+```
+
+Check the `result.current_l1.number` field and ensure it increases over time.
+
+The genesis L1 number is 30758357, the block number of [first batch transaction](https://bscscan.com/tx/0xefe7d06cb16cbc6f5ed7e7b611125cd4cf9a81f064e73ec814e914c28545853e) is 30760322. Only when the `result.current_l1.number` passes 30760322, the L2 block number will be increased.
