@@ -105,7 +105,7 @@ export L2_RPC=https://opbnb-mainnet-rpc.bnbchain.org
   --rollup.sequencerhttp=$L2_RPC
 ```
 
-op-node
+op-node, please note the op-node starts requires a p2p private key, you need replace the private key with a new random number.
 
 ```bash
 #! /usr/bin/bash
@@ -152,7 +152,15 @@ export P2P_BOOTNODES="enr:-J24QGRN1ZLv--bzrqM-qRC-zUlCO4irVVg2bbWOvd3KEFjwLj8qCh
 
 ## Check status
 
-Wait for the node to sync. You'll see log in `op-geth` if there's any new block.
+The node synchronization process may take a long time, depending on the network conditions. You should wait around 30 mins to 1 hour until the node is fully synced before proceeding with any other operations. You can monitor the progress of the sync by looking at the logs, which will show the p2p information at first, like:
+
+```
+INFO [08-19|08:53:42.479] Looking for peers                        peercount=0 tried=73 static=0
+INFO [08-19|08:53:57.823] Looking for peers                        peercount=0 tried=63 static=0
+INFO [08-19|08:54:07.867] Looking for peers                        peercount=0 tried=46 static=0
+```
+
+Then You'll see log in `op-geth` if there's any new block.
 
 ```
 INFO [06-14|01:15:02.937] Starting work on payload                 id=0x4e2b62d76dc5f1d3
