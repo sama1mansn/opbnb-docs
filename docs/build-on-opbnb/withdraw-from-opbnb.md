@@ -30,8 +30,9 @@ Click withdraw button and confirm the transaction with your wallet. It will take
 
 There are 2 steps after you submit your withdrawal request. 
 
-1. Your withdrawal will be part of a Layer 2 transaction that will be submitted to the Layer 1 BSC network. This means that your tokens will be locked on the opBNB network and unlocked on the BSC network. Then your withdrawal status will change to *Waiting for Proof*, which indicates that the transaction is pending verification.
-2. You need to wait until the transaction is ready to be collected after the challenge window. The challenge window is a period of time during which anyone can challenge the validity of the transaction. If no one challenges the transaction, it will be finalized and you can collect your tokens on the BSC network.
+1. *Submit Proof:* When you withdraw your tokens, they will be transferred from the opBNB network to the BSC network. After you submit the withdrawal request, your withdrawal status will change to *Waiting for Proof*, which indicates that the transaction is pending for the proof submission. You need to submit the proof manually.
+
+2. *Claim Token:* After you submit your proof, you need to wait until the transaction is ready to be collected after the challenge window, which is 7 days. The challenge window is a period of time during which anyone can challenge the validity of the transaction. If no one challenges the transaction, it will be finalized and you can collect your tokens on the BSC network.
 
 ![withdraw-status](../../static/img/withdraw-status.png)
 
