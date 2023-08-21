@@ -34,8 +34,8 @@ L1 chain ID is `900`.
 L2 chain ID is `901`.
 
 L1 test account:  
-- address: `0x04d63aBCd2b9b1baa327f2Dda0f873F197ccd186`
-- Private key: `59ba8068eb256d520179e903f43dacf6d8d57d72bd306e1bd603fdb8c8da10e8`
+- address: `0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266`
+- Private key: `ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80`
 
 L2 test account:  
 - Address: `0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266`
