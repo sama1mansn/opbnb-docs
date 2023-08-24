@@ -36,7 +36,7 @@ const sidebars = {
       items:[
         'build-on-opbnb/wallet-configuration',
         'build-on-opbnb/set-gas-price',
-        'build-on-opbnb/opbnb-testnet-info',
+        'build-on-opbnb/opbnb-network-info',
         'build-on-opbnb/network-faucet',
         'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/withdraw-from-opbnb',
@@ -76,6 +76,7 @@ const sidebars = {
         'tutorials/running-a-local-development-environment',
         'tutorials/full-stack-dapp',
         'tutorials/opbnbscan-verify-hardhat-truffle',
+        'tutorials/running-node-with-snapshot',
       ],
     },
   ],
