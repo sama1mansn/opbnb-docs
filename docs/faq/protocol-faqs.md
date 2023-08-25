@@ -107,16 +107,6 @@ penalties are applied. The sequencer's bond may be slashed as a form of punishme
 Additionally, the state roots from the problematic transaction onwards will be erased and
 re-computed to ensure accuracy.
 
-### How to check if a smart contract is verified on opBNB using an API GET request?
-With the [API key](https://nodereal.io/meganode) and smart contract address, you can retrieve the contract's verification status, source code & ABI.
-For opBNB mainnet, https://open-platform.nodereal.io/{{yourAPIkey}}/op-bnb-mainnet/contract/?action=getsourcecode&address={{contract address}}.
-For opBNB testnet, https://open-platform.nodereal.io/{{yourAPIkey}}/op-bnb-testnet/contract/?action=getsourcecode&address={{contract address}}.
-
-### How to check if a smart contract is verified on opBNB using an API GET request?
-With the [API key](https://nodereal.io/meganode) and smart contract address, you can retrieve the contract's verification status, source code & ABI.
-For opBNB mainnet, https://open-platform.nodereal.io/{{yourAPIkey}}/op-bnb-mainnet/contract/?action=getsourcecode&address={{contract address}}.
-For opBNB testnet, https://open-platform.nodereal.io/{{yourAPIkey}}/op-bnb-testnet/contract/?action=getsourcecode&address={{contract address}}.
-
 :::info Don't see your question?
 We're working on expanding this FAQ with more content, including questions from the community and partners, so please watch this space! However, if you don't see your question, please ask in the [BNB forum](https://forum.bnbchain.org/), so you can get the answers you need and make us aware of new FAQ items.
 :::
