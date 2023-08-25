@@ -15,7 +15,7 @@
 const sidebars = {
 
   guideSidebar:[
-    
+
     {
       type: "category",
       label: "Introduction",
@@ -32,11 +32,11 @@ const sidebars = {
       label: "Getting Started",
       collapsible: true,
       collapsed: true,
-      link:{type: 'doc', id:'build-on-opbnb/getting-started'}, 
+      link:{type: 'doc', id:'build-on-opbnb/getting-started'},
       items:[
         'build-on-opbnb/wallet-configuration',
         'build-on-opbnb/set-gas-price',
-        'build-on-opbnb/opbnb-testnet-info',
+        'build-on-opbnb/opbnb-network-info',
         'build-on-opbnb/network-faucet',
         'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/withdraw-from-opbnb',
@@ -58,7 +58,7 @@ const sidebars = {
         'core-concepts/gas-and-fees',
       ],
     },
-    
+
     {
       type: 'doc', id:'contribute', label: 'Contribute'
     },
@@ -72,14 +72,16 @@ const sidebars = {
       collapsed: true,
       items:[
         'tutorials/running-a-testnet-node',
+        'tutorials/running-a-mainnet-node',
         'tutorials/running-a-local-development-environment',
         'tutorials/full-stack-dapp',
         'tutorials/opbnbscan-verify-hardhat-truffle',
+        'tutorials/running-node-with-snapshot',
       ],
     },
   ],
   faqs:[
-    
+
     {
       type: "category",
       label: "FAQs",
@@ -87,14 +89,14 @@ const sidebars = {
       collapsed: true,
       link:{
           type: 'doc', id:'faq/opbnb-faq'
-        }, 
+        },
       items:[
         'faq/protocol-faqs',
         'faq/gas-and-fees-faqs',
         'faq/opbnb-bridge-faqs'
       ],
     },
-    
+
   ]
 };
 

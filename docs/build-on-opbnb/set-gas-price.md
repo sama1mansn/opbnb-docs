@@ -23,11 +23,20 @@ Metamask:
 
 3. Before you confirm your transaction, click on the **advanced->edit** button next to the gas fee section.
 
-   ![image-20230802161206164](../../static/img/gas-price-setting.png)
+   <img
+     src={require('../../static/img/gas-price-setting.png').default}
+     alt="opBNB-bridge"
+     style={{zoom:"48%"}}
+   />
 
-4. You will see two sliders: one for the **Max base fee(Gwei)** price and one for the **Priority Fee(Gwei)**. The priority price is the amount of opBNB you are willing to pay per unit of gas for your transaction to be included in the next block. The base price is the amount of opBNB you are willing to pay per unit of gas for the gas used by your transaction. The total gas fee is the sum of these two prices multiplied by the gas limit, which is an estimate of how much gas your transaction will use. opBNB minimum priority fee is 0.2 Gwei, and you can set any number that is higher than 0.2 Gwei.
 
-   ![image-20230802161402890](../../static/img/advanced-setting.png)
+4. You will see two sliders: one for the **Max base fee(Gwei)** price and one for the **Priority Fee(Gwei)**. The priority price is the amount of opBNB you are willing to pay per unit of gas for your transaction to be included in the next block. The base price is the amount of opBNB you are willing to pay per unit of gas for the gas used by your transaction. The total gas fee is the sum of these two prices multiplied by the gas limit, which is an estimate of how much gas your transaction will use. The base fee for opBNB transactions is dynamic and depends on the demand for block space. The minimum possible base fee is 0.000000008 gwei. The priority fee, which is paid to the sequencer who includes the transaction in a block, can also be as low as 0.000000001 gwei. However, these fees may vary depending on the network congestion and the urgency of the transaction.
+
+   <img
+     src={require('../../static/img/advanced-setting.png').default}
+     alt="opBNB-bridge"
+     style={{zoom:"48%"}}
+   />
 
    
 
