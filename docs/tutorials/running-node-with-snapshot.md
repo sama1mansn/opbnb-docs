@@ -5,16 +5,17 @@ description: Guide to running opBNB Node with snapshot
 
 # Running the Node with Snapshot
 
-To improve the synchronization speed of the node, you can utilize snapshots to initialize it. Daily snapshots are created and kept for a period of 7 days.
+To improve the synchronization speed of the node, you can utilize snapshots to initialize it. 
 
 An example of the snapshot's URL is as follows:
-https://opbnb-snapshot-testnet.bnbchain.org/geth-20230723.tar.gz
+https://opbnb-snapshot-{{NETWORK}}.bnbchain.org/geth-yyyymmdd.tar.gz
 
-Modify the domain and date to obtain the desired snapshot.
+Modify the domain and date to obtain the desired snapshot. For example, if you want to download the snaptshot of September 1st of 2023 for mainnet, you need use the URL of https://opbnb-snapshot-mainnet.bnbchain.org/geth-20230901.tar.gz.
 
-Domains:
-- Testnet: http://opbnb-snapshot-testnet.bnbchain.org
-- Mainnet: http://opbnb-snapshot-mainnet.bnbchain.org
+:::info
+Snapshots are generated and retained on a daily basis, with each snapshot being stored for a duration of 7 days.
+:::
+
 
 ## usage
 
