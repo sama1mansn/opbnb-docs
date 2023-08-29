@@ -79,8 +79,6 @@ Select add manual network and enter the network information.
   style={{zoom:"48%"}}
 />
 
-
-
 :::info
 Depending on your location and preference, you can choose from a variety of RPC endpoints for BSC and opBNB. For more information about the endpoints and their features, please refer to the network information document that we have prepared for you. To ensure the best performance and user experience, you can test the latency of each endpoint before you configure it with your wallet.
 :::
