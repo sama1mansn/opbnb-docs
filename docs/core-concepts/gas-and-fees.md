@@ -17,7 +17,7 @@ OpBNB is a Layer 2 scaling solution that aims to achieve higher throughput and l
 
 **Gas price = base price + priority price**
 
-**Layer 2 transaction cost = Layer 2 gas price * Layer 2 gas consumed + Layer 1 gas price * Layer 1 gas consumed.**
+**Layer 2 transaction cost = Layer 2 gas price x Layer 2 gas consumed + Layer 1 gas price x Layer 1 gas consumed.**
 
 ## Current configuration
 
