@@ -7,22 +7,23 @@ description: Guide to running opBNB Node with snapshot
 
 To improve the synchronization speed of the node, you can utilize snapshots to initialize it. 
 
-An example of the snapshot's URL is as follows:
-https://opbnb-snapshot-{{NETWORK}}.bnbchain.org/geth-yyyymmdd.tar.gz
-
-Modify the domain and date to obtain the desired snapshot. For example, if you want to download the snaptshot of September 1st of 2023 for mainnet, you need use the URL of https://opbnb-snapshot-mainnet.bnbchain.org/geth-20230901.tar.gz.
+Snapshot download link:
+### *Mainnet*
+https://opbnb-snapshot-mainnet.bnbchain.org/geth-yyyymmdd.tar.gz
+### *Testnet*
+https://tf-nodereal-prod-opbnb-testnet-snapshot-s3-ap.s3.ap-northeast-1.amazonaws.com/geth-yyyymmdd.tar.gz
 
 :::info
-Snapshots are generated and retained on a daily basis, with each snapshot being stored for a duration of 7 days.
+Snapshots are generated and retained on a daily basis, with each snapshot being stored for a duration of 7 days. Community developer NodeReal is responsible for creating and updating the testnet snapshot regularly.
 :::
 
 
-## usage
+## Usage
 
 ### Step 1: Download the snapshot and decompress it.
 
 ```bash
-wget -q -O - https://opbnb-snapshot-testnet.bnbchain.org/geth-20230723.tar.gz | tar -xvf -
+wget -q -O - https://opbnb-snapshot-mainnet.bnbchain.org/geth-20230723.tar.gz | tar -xvf -
 ```
 
 ### Step 2: Replace the data.
