@@ -120,7 +120,7 @@ export L1_RPC=https://bsc-dataseed.bnbchain.org
 # replace the p2p private key with yours
 # you can generate a new one with `openssl rand -hex 32`
 export P2P_PRIV_KEY=0000000000000000000000000000000000000000000000000000000000000000
-export P2P_BOOTNODES="enr:-J24QGRN1ZLv--bzrqM-qRC-zUlCO4irVVg2bbWOvd3KEFjwLj8qCh54a1ziqic84uQz-2RLVSuNyNAbKEfrNr-STj-GAYoIQDCIgmlkgnY0gmlwhDaykUmHb3BzdGFja4PMAQCJc2VjcDI1NmsxoQJ-_5GZKjs7jaB4TILdgC8EwnwyL3Qip89wmjnyjvDDwoN0Y3CCIyuDdWRwgiMr"
+export P2P_BOOTNODES="enr:-J24QA9sgVxbZ0KoJ7-1gx_szfc7Oexzz7xL2iHS7VMHGj2QQaLc_IQZmFthywENgJWXbApj7tw7BiouKDOZD4noWEWGAYppffmvgmlkgnY0gmlwhDbjSM6Hb3BzdGFja4PMAQCJc2VjcDI1NmsxoQKetGQX7sXd4u8hZr6uayTZgHRDvGm36YaryqZkgnidS4N0Y3CCIyuDdWRwgiMs"
 
 ./op-node \
   --l1.trustrpc \
@@ -136,6 +136,7 @@ export P2P_BOOTNODES="enr:-J24QGRN1ZLv--bzrqM-qRC-zUlCO4irVVg2bbWOvd3KEFjwLj8qCh
   --p2p.listen.ip=0.0.0.0 \
   --p2p.listen.tcp=9003 \
   --p2p.listen.udp=9003 \
+  --p2p.nat \
   --snapshotlog.file=./snapshot.log \
   --p2p.priv.raw=$P2P_PRIV_KEY \
   --p2p.bootnodes=$P2P_BOOTNODES \
