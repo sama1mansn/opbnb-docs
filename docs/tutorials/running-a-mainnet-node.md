@@ -117,9 +117,6 @@ cd op-node-data
 export L2_RPC=http://localhost:8551
 # it's better to replace the L1_RPC with your own BSC Mainnet RPC Endpoint for stability
 export L1_RPC=https://bsc-dataseed.bnbchain.org
-# replace the p2p private key with yours
-# you can generate a new one with `openssl rand -hex 32`
-export P2P_PRIV_KEY=0000000000000000000000000000000000000000000000000000000000000000
 export P2P_BOOTNODES="enr:-J24QA9sgVxbZ0KoJ7-1gx_szfc7Oexzz7xL2iHS7VMHGj2QQaLc_IQZmFthywENgJWXbApj7tw7BiouKDOZD4noWEWGAYppffmvgmlkgnY0gmlwhDbjSM6Hb3BzdGFja4PMAQCJc2VjcDI1NmsxoQKetGQX7sXd4u8hZr6uayTZgHRDvGm36YaryqZkgnidS4N0Y3CCIyuDdWRwgiMs"
 
 ./op-node \
@@ -138,7 +135,6 @@ export P2P_BOOTNODES="enr:-J24QA9sgVxbZ0KoJ7-1gx_szfc7Oexzz7xL2iHS7VMHGj2QQaLc_I
   --p2p.listen.udp=9003 \
   --p2p.nat \
   --snapshotlog.file=./snapshot.log \
-  --p2p.priv.raw=$P2P_PRIV_KEY \
   --p2p.bootnodes=$P2P_BOOTNODES \
   --metrics.enabled \
   --metrics.addr=0.0.0.0 \
