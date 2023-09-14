@@ -1,5 +1,5 @@
 ---
-sidebar_label: Run Test Node
+sidebar_label: Run Testnet Node
 description: Guide to running opBNB Testnet Node
 ---
 
@@ -114,9 +114,6 @@ cd op-node-data
 export L2_RPC=http://localhost:8551
 # it's better to replace the L1_RPC with your own BSC Testnet RPC Endpoint for stability
 export L1_RPC=https://data-seed-prebsc-1-s1.binance.org:8545
-# replace the p2p private key with yours
-# you can generate a new one with `openssl rand -hex 32`
-export P2P_PRIV_KEY=0000000000000000000000000000000000000000000000000000000000000000
 export P2P_BOOTNODES="enr:-J24QGQBeMsXOaCCaLWtNFSfb2Gv50DjGOKToH2HUTAIn9yXImowlRoMDNuPNhSBZNQGCCE8eAl5O3dsONuuQp5Qix2GAYjB7KHSgmlkgnY0gmlwhDREiqaHb3BzdGFja4PrKwCJc2VjcDI1NmsxoQL4I9wpEVDcUb8bLWu6V8iPoN5w8E8q-GrS5WUCygYUQ4N0Y3CCIyuDdWRwgiMr"
 
 ./op-node \
@@ -134,7 +131,6 @@ export P2P_BOOTNODES="enr:-J24QGQBeMsXOaCCaLWtNFSfb2Gv50DjGOKToH2HUTAIn9yXImowlR
   --p2p.listen.tcp=9003 \
   --p2p.listen.udp=9003 \
   --snapshotlog.file=./snapshot.log \
-  --p2p.priv.raw=$P2P_PRIV_KEY \
   --p2p.bootnodes=$P2P_BOOTNODES \
   --metrics.enabled \
   --metrics.addr=0.0.0.0 \
