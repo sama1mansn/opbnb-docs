@@ -2,27 +2,11 @@
 title: opBNB Bridge FAQs
 ---
 
-### What if transaction fails with `-32603` error code when transfering tokens on opBNB bridge?
+### What is the status of the integration between opBNB and Optimism's Superchain?
 
-Change your wallet RPC endpoint for BSC testnet and try again:`https://www.bnbchainlist.org/`
+opBNB is a project that aims to bring the benefits of L2 scaling and user-friendly UX to the BNB ecosystem. It will enable fast and cheap transactions on BNB L2, as well as smooth interoperability with Greenfield, a decentralized platform for building and running applications. 
+Superchain is an innovative solution that leverages OP Stack to provide L2/L3 scaling and security for Ethereum. It allows users to access various L2 protocols with a single wallet and enjoy low fees and high throughput. opBNB is interested in collaborating with Superchain and integrating OP Stack into BNBChain. 
 
-### What if opBNB bridge shows different (or 0) balance on than in Metamask wallet?
-
-![Error](../../static/img/faqs/MM%20bal%20mismatch.png)
-1. Change your wallet RPC endpoint for BSC testnet and try again: `https://www.bnbchainlist.org/` or `https://chainlist.org/?search=bsc&testnets=true`
-2. If you're still getting this issue, then make sure to disable the VPN and refresh the opBNB bridge: https://opbnb-testnet-bridge.bnbchain.org/?type=deposit page.
-
-### What to do if withdraw fails and the confirmation notification just pops up and disappears?
-
-<img
-  src={require('../../static/img/faqs/Withdraw-confirmation.png').default}
-  alt="withdraw-tx-fails"
-  style={{zoom:"80%"}}
-/>
-
-
-1. Change your wallet RPC endpoint and try again: `https://www.bnbchainlist.org/` or `https://chainlist.org/?search=bsc&testnets=true`
-2. If you're still getting this issue, then make sure to disable the VPN and refresh the opBNB bridge [Deposit Page](https://opbnb-testnet-bridge.bnbchain.org/?type=deposit).
 
 :::info Don't see your question?
 We're working on expanding this FAQ with more content, including questions from the community and partners, so please watch this space! However, if you don't see your question, please ask in the [BNB forum](https://forum.bnbchain.org/), so you can get the answers you need and make us aware of new FAQ items.
