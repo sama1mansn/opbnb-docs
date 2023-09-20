@@ -43,7 +43,7 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
    - RPC URL: [https://opbnb-testnet-rpc.bnbchain.org](https://opbnb-testnet-rpc.bnbchain.org)
    - ChainID: 5611
    - Symbol: tBNB
-   - Explorer: [http://opbnbscan.com/](http://opbnbscan.com/)
+   - Explorer: [http://testnet.opbnbscan.com/](http://testnet.opbnbscan.com/)
 
    #### Mainnet
 
@@ -51,7 +51,7 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
    - RPC URL: [https://opbnb-mainnet-rpc.bnbchain.org ](https://opbnb-mainnet-rpc.bnbchain.org)
    - ChainID: 204
    - Symbol: BNB
-   - Explorer: [http://mainnet.opbnbscan.com/](http://mainnet.opbnbscan.com/)
+   - Explorer: [http://opbnbscan.com/](http://opbnbscan.com/)
 
 ## References - How to configure Trustwallet or Metamask
 
