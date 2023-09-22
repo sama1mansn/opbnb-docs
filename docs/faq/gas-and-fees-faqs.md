@@ -32,7 +32,7 @@ To troubleshoot your transaction, you can do the following:
 
 * Check your wallet balance and make sure you have enough funds to cover the transaction fee and the amount of opBNB you want to send.
 * Check the network status and adjust your gas price and gas limit accordingly. Sometimes the wallet like Trust Wallet or Metamask recommends the "max base fee" or "max priority fee" to "0". This is not accepted by the opBNB Mainnet and will result in a failed transaction. Please check your transaction details carefully before signing/confirming. If you see a "0" in the "max base fee" or "max priority fee" fields, do not proceed with the transaction. Instead, cancel it and try again until you see a normal fee recommendation. 
-* Check the recipient address and make sure it is correct and valid. You can use a tool like https://etherscan.io/ to verify the address and see if it has any transactions history or contract code.
+* Check the recipient address and make sure it is correct and valid. You can use a tool like https://opbnbscan.com/ to verify the address and see if it has any transactions history or contract code.
 * Contact your wallet provider, the opBNB network, or the smart contract developer for technical support if you suspect there is an issue on their end.
 
 :::info Don't see your question?
