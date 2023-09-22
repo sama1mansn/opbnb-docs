@@ -20,6 +20,20 @@ Prominent Layer 2 mainnet gas fees resource.
 
 To also check BNB Chain’s Layer 1, BSC visit [here](https://bscscan.com/tx/0x1515e830b352a76bab8468d39c4924e1d220578ab0bf69eb09914e877c0713e5).
 
+### Why is my opbnb transaction rejected or pending?
+There are several possible reasons why your transaction of opBNB may be rejected or pending. Here are some of the most common ones:
+
+* You have insufficient funds in your wallet to cover the transaction fee or the amount of opBNB you want to send.
+* You have set a gas price or gas limit that is too low for the network congestion level, resulting in a slow or failed transaction.
+* You have made a mistake in the contract interaction, such as calling a function that does not exist or sending an unsupported token type.
+* You have encountered a technical issue with your wallet provider, the opBNB network, or the smart contract you are interacting with.
+
+To troubleshoot your transaction, you can do the following:
+
+* Check your wallet balance and make sure you have enough funds to cover the transaction fee and the amount of opBNB you want to send.
+* Check the network status and adjust your gas price and gas limit accordingly. Sometimes the wallet like Trust Wallet or Metamask recommends the "max base fee" or "max priority fee" to "0". This is not accepted by the opBNB Mainnet and will result in a failed transaction. Please check your transaction details carefully before signing/confirming. If you see a "0" in the "max base fee" or "max priority fee" fields, do not proceed with the transaction. Instead, cancel it and try again until you see a normal fee recommendation. 
+* Check the recipient address and make sure it is correct and valid. You can use a tool like https://etherscan.io/ to verify the address and see if it has any transactions history or contract code.
+* Contact your wallet provider, the opBNB network, or the smart contract developer for technical support if you suspect there is an issue on their end.
 
 :::info Don't see your question?
 We're working on expanding this FAQ with more content, including questions from the community and partners, so please watch this space! However, if you don't see your question, please ask in the [BNB forum](https://forum.bnbchain.org/), so you can get the answers you need and make us aware of new FAQ items.
