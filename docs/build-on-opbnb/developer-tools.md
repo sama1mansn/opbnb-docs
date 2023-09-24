@@ -15,7 +15,7 @@ One of our main objectives is to expand the adoption and utility of opBNB as a h
 | Node Providers     | Node Provider       | [NodeReal](https://nodereal.io/meganode)                     |
 | Explorer           | Explorer            | [NodeReal opBNB Scan](https://mainnet.opbnbscan.com), [BSCScan](https://bscscan.com/) |
 |                    | Developer Platforms | [Truffle](https://trufflesuite.com/), [Foundry](https://book.getfoundry.sh/), [Hardhat](https://hardhat.org/), [Remix](https://remix.ethereum.org/) |
-| Use Access Tooling | Wallet              | [Metamask](https://metamask.io/), [TrustWallet](https://trustwallet.com/), [Particle Network](https://wallet.particle.network/), [MathWallet](https://mathwallet.org/) |
+| Use Access Tooling | Wallet              | [Metamask](https://metamask.io/), [TrustWallet](https://trustwallet.com/), [Particle Network](https://wallet.particle.network/) |
 |                    | Bridges             | [PolyHedra](https://zkbridge.com/)                           |
 |                    | dApp Store          | [dApp Bay](https://dappbay.bnbchain.org/ranking/chain/opbnb)      |
 | Oracles            | Price Feeds         | [Binance Oracle](https://oracle.binance.com/)                |
