@@ -20,7 +20,7 @@ This is a living document and is susceptible to changes.
 | RPC Endpoint    | [See here](#opbnb-rpc-endpoints)                             |
 | Chain ID        | 5611(Testnet), 204(Mainnet)                                  |
 | Currency Symbol | tBNB(Testnet) BNB(Mainnet)                                   |
-| Block Explorer  | https://mainnet.opbnbscan.com, https://opbnbscan.com, https://bscscan.com                  |
+| Block Explorer  | https://testnet.opbnbscan.com, https://opbnbscan.com, https://bscscan.com                  |
 | Bridge          | https://opbnb-testnet-bridge.bnbchain.org, https://opbnb-bridge.bnbchain.org |
 
 

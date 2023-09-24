@@ -93,7 +93,9 @@ const sidebars = {
       items:[
         'faq/protocol-faqs',
         'faq/gas-and-fees-faqs',
-        'faq/opbnb-bridge-faqs'
+        'faq/opbnb-bridge-faqs',
+        'faq/cross-chain-faqs',
+        'faq/build-on-opbnb-faqs'
       ],
     },
 
