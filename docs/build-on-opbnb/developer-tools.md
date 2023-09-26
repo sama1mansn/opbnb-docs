@@ -9,7 +9,7 @@ This is a living document and is susceptible to changes.
 
 One of our main objectives is to expand the adoption and utility of opBNB as a high performance and low cost Layer 2 chain on the BNB Smart Chain. To achieve this goal, we have to ensure that our underlying technology is robust, scalable and user-friendly. That is why we are committed to developing and improving the core infrastructure and tools that support opBNB and its community of users, hosts and developers. Below are the ecosystem we are building for the opBNB.
 
-| Categories         | Sub Categories      | Infraustracture and Toolings                                 |
+| Categories         | Sub Categories      | Infrastructure and Toolings                                 |
 | ------------------ | ------------------- | ------------------------------------------------------------ |
 | DAO Governance     | DAO Governance      |                                                              |
 | Node Providers     | Node Provider       | [NodeReal](https://nodereal.io/meganode)                     |
