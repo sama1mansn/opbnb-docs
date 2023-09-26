@@ -23,7 +23,7 @@ Before you initiate the withdrawal process, you need to make sure that you have 
 Click withdraw button and confirm the transaction with your wallet. It will take a while to confirm.
 
 <img
-  src={require('../../static/img/withdraw-confirm.png').default}
+  src={require('../../static/img/withdraw-confirm-details.png').default}
   alt="opBNB-bridge-withdraw-confirmation"
   style={{zoom:"48%"}}
 />
