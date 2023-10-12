@@ -76,6 +76,42 @@ To troubleshoot your transaction, you can do the following:
 * Check the recipient address and make sure it is correct and valid. You can use a tool like https://opbnbscan.com/ to verify the address and see if it has any transactions history or contract code.
 * Contact your wallet provider, the opBNB network, or the smart contract developer for technical support if you suspect there is an issue on their end.
 
+
+
+### Why the estimated transaction fee is zero in my wallet?
+
+It is because wallets are not well adapted to L2 networks. Wallets are designed for L1 networks, where the total transaction cost is calculated differently from L2 networks.
+
+For example, suppose you want to send some opBNB tokens on the opBNB network. When you use your wallet to approve the transaction, you will see that the estimated gas fee is 0BNB. This may seem like a great deal, but it is not the whole story.
+
+<img
+  src={require('../../static/img/D63yQpYlnLUseqSJWf403Go4mrRaSQWM6LJ6EMsX6lJJH2BXlBEmy342JJp3hTW08mcjyClg4X6UmAOCTiTt1Hoq8APLdbyx8Z7UKtf0IYYYrwy5ZPtfcLv5LHgvEY7BXoLD6jUUlOnfe27gP0QhmEs.png').default}
+  alt="opBNB-bridge"
+  style={{zoom:"30%"}}
+/>
+
+The gas fee you see in your wallet is based on the L2 part of the transaction, which is very low because it uses a batch processing technique to aggregate many transactions into one. The L2 part of the transaction consists of two components: the base fee and the priority fee. The base fee is a fixed amount that depends on the network congestion, and the priority fee is a variable amount that you can set to increase or decrease the speed of your transaction. For example, in our case, the base fee is 0.000000008 gwei and the priority fee is 0.00001 gwei, so the total L2 gas price is 0.000010008 gwei. The gas used is 21000, which is the standard amount for a transfer transaction. Therefore, the total L2 gas fee is 0.000010008 * 21000 = 0.210168 gwei, which is too small to be displayed in your wallet.
+
+<img
+  src={require('../../static/img/LlvtsQFvpzHkXr6s3aWyOLW6agzcChIOW3xx1sakQJRRSP448OS2Q7jdDGTLS77Ve6gbAZuHrMu16CqVavhpduOerSJCXvR70RZ6HLe03UhYyHtfHd9HqChc55XLdrG9Ogq922OCUt2Wk64wbmYawG0.png').default}
+  alt="opBNB-bridge"
+  style={{zoom:"30%"}}
+/>
+
+However, this is not the only cost you have to pay for your transaction. There is also a layer 1 (L1) part of the transaction, which is the data cost. This is because every L2 transaction has to be recorded on the blockchain as data, and data storage on the blockchain is not free. The L1 part of the transaction depends on the size of the data and the L1 gas price at the time of submission. For example, in our case, the size of the data is 68 bytes and the L1 gas price is 249 gwei, so the total L1 gas fee is 68 * 249 = 16.932 gwei.
+
+Therefore, the actual cost of your transaction is the sum of the L2 and L1 parts, which is 0.210168 + 16.932 = 17.142168 gwei, or about 0.00001698 BNB, or about 0.003 USD at current prices. This is still very cheap compared to other blockchains, but it is not zero as your wallet shows.
+
+To verify this, you can check your transaction details on the opBNB explorer, where you will see both the L2 and L1 costs clearly displayed.
+
+<img
+  src={require('../../static/img/74pMzvad03dbTmcQx6wGiGfqlfrtWzhxUBRUYooy5vcwtfbjVbKlK71mknIozAWagJz6NFsoBqjIiClFbd_0KrpSsuIY5qs6h81XLGsqvAV-Gsh4CPOLCqmfIOCYUxe1kPri8US7jPEfy_aJFmGwIJQ.png').default}
+  alt="opBNB-bridge"
+  style={{zoom:"30%"}}
+/>
+
+We hope this helps you understand how opBNB works and why your wallet only shows the L2 cost.
+
 :::info Don't see your question?
 We're working on expanding this FAQ with more content, including questions from the community and partners, so please watch this space! However, if you don't see your question, please ask in the [BNB forum](https://forum.bnbchain.org/), so you can get the answers you need and make us aware of new FAQ items.
 :::
