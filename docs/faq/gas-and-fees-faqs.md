@@ -113,5 +113,6 @@ To verify this, you can check your transaction details on the opBNB explorer, wh
 We hope this helps you understand how opBNB works and why your wallet only shows the L2 cost.
 
 :::info Don't see your question?
-We're working on expanding this FAQ with more content, including questions from the community and partners, so please watch this space! However, if you don't see your question, please ask in the [BNB forum](https://forum.bnbchain.org/), so you can get the answers you need and make us aware of new FAQ items.
+We're working on expanding this FAQ with more content, including questions from the community and partners, so please watch this space! However, if you don't see your question, please ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain
+), so you can get the answers you need and make us aware of new FAQ items.
 :::

@@ -108,5 +108,6 @@ Additionally, the state roots from the problematic transaction onwards will be e
 re-computed to ensure accuracy.
 
 :::info Don't see your question?
-We're working on expanding this FAQ with more content, including questions from the community and partners, so please watch this space! However, if you don't see your question, please ask in the [BNB forum](https://forum.bnbchain.org/), so you can get the answers you need and make us aware of new FAQ items.
+We're working on expanding this FAQ with more content, including questions from the community and partners, so please watch this space! However, if you don't see your question, please ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain
+), so you can get the answers you need and make us aware of new FAQ items.
 :::

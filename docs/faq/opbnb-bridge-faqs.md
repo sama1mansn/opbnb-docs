@@ -33,6 +33,23 @@ The wallet estimate of the transaction is around 0.002 BNB, which is around $0.4
 
 Once the transaction is executed on the chain, you can see the actual cost of the transaction in the opBNB explorer, which usually is similar to the estimate given by the bridge.
 
+
+### Why your tokens on BSC are not received after 7 days of withdrawal request?
+
+You might have forgotten to sign the proof in the transaction history. This is a necessary step to initiate the 7 days challenge window. Without signing the proof, the bridge will not proceed with the challenge window and your withdrawal will be postponed.
+
+<img
+  src={require('../../static/img/withdraw-confirm.png').default}
+  alt="opBNB-bridge-withdraw-confirmation"
+  style={{zoom:"48%"}}
+/>
+
+### Why do I need sign the proof to start the 7 days challenge window?
+
+When you withdraw tokens from opBNB to BSC, you need to provide a proof withdrawal to verify that your transaction on L2 is valid and consistent with the world state of L2. This is because L1 does not have access to the full world state of L2, only the data availability (DA) data and periodic snapshots of the world state from L2. The DA data is a compressed representation of the transactions on L2, which can be used to reconstruct the world state of L2 if needed. However, this process is expensive and time-consuming, so it is not done for every withdrawal. Instead, you need to submit a proof withdrawal, which is a cryptographic proof that your transaction on L2 matches the world state of L2 at a certain point in time. This way, you can ensure that your withdrawal is secure and accurate, and that no one can cheat or double-spend on L2.
+
+
+
 :::info Don't see your question?
 We're working on expanding this FAQ with more content, including questions from the community and partners, so please watch this space! However, if you don't see your question, please ask in the [BNB forum](https://forum.bnbchain.org/), so you can get the answers you need and make us aware of new FAQ items.
 :::
