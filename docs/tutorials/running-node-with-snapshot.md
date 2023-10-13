@@ -9,7 +9,8 @@ To improve the synchronization speed of the node, you can utilize snapshots to i
 
 Snapshot download link:
 ### *Mainnet*
-https://opbnb-snapshot-mainnet.bnbchain.org/geth-yyyymmdd.tar.gz
+https://tf-bnbchain-prod-opbnb-mainnet-snapshot-s3-ap-northeast-1.s3.ap-northeast-1.amazonaws.com/geth-yyyymmdd.tar.gz
+
 ### *Testnet*
 https://tf-nodereal-prod-opbnb-testnet-snapshot-s3-ap.s3.ap-northeast-1.amazonaws.com/geth-yyyymmdd.tar.gz
 
@@ -23,7 +24,7 @@ Snapshots are generated and retained on a daily basis, with each snapshot being 
 ### Step 1: Download the snapshot and decompress it.
 
 ```bash
-wget -q -O - https://opbnb-snapshot-mainnet.bnbchain.org/geth-20230723.tar.gz | tar -xvf -
+wget -q -O - https://tf-bnbchain-prod-opbnb-mainnet-snapshot-s3-ap-northeast-1.s3.ap-northeast-1.amazonaws.com/geth-20231012.tar.gz | tar -xvf -
 ```
 
 ### Step 2: Replace the data.
