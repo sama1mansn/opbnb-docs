@@ -50,6 +50,5 @@ When you withdraw tokens from opBNB to BSC, you need to provide a proof withdraw
 
 
 :::info Don't see your question?
-We're working on expanding this FAQ with more content, including questions from the community and partners, so please watch this space! However, if you don't see your question, please ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain
-), so you can get the answers you need and make us aware of new FAQ items.
+We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::
