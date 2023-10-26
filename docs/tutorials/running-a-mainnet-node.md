@@ -29,7 +29,7 @@ cd opbnb/op-node
 git checkout $OPBNB_MAINNET_VERSION
 make op-node
 mkdir -p $OPBNB_WORKSPACE/op-node-data
-cp ./bin/op-node $OPBNB_WORKSPACE/op-node-data
+cp -r ./bin/op-node $OPBNB_WORKSPACE/op-node-data
 
 cd $OPBNB_WORKSPACE
 git clone git@github.com:bnb-chain/op-geth.git
@@ -37,7 +37,7 @@ cd op-geth
 git checkout $OPBNB_MAINNET_VERSION
 make geth
 mkdir -p $OPBNB_WORKSPACE/op-geth-data
-cp ./build/bin/geth $OPBNB_WORKSPACE/op-geth-data/op-geth
+cp -r ./build/bin/geth $OPBNB_WORKSPACE/op-geth-data/op-geth
 ```
 
 ## Data Preparation
