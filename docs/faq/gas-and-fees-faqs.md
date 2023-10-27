@@ -112,6 +112,12 @@ To verify this, you can check your transaction details on the opBNB explorer, wh
 
 We hope this helps you understand how opBNB works and why your wallet only shows the L2 cost.
 
+### Why is one of transaction's gas fees so much higher than the rest?
+
+A known issue that can cause irregularly high gas prices in opBNB transactions could be due to a high L1 gas price which is calculated by averaging block transaction gas prices using the formula:<br/>
+```(Txn Fee = Gas Price * Gas + L1 Gas Price * L1 Gas Used * L1 Fee Scalar)```<br/>
+This means that if there is an L1 block with a unusual high gas price, it will cause the gas price to be higher for a specific L2 block. This will be fixed going forward by introducing a static L1 gas price.
+
 :::info Don't see your question?
 We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::
