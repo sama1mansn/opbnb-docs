@@ -41,6 +41,7 @@ const sidebars = {
         'build-on-opbnb/deposit-to-opbnb',
         'build-on-opbnb/withdraw-from-opbnb',
         'build-on-opbnb/developer-tools',
+        'build-on-opbnb/multisig-wallet',
       ],
     },
     {
