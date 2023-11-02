@@ -15,7 +15,7 @@ https://tf-bnbchain-prod-opbnb-mainnet-snapshot-s3-ap-northeast-1.s3.ap-northeas
 https://tf-nodereal-prod-opbnb-testnet-snapshot-s3-ap.s3.ap-northeast-1.amazonaws.com/geth-yyyymmdd.tar.gz
 
 :::info
-Snapshots are generated and retained on a daily basis, with each snapshot being stored for a duration of 7 days. Community developer NodeReal is responsible for creating and updating the testnet snapshot regularly.
+Snapshots are generated on a weekly basis and retained for 7 day each. Community developer NodeReal is responsible for creating and updating the testnet snapshot regularly.
 :::
 
 
