@@ -6,21 +6,24 @@ dir:
   order: 2
 ---
 
-:::caution 
-This is a living document and is susceptible to changes. 
+To transfer your tokens from opBNB to BSC, you can use the [opBNB bridge dApp(Testnet)](https://opbnb-testnet-bridge.bnbchain.org/) or [opBNB bridge dApp(Mainnet)](https://opbnb-bridge.bnbchain.org). Users who do not want to wait 7 days to claim their tokens can use a community bridge, but please note that community bridges may not be as secure as the official opBNB bridge.
+
+
+:::info
+Note that the default option is the community bridge. To use the opBNB bridge, switch to the "official bridge" tab.
+
 :::
 
-If you want to transfer your tokens from opBNB to BSC network, you can do so by using the [opBNB bridge dApp(Testnet)](https://opbnb-testnet-bridge.bnbchain.org/) or [opBNB bridge dApp(Mainnet)](https://opbnb-bridge.bnbchain.org), which is a tool that allows you to move your tokens across different networks.
-
-Before you initiate the withdrawal process, you need to make sure that you have connected your wallet and switched to the opBNB network.
 
 <img
-  src={require('../../static/img/withdraw.png').default}
-  alt="opBNB-bridge-withdraw"
+  src={require('../../static/image-20231103144553832.png').default}
   style={{zoom:"48%"}}
 />
 
-Click withdraw button and confirm the transaction with your wallet. It will take a while to confirm.
+## Steps of withdrawal through official bridge 
+
+For users who choose the official opBNB bridge, you will need to wait for a challenge period of 7 days before you can claim your tokens on BSC. This challenge period is a security measure to prevent fraud and theft. The challenge period is necessary to ensure the security of the opBNB network and users. However, it can be inconvenient for users who need their tokens quickly. If you need your tokens immediately, you may want to consider using a community bridge instead. However, please be aware that community bridges may not be as secure as the official opBNB bridge. Do your research first.
+
 
 <img
   src={require('../../static/img/withdraw-confirm-details.png').default}
@@ -36,12 +39,3 @@ There are 2 steps after you submit your withdrawal request.
 
 ![withdraw-status](../../static/img/withdraw-status.png)
 
-3. Then you can collect your token. 
-
-:::info:
-The challenge window is shorter on the testnet of opBNB, so you can test the withdrawal process faster. On the mainnet of opBNB, the challenge window will be 7 days long.
-:::
-
-<!-- ## What is the withdrawal confirmation time?
-
-The withdrawal confirmation time is XXX . -->
