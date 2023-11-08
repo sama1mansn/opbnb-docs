@@ -112,6 +112,9 @@ With the [API key](https://nodereal.io/meganode) and smart contract address, you
 For opBNB mainnet, https://open-platform.nodereal.io/{{yourAPIkey}}/op-bnb-mainnet/contract/?action=getsourcecode&address={{contract address}}.
 For opBNB testnet, https://open-platform.nodereal.io/{{yourAPIkey}}/op-bnb-testnet/contract/?action=getsourcecode&address={{contract address}}.
 
+### How to get the finalized block height on opBNB and why is it always hundreds blocks behind the latest?
+The difference between latest and finalized by more than 200 blocks is expected. This is the concept in the OP design. The latest is defined as the latest unsafe block. The finalized means that the L2 block has been committed to L1 and the corresponding L1 block is finalized (by fast finality or natural finality).
+
 :::info Don't see your question?
 We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::
