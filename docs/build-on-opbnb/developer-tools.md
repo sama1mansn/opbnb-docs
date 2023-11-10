@@ -13,7 +13,7 @@ One of our main objectives is to expand the adoption and utility of opBNB as a h
 | ------------------ | ------------------- | ------------------------------------------------------------ |
 | DAO Governance     | DAO Governance      |                                                              |
 | Node Providers     | Node Provider       | [NodeReal](https://nodereal.io/meganode)                     |
-| Explorer           | Explorer            | [NodeReal opBNB Scan](https://mainnet.opbnbscan.com), [BSCScan](https://bscscan.com/) |
+| Explorer           | Explorer            | [NodeReal opBNB Scan](https://mainnet.opbnbscan.com), [BSCScan](https://opbnb.bscscan.com/) |
 |                    | Developer Platforms | [Truffle](https://trufflesuite.com/), [Foundry](https://book.getfoundry.sh/), [Hardhat](https://hardhat.org/), [Remix](https://remix.ethereum.org/) |
 | Use Access Tooling | Wallet              | [Metamask](https://metamask.io/), [TrustWallet](https://trustwallet.com/), [Particle Network](https://wallet.particle.network/), [Gem Wallet](https://gemwallet.com/) |
 |                    | Bridges             | [PolyHedra](https://zkbridge.com/), [rhino.fi](https://app.rhino.fi/bridge?token=BNB&chainOut=OPBNB&chain=BINANCE) |
