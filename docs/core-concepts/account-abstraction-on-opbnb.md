@@ -17,7 +17,7 @@ Not only does opBNB address the cost issue, but it also offers higher Transactio
 
 ## opBNB AA Infrastructure   
 
-Notably, platforms like [Biconomy](https://docs.biconomy.io/supportedchains/) and [Particle Wallet](https://docs.particle.network/overview/available-networks) have already adopted opBNB's AA solutions. Their integration showcases the practical application and effectiveness of opBNB in managing the complexity and cost of AA transactions in real-world scenarios.
+Notably, platforms like [Biconomy](https://docs.biconomy.io/supportedchains/) and [Particle Wallet](https://docs.particle.network/overview/available-networks) have already adopted opBNB's AA solutions. Their integration showcases the practical application and effectiveness of opBNB in managing the complexity and cost of AA transactions in real-world scenarios. For details, please refer to the blog of [Account Abstraction current and future development on BNB Chain](https://www.bnbchain.org/en/blog/account-abstraction-current-and-future-development-on-bnbchain-part-one). 
 
 
 
