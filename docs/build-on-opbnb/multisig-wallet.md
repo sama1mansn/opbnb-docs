@@ -13,6 +13,6 @@ BNB Chain deployed a multi-sig wallet service based on the Gnosis Safe protocol 
 
 # How to Use the BNB Chain Multi-Sig Wallet Service
 
-To use the BNB Chain multi-sig wallet service, connect with your own EOA wallet to start. Visit [https://safe.bnbchain.org/welcome](https://safe.bnbchain.org/welcome)
+To use the BNB Chain multi-sig wallet service, connect with your own EOA wallet to start. Visit [https://multisig.bnbchain.org/welcome](https://multisig.bnbchain.org/welcome)
 
 Read the [Safe Doc](https://docs.safe.global/getting-started/readme) for details.
