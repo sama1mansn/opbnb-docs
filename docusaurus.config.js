@@ -92,10 +92,10 @@ const config = {
             to: "/docs/core-concepts/need-for-opbnb",
           },
           {
-            link: {type: 'doc', id: '/docs/tutorials/running-a-testnet-node'},
+            link: {type: 'doc', id: '/docs/tutorials/running-a-local-node'},
             label: "Tutorials",
             position: "left",
-            to: "/docs/tutorials/running-a-testnet-node",
+            to: "/docs/tutorials/running-a-local-node",
           },
           {
             link: {type: 'doc', id: 'openbnb-faq'},

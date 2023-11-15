@@ -72,12 +72,10 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items:[
-        'tutorials/running-a-testnet-node',
-        'tutorials/running-a-mainnet-node',
         'tutorials/running-a-local-development-environment',
+        'tutorials/running-a-local-node',
         'tutorials/full-stack-dapp',
         'tutorials/opbnbscan-verify-hardhat-truffle',
-        'tutorials/running-node-with-snapshot',
       ],
     },
   ],
