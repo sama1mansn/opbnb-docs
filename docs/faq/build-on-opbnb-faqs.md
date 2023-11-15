@@ -67,7 +67,7 @@ The process of creating and storing NFTs on the opBNB is similar to other blockc
 
 ### When using hardhat to verify upgradeable/proxy contract on opBNB-testnet, I've encountered "Error: Failed to get logs for contract at address 0x<address>". How can I resolve the issue and verify the upgradeable/proxy contract?
 
-Currently, hardhat API is using chain's public RPC to get contract event log. Therefore, the public RPC limits the query range within the latest 5w blocks only. That's why the error message said "Failed to get logs". 
+Currently, hardhat API is using chain's public RPC to get contract event log. Therefore, the public RPC limits the query range within the latest 50k blocks only. That's why the error message said "Failed to get logs". 
 
 For the short-term solution, we recommend user to try again on explorer front-end (https://opbnbscan.com/verifyContract & https://testnet.opbnbscan.com/verifyContract) instead via hardhat.
 
