@@ -6,9 +6,6 @@ dir:
   order: 2
 ---
 
-## The Challenge of High Costs in AA Transactions
-Account Abstraction (AA) transactions are known for their higher costs due to their complexity and advanced features. This is where opBNB steps in, offering a cost efficient solution that effectively counters these cost challenges while enhancing the capabilities of decentralized applications (dApps).
-
 ## opBNB is a cost-efficient solution for AA 
 The primary allure of opBNB lies in its ability to significantly reduce the gas costs associated with AA (ERC4337) transactions. This efficiency is achieved through optimized transaction processing and a more streamlined approach to handling complex operations typically found in AA transactions. AA transactions, with their intricate operations and smart contract interactions, traditionally require more computational resources. opBNB, however, utilizes innovative methods to simplify these processes, ensuring that the complexity does not translate into prohibitive costs for users and developers.
 
