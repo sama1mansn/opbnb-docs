@@ -42,7 +42,7 @@ export OPBNB_WORKSPACE=/tmp/opbnb
 mkdir -p $OPBNB_WORKSPACE
 
 cd $OPBNB_WORKSPACE
-git clone git@github.com:bnb-chain/opbnb.git
+git clone https://github.com/bnb-chain/opbnb.git
 cd opbnb/op-node
 git checkout develop
 make op-node
@@ -50,7 +50,7 @@ mkdir -p $OPBNB_WORKSPACE/op-node-data
 cp ./bin/op-node $OPBNB_WORKSPACE/op-node-data
 
 cd $OPBNB_WORKSPACE
-git clone git@github.com:bnb-chain/op-geth.git
+git clone https://github.com/bnb-chain/op-geth.git
 cd op-geth
 git checkout develop
 make geth
