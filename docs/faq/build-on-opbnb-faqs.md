@@ -65,6 +65,14 @@ Refer to the official Hardhat documentation [here](https://hardhat.org/hardhat-r
 
 The process of creating and storing NFTs on the opBNB is similar to other blockchains. You need to have a smart contract that defines the properties and functions of your NFT, and then deploy it on the opBNB. To store the metadata of your NFT, such as the name, description, image, and other attributes, you can use various storage solutions. Some examples are BNB Greenfield, IPFS, and Filecoin.
 
+### When using hardhat to verify upgradeable/proxy contract on opBNB-testnet, I've encountered "Error: Failed to get logs for contract at address 0x<address>". How can I resolve the issue and verify the upgradeable/proxy contract?
+
+Currently, hardhat API is using chain's public RPC to get contract event log. Therefore, the public RPC limits the query range within the latest 50k blocks only. That's why the error message said "Failed to get logs". 
+
+For the short-term solution, we recommend user to try again on explorer front-end (https://opbnbscan.com/verifyContract & https://testnet.opbnbscan.com/verifyContract) instead via hardhat.
+
+For the long-term solution, the team is building an in-house enhanced API to get contract event logs. ETA will be at least the end of Nov. After which, users can verify upgradeable/proxy via hardhat.
+
 :::info Don't see your question?
 We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::
