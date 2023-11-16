@@ -43,6 +43,7 @@ const sidebars = {
         'build-on-opbnb/developer-tools',
         'build-on-opbnb/multisig-wallet',
         'build-on-opbnb/geth-sync',
+        'build-on-opbnb/bep20-crosschain',
       ],
     },
     {
