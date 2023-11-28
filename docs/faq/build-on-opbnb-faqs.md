@@ -73,6 +73,18 @@ For the short-term solution, we recommend user to try again on explorer front-en
 
 For the long-term solution, the team is building an in-house enhanced API to get contract event logs. ETA will be at least the end of Nov. After which, users can verify upgradeable/proxy via hardhat.
 
+### Why my opBNB node is unable to catch up with current blocks?
+
+There is a possibility that the node's chain has been forked and different with other nodes.
+
+In the event that the chain is forked due to a hard fork, it is recommended to reset the blockchain and synchronize it with the latest version of the program:
+
+1) Clear the data directory in OP Geth
+2) Update the opbnb to latest version: `git clone -b v0.2.1 git@github.com:bnb-chain/opbnb.git`
+3) Update the op-geth to latest version: `git clone -b v0.2.0 git@github.com:bnb-chain/op-geth.git`
+
+Follow the instructions here to re-sync the node: https://docs.bnbchain.org/opbnb-docs/docs/tutorials/running-a-local-node. Just note that make sure to use the latest version of opbnb and op-geth, and use the new version `genesis.json` and `rollup.json`.
+
 :::info Don't see your question?
 We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::
