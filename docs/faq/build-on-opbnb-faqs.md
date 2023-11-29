@@ -80,8 +80,8 @@ There is a possibility that the node's chain has been forked and different with 
 In the event that the chain is forked due to a hard fork, it is recommended to reset the blockchain and synchronize it with the latest version of the program:
 
 1) Clear the data directory in OP Geth
-2) Update the opbnb to latest version: `git clone -b v0.2.1 git@github.com:bnb-chain/opbnb.git`
-3) Update the op-geth to latest version: `git clone -b v0.2.0 git@github.com:bnb-chain/op-geth.git`
+2) Update the opbnb to latest version: `git clone -b v0.x.x git@github.com:bnb-chain/opbnb.git`
+3) Update the op-geth to latest version: `git clone -b v0.x.x git@github.com:bnb-chain/op-geth.git`
 
 Follow the instructions here to re-sync the node: https://docs.bnbchain.org/opbnb-docs/docs/tutorials/running-a-local-node. Just note that make sure to use the latest version of opbnb and op-geth, and use the new version `genesis.json` and `rollup.json`.
 
