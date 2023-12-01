@@ -34,17 +34,18 @@ Please note the floor base price is the minimum base price opBNB can set, and ac
 
 The minimum priority price is preconfigured, and users can give any priority price that is higher than this number. Usually users will get the estimate gas price by calling the API of “estimate gas price”. It is a recommended gas price according to the current average gas price of history blocks.
 
-BNB Chain aims to reduce the transaction cost to the level that enable the mass adoption, for opBNB, the target of the transfer transaction is lower than $0.005, therefore after analysis the Layer 1 gas price of BSC and the gas of transfer transactions, the minimum base price and priority price is calculated as:
+BNB Chain aims to reduce the transaction cost to the level that enable the mass adoption, for opBNB, the target of the transfer transaction is lower than $0.001.
 
-**Target of opBNB Layer 2 native transfer transactions is $0.005.** 
+## How to reduce the cost of L2 transactions
+To reduce the cost of Layer 2 (L2) transactions on opBNB on the BNB Smart Chain, focusing on minimizing Layer 1 (L1) data costs is key. This can be achieved through:
 
-**Native transfer transactions cost calculation**
+1. **Enhanced Data Compression**: Implementing more advanced data compression algorithms to reduce the size of L2 transaction data before submitting it to L1.
 
-L2 part gas: 21000 
+2. **Efficient Transaction Batching**: Optimizing how transactions are batched together to maximize space efficiency and reduce costs per transaction.
 
-L1 part gas: 3980, and the gas price of BSC is 3gwei
+3. **Data Availability Solutions**: Utilizing solutions like those in BNB Greenfield for offloading some data storage from the main chain, thereby reducing data costs.
 
-opBNB Transaction cost = (L1 gas price * 3980 + L2 gas price * 21000) * 0.000000001*BNB Price <= $0.005
+4. **Zero-Knowledge Proofs**: Employing zero-knowledge proofs to validate transactions without disclosing full transaction data, thus minimizing L1 data load.
 
-Based on this formula, when the gas price of opBNB is lower than 0.2gwei the cost of transfer transaction on opBNB is lower than $0.005.
+5. **Protocol-Level Optimizations**: Making improvements at the protocol level to reduce overhead in transaction processing on L2.
 
