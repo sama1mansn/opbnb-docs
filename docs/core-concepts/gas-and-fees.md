@@ -36,8 +36,7 @@ The minimum priority price is preconfigured, and users can give any priority pri
 
 BNB Chain aims to reduce the transaction cost to the level that enable the mass adoption, for opBNB, the target of the transfer transaction is lower than $0.001.
 
-## How to reduce the cost of L2 transactions
-To reduce the cost of Layer 2 (L2) transactions on opBNB on the BNB Smart Chain, focusing on minimizing Layer 1 (L1) data costs is key. This can be achieved through:
+## How opBNB keep reducing the cost of L2 transactions
 
 1. **Enhanced Data Compression**: Implementing more advanced data compression algorithms to reduce the size of L2 transaction data before submitting it to L1.
 
