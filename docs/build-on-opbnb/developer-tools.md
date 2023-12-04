@@ -65,7 +65,7 @@ Essential component as the BNB Chain moves towards decentralization. [XDao](http
 | Node Providers      | Node Provider         | [NodeReal](https://nodereal.io/meganode)                     |
 | Explorer            | Explorer              | [NodeReal opBNB Scan](https://mainnet.opbnbscan.com), [BSCScan](https://opbnb.bscscan.com/) |
 |                     | Developer Platforms   | [Truffle](https://trufflesuite.com/), [Foundry](https://book.getfoundry.sh/), [Hardhat](https://hardhat.org/), [Remix](https://remix.ethereum.org/) |
-| Use Access Tooling  | Wallet                | [Metamask](https://metamask.io/), [TrustWallet](https://trustwallet.com/), [Particle Network](https://wallet.particle.network/), [Gem Wallet](https://gemwallet.com/) |
+| Use Access Tooling  | Wallet                | [Binance Web3 Wallet](https://www.binance.com/en/web3wallet), [Metamask](https://metamask.io/), [TrustWallet](https://trustwallet.com/), [Particle Network](https://wallet.particle.network/), [Gem Wallet](https://gemwallet.com/), [OKX Wallet](https://www.okx.com/nl/web3), [MathWallet](https://mathwallet.org/en-us/) |
 |                     | Bridges               | [opBNB Bridge](https://opbnb-bridge.bnbchain.org/deposit),[PolyHedra](https://zkbridge.com/), [rhino.fi](https://app.rhino.fi/bridge?token=BNB&chainOut=OPBNB&chain=BINANCE) |
 |                     | dApp Store            | [dApp Bay](https://dappbay.bnbchain.org/ranking/chain/opbnb) |
 | Oracles             | Price Feeds, VRF      | [Binance Oracle](https://oracle.binance.com/)                |
