@@ -33,12 +33,14 @@ You can use either public and private RPC endpoints to access opBNB.
  - https://opbnb-testnet-rpc.bnbchain.org/
  - https://opbnb-testnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3
  - https://opbnb-testnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5
+ - https://opbnb-testnet.publicnode.com
 
 ### Public opBNB Mainnet RPC Endpoints(WSS is supported)
 
  - https://opbnb-mainnet-rpc.bnbchain.org
  - https://opbnb-mainnet.nodereal.io/v1/64a9df0874fb4a93b9d0a3849de012d3
  - https://opbnb-mainnet.nodereal.io/v1/e9a36765eb8a40b9bd12e680a1fd2bc5
+ - https://opbnb.publicnode.com
 
 ### Private opBNB RPC Endpoints
 
