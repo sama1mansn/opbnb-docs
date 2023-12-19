@@ -44,7 +44,7 @@ customChains: [
   chainId: 5611, // Replace with the correct chainId for the "opbnb" network
   urls: {
     apiURL:  "https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-testnet/contract/",
-    browserURL: "https://opbnbscan.com/",
+    browserURL: "https://testnet.opbnbscan.com/",
   },
  },
 ],
@@ -74,7 +74,7 @@ module.exports = {
   	verify: {
   	apiUrl: 'https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-testnet/contract/',
   	apiKey: '{{YOUR-NODEREAL-API-KEY}}', 
-  	explorerUrl: 'https://opbnbscan.com/',
+  	explorerUrl: 'https://testnet.opbnbscan.com/',
  		},
  			host: "127.0.0.1",
  			port: 24012,
