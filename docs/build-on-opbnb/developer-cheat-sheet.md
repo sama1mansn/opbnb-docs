@@ -66,6 +66,7 @@ For example:
 **L2 Sync Mode Settings:**
 
 - **op-geth:** `--gcmode=archive`
+- **op-node:** `--l2.engine-sync=true`
 
 # Node Health Monitoring
 
