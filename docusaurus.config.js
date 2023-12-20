@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-   trailingSlash: false,
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -42,10 +42,17 @@ const config = {
           customCss: require.resolve("./src/css/custom.css")
         }
       })
-    ]
+    ],
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-LSRFL0KHRR',
+        anonymizeIP: true,
+      },
+    ],
   ],
 
-  themes: [ "docusaurus-theme-openapi-docs"],
+  themes: ["docusaurus-theme-openapi-docs"],
 
   themeConfig:
 
@@ -59,18 +66,18 @@ const config = {
       algolia: {
         // The application ID provided by Algolia
         appId: '3LF005YNGZ',
-  
+
         // Public API key: it is safe to commit it
         apiKey: 'dbc11ec6638f9c767ef6ed2856871f58',
-  
+
         indexName: 'bnbchain',
-  
+
         // Optional: see doc section below
         // contextualSearch: true,
-  
+
         // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
         externalUrlRegex: 'https://docs.bnbchain.org/',
-  
+
       },
       navbar: {
         title: "BNB Optimistic Rollup",
@@ -80,25 +87,25 @@ const config = {
         },
         items: [
           {
-            link: {type: 'doc', id: 'build-on-opbnb/getting-started'},
+            link: { type: 'doc', id: 'build-on-opbnb/getting-started' },
             label: "Getting Started",
             position: "left",
             to: "/docs/build-on-opbnb/getting-started",
           },
           {
-            link: {type: 'doc', id: '/core-concepts'},
+            link: { type: 'doc', id: '/core-concepts' },
             label: "Core Concepts",
             position: "left",
             to: "/docs/core-concepts/need-for-opbnb",
           },
           {
-            link: {type: 'doc', id: '/docs/tutorials/running-a-local-node'},
+            link: { type: 'doc', id: '/docs/tutorials/running-a-local-node' },
             label: "Tutorials",
             position: "left",
             to: "/docs/tutorials/running-a-local-node",
           },
           {
-            link: {type: 'doc', id: 'openbnb-faq'},
+            link: { type: 'doc', id: 'openbnb-faq' },
             label: "FAQs",
             position: "left",
             to: "/docs/faq/opbnb-faq",
@@ -111,7 +118,7 @@ const config = {
           },
         ],
       },
-      
+
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
@@ -119,7 +126,7 @@ const config = {
       }
     }),
 
-  
+
 };
 
 module.exports = config;
