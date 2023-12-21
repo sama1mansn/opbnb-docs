@@ -62,6 +62,9 @@ For example:
   export L1_RPC2=https://bsc.nodereal.io
   --l1=rpc1,rpc2…
 ```
+Optimize L1 receipt retrieval performance
+- **op-node:** `--l1.rpckind=bsc_fullnode`
+
 
 **L2 Sync Mode Settings:**
 
