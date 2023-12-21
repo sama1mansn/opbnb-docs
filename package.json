@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@docusaurus/core": ">=2.0.1 <2.3.0",
+    "@docusaurus/plugin-google-gtag": "^3.0.1",
     "@docusaurus/preset-classic": ">=2.0.1 <2.3.0",
     "@docusaurus/types": "^2.4.1",
     "@markprompt/css": "^0.8.1",
