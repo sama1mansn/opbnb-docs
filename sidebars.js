@@ -34,6 +34,7 @@ const sidebars = {
       collapsed: true,
       link:{type: 'doc', id:'build-on-opbnb/getting-started'},
       items:[
+        'build-on-opbnb/developer-cheat-sheet',
         'build-on-opbnb/wallet-configuration',
         'build-on-opbnb/set-gas-price',
         'build-on-opbnb/opbnb-network-info',
@@ -44,6 +45,7 @@ const sidebars = {
         'build-on-opbnb/multisig-wallet',
         'build-on-opbnb/geth-sync',
         'build-on-opbnb/bep20-crosschain',
+        
       ],
     },
     {
