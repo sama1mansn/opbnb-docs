@@ -68,7 +68,7 @@ Essential component as the BNB Chain moves towards decentralization. [XDao](http
 | Use Access Tooling  | Wallet                | [Binance Web3 Wallet](https://www.binance.com/en/web3wallet), [Metamask](https://metamask.io/), [TrustWallet](https://trustwallet.com/), [Particle Network](https://wallet.particle.network/), [Gem Wallet](https://gemwallet.com/), [OKX Wallet](https://www.okx.com/nl/web3), [MathWallet](https://mathwallet.org/en-us/) |
 |                     | Bridges               | [opBNB Bridge](https://opbnb-bridge.bnbchain.org/deposit),[PolyHedra](https://zkbridge.com/), [rhino.fi](https://app.rhino.fi/bridge?token=BNB&chainOut=OPBNB&chain=BINANCE) |
 |                     | dApp Store            | [dApp Bay](https://dappbay.bnbchain.org/ranking/chain/opbnb) |
-| Oracles             | Price Feeds, VRF      | [Binance Oracle](https://oracle.binance.com/)                |
+| Oracles             | Price Feeds, VRF      | [Binance Oracle](https://oracle.binance.com/), [Supra](https://supraoracles.com/)                |
 | Storage             | Decentralized Storage | [BNB Greenfield](https://greenfield.bnbchain.org/en)         |
 | Security            |                       | [AvengerDAO](https://www.avengerdao.org/)                    |
 | Account Abstraction |                       | [Particle Network](https://wallet.particle.network/),[Biconomy](https://docs.biconomy.io/supportedchains/),[CyberConnect](https://cyberconnect.me/) |
