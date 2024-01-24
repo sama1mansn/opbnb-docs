@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  trailingSlash: false,
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -84,7 +84,7 @@ const config = {
         },
         items: [
           {
-            link: { type: 'doc', id: 'build-on-opbnb/getting-started' },
+            link: { type: 'doc', id: 'build-on-opbnb/getting-started.md' },
             label: "Getting Started",
             position: "left",
             to: "/docs/build-on-opbnb/getting-started",
