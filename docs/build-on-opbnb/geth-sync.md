@@ -1,4 +1,4 @@
-# Geth Sync
+# Fast Geth Sync
 
 # Geth P2P Sync Feature
 

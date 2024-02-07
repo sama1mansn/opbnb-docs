@@ -22,7 +22,7 @@ Developing on opBNB is nearly the same as building directly on BNB Smart Chain. 
 
 ### Advance (Developer)
 1. [Best Practice](./developer-cheat-sheet.md)
-2. [Run Node]:
+2. Run Node:
 - [Run Local Dev Enviroment](../tutorials/running-a-local-development-environment.md)
 - [Run Local Mainnet/Testnet Node](../tutorials/running-a-local-node.md)
 - [Fast Geth Sync](./geth-sync.md)
