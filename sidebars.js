@@ -29,6 +29,22 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Core Concepts",
+      collapsible: true,
+      collapsed: true,
+      items:[
+        'core-concepts/need-for-opbnb',
+        'core-concepts/why-opstack',
+        'core-concepts/optimisations-on-opstack',
+        'core-concepts/difference-BSC-Eth',
+        'core-concepts/difference-L2',
+        'core-concepts/cross-chain',
+        'core-concepts/gas-and-fees',
+        'core-concepts/account-abstraction-on-opbnb',
+      ],
+    },
+    {
+      type: "category",
       label: "Getting Started",
       collapsible: true,
       collapsed: true,
@@ -46,22 +62,6 @@ const sidebars = {
         'build-on-opbnb/geth-sync',
         'build-on-opbnb/bep20-crosschain',
         
-      ],
-    },
-    {
-      type: "category",
-      label: "Core Concepts",
-      collapsible: true,
-      collapsed: true,
-      items:[
-        'core-concepts/need-for-opbnb',
-        'core-concepts/why-opstack',
-        'core-concepts/optimisations-on-opstack',
-        'core-concepts/difference-BSC-Eth',
-        'core-concepts/difference-L2',
-        'core-concepts/cross-chain',
-        'core-concepts/gas-and-fees',
-        'core-concepts/account-abstraction-on-opbnb',
       ],
     },
 
