@@ -3,29 +3,34 @@ sidebar_label: Overview
 description: Overview of getting started on opBNB
 ---
 
-# Getting Started
+# Overview
 
-Developing on opBNB, an optimistic rollup Layer 2 scaling solution for BNB Smart Chain, is nearly the same as building directly on BNB Smart Chain. opBNB uses an EVM execution engine, meaning decentralized applications can be migrated from Ethereum, BNB Smart Chain, Polygon, and other EVM-compatible chains without changing much code. Some key points to highlight:
+Developing on opBNB is nearly the same as building directly on BNB Smart Chain. Migration from Ethereum, BNB Smart Chain, Polygon, and other EVM-compatible chains to opBNB will be nearly seamless for projects. Some key points to highlight:
 
-1. opBNB is an optimistic rollup - it scales BNB Smart Chain by bundling transactions off-chain and using fraud proofs to ensure validity. This allows for much higher throughput than the underlying BNB Smart Chain.
-2. opBNB uses the EVM, the same virtual machine used by Ethereum and BNB Smart Chain. This means any dApp, smart contract, or other application that runs on the EVM can operate on opBNB with little to no code changes. Developers can simply deploy the same application on opBNB to get the benefits of Layer 2 scaling.
-3. dApps and smart contracts can migrate to opBNB from any other EVM chain like Ethereum, BNB Smart Chain, or Polygon. Again, since opBNB is EVM-compatible, the applications will run as-is on the new network.
-4. Building on opBNB provides the scalability and low costs of a rollup, while still leveraging the security of BNB Smart Chain. dApps get the best of both Layer 1 and Layer 2.
+1. Optimistic rollup - opBNB provides the scalability and low costs of a rollup, while still leveraging the security of BNB Smart Chain. dApps get the best of both Layer 1 and Layer 2.
+2. EVM Compatible - Developers on any EVM campatible chains can simply deploy the same application on opBNB to get the benefits of Layer 2 scaling.
 
-## How to use opBNB?
+## Guide
 
-To use opBNB, you need to have an Ethereum wallet like Metamask or Trustwallet. You also need to have some tBNB in your wallet to pay for gas fees.
+### Basic (Starter)
+1. [Network Infomation](./opbnb-network-info.md)
+2. [Configure Wallet](./wallet-configuration.md)
+3. [Set Gasprice](./set-gas-price.md)
+4. [Claim Faucet](./network-faucet.md)
+5. [Deposit Asset](./deposit-to-opbnb.md)
+6. [Withdraw Asset](./withdraw-from-opbnb.md)
 
-Step 1: Connect your wallet to opBNB
-Connect your wallet to the BSC testnet and opBNB testnet. Both BSC and opBNB support EVM wallets like Metamask and Trustwallet. Follow the steps of [Wallet Configuration](./wallet-configuration.md).
+### Advance (Developer)
+1. [Best Practice](./developer-cheat-sheet.md)
+2. [Run Node](./geth-sync.md)
+3. [Multi-Sig Wallet Service](./multisig-wallet.md)
+4. [Arbitrary BEP20 Cross-chain Transfer](./bep20-crosschain.md)
+5. [Infra and Tooling](./developer-tools.md)
 
-Step 2: Deposit your tBNB token to opBNB
-Follow the steps of [Deposit Tokens to opBNB](./deposit-to-opbnb.md).
+### Tutorial & SDK Resources (In depth)
+1. [Tutorials](../tutorials/)
+2. [FAQ](../faq/)
+3. [OP Stack Client SDK](https://sdk.optimism.io/)
+The SDK provides a set of tools for interacting with opBNB and also for Interlayer communication. (_[OP Stack Client SDK](https://stack.optimism.io/docs/build/sdk/) is maintained by OP Stack_)
 
-Step 3: Start building by deploying smart contract to opBNB. 
-
-## opBNB SDKs
-
-Following is the list of SDKs for opBNB
-
-- **[OP Stack Client SDK](https://sdk.optimism.io/):** the SDK provides set of tools for interacting with opBNB and also for Interlayer communication. (_[OP Stack Client SDK](https://stack.optimism.io/docs/build/sdk/) is maintained by OP Stack_)
+### [Contribute](../contribute.md)
