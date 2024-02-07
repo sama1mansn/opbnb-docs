@@ -1,4 +1,4 @@
-# User manual for geth sync feature
+# Geth Sync
 
 # Geth P2P Sync Feature
 
