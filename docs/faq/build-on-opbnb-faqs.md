@@ -84,6 +84,8 @@ You can follow the instructions from How to verify a contract on [Etherscan/BscS
 ### How to get proxy's constructor arguments for verification?
 To form _data agrument we need: 1) function name 2) owner address + agrument1 + argument2 + etc. Then copy "Encoded data", add "0x" at the beginning of the text and past it as _data (Bytes) argument. For details, please refer to [openzeppelin docs](https://forum.openzeppelin.com/t/how-to-verify-upgradeable-contract-on-opbnb-testnet-by-hardhat/39495/6?u=serghd).
 
+An easier way is to look at the input data of the creation transaction for your proxy: https://testnet.opbnbscan.com/tx/0xa287b0b69472cb4961c528b16e799136a520f700b5407595314c3cdd0a21f8d6?tab=overview 3. You can see that the encoded constructor arguments are at the last portion of the bytecode.
+
 :::info Don't see your question?
 We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::
