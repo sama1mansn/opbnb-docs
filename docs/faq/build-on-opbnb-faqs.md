@@ -65,14 +65,6 @@ Refer to the official Hardhat documentation [here](https://hardhat.org/hardhat-r
 
 The process of creating and storing NFTs on the opBNB is similar to other blockchains. You need to have a smart contract that defines the properties and functions of your NFT, and then deploy it on the opBNB. To store the metadata of your NFT, such as the name, description, image, and other attributes, you can use various storage solutions. Some examples are BNB Greenfield, IPFS, and Filecoin.
 
-### When using hardhat to verify upgradeable/proxy contract on opBNB-testnet, I've encountered "Error: Failed to get logs for contract at address 0x{address}". How can I resolve the issue and verify the upgradeable/proxy contract?
-
-Currently, hardhat API is using chain's public RPC to get contract event log. Therefore, the public RPC limits the query range within the latest 50k blocks only. That's why the error message said "Failed to get logs". 
-
-For the short-term solution, we recommend user to try again on explorer front-end (https://opbnbscan.com/verifyContract & https://testnet.opbnbscan.com/verifyContract) instead via hardhat.
-
-For the long-term solution, the team is building an in-house enhanced API to get contract event logs. ETA will be at least the end of Nov. After which, users can verify upgradeable/proxy via hardhat.
-
 ### Why my opBNB node is unable to catch up with current blocks?
 
 There is a possibility that the node's chain has been forked and different with other nodes.
@@ -84,6 +76,15 @@ In the event that the chain is forked due to a hard fork, it is recommended to r
 3) Update the op-geth to latest version: `git clone -b v0.x.x git@github.com:bnb-chain/op-geth.git`
 
 Follow the instructions here to re-sync the node: https://docs.bnbchain.org/opbnb-docs/docs/tutorials/running-a-local-node. Just note that make sure to use the latest version of opbnb and op-geth, and use the new version `genesis.json` and `rollup.json`.
+
+### How to verify ERC1967Proxy upgradeable contract on opbnb-testnet by Hardhat?
+
+You can follow the instructions from How to verify a contract on [Etherscan/BscScan/PolygonScan](https://forum.openzeppelin.com/t/how-to-verify-a-contract-on-etherscan-bscscan-polygonscan/14225#if-proxy-is-not-verified-10) to use the solc-input.json to verify the proxy.
+
+### How to get proxy's constructor arguments for verification?
+To form _data agrument we need: 1) function name 2) owner address + agrument1 + argument2 + etc. Then copy "Encoded data", add "0x" at the beginning of the text and past it as _data (Bytes) argument. For details, please refer to [openzeppelin docs](https://forum.openzeppelin.com/t/how-to-verify-upgradeable-contract-on-opbnb-testnet-by-hardhat/39495/6?u=serghd).
+
+An easier way is to look at the input data of the creation transaction for your proxy: https://testnet.opbnbscan.com/tx/0xa287b0b69472cb4961c528b16e799136a520f700b5407595314c3cdd0a21f8d6?tab=overview 3. You can see that the encoded constructor arguments are at the last portion of the bytecode.
 
 :::info Don't see your question?
 We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
