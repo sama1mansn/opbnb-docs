@@ -25,6 +25,12 @@ On **Account Abstraction(AA)**, [CyberConnect](https://cyberconnect.me/), [Parti
 
 **MultiSig** wallet BNB Chain has provided its own [Safe Multi-Sig Wallet](https://docs.bnbchain.org/opbnb-docs/docs/build-on-opbnb/multisig-wallet). 
 
+**Wallet as a Service**
+
+Wallet-as-a-Service (WaaS) streamlines the integration of digital wallets into applications, allowing businesses to manage cryptocurrencies and tokens effortlessly. By handling the complexities of wallet infrastructure, WaaS enables a secure and user-friendly experience for managing digital assets, fostering wider blockchain adoption and enhancing operational efficiency.
+
+[Particle](https://particle.network/), [Sequence.build](https://sequence.build/landing), and [Avatar](https://avatarwallet.io/) have supported Wallet-as-a-Service (WaaS) platforms on the BNB Smart Chain and opBNB, facilitating seamless integration of digital wallet functionalities into applications for managing opBNB and other assets. 
+
 **Bridges** 
 
 For bridges opBNB has its own default [bridge](https://opbnb-bridge.bnbchain.org/deposit), which is built mirroring OP Stack. This also means that it has the 7 days challenge period, similar to OP bridge, BASE bridge. But opBNB does have 3rd party bridge providers, such as [Polyhedra](https://zkbridge.com/opbnb) and [Rhino.Fi](https://app.rhino.fi/bridge?token=BNB&chainOut=OPBNB&chain=BINANCE) that provide shorter withdrawal periods. 
@@ -65,15 +71,15 @@ Essential component as the BNB Chain moves towards decentralization. [XDao](http
 | Node Providers      | Node Provider         | [NodeReal](https://nodereal.io/meganode)                     |
 | Explorer            | Explorer              | [NodeReal opBNB Scan](https://mainnet.opbnbscan.com), [BSCScan](https://opbnb.bscscan.com/) |
 |                     | Developer Platforms   | [Truffle](https://trufflesuite.com/), [Foundry](https://book.getfoundry.sh/), [Hardhat](https://hardhat.org/), [Remix](https://remix.ethereum.org/) |
-| Use Access Tooling  | Wallet                | [Binance Web3 Wallet](https://www.binance.com/en/web3wallet), [Metamask](https://metamask.io/), [TrustWallet](https://trustwallet.com/), [Particle Network](https://wallet.particle.network/), [Gem Wallet](https://gemwallet.com/), [OKX Wallet](https://www.okx.com/nl/web3), [MathWallet](https://mathwallet.org/en-us/) |
+| Use Access Tooling  | Wallet                | [Binance Web3 Wallet](https://www.binance.com/en/web3wallet), [Metamask](https://metamask.io/), [TrustWallet](https://trustwallet.com/), [Particle Network](https://wallet.particle.network/), [Gem Wallet](https://gemwallet.com/), [OKX Wallet](https://www.okx.com/nl/web3), [MathWallet](https://mathwallet.org/en-us/),  [Sequence.build](https://sequence.build/landing), [Avatar](https://avatarwallet.io/) |
 |                     | Bridges               | [opBNB Bridge](https://opbnb-bridge.bnbchain.org/deposit),[PolyHedra](https://zkbridge.com/), [rhino.fi](https://app.rhino.fi/bridge?token=BNB&chainOut=OPBNB&chain=BINANCE) |
 |                     | dApp Store            | [dApp Bay](https://dappbay.bnbchain.org/ranking/chain/opbnb) |
-| Oracles             | Price Feeds, VRF      | [Binance Oracle](https://oracle.binance.com/), [Supra](https://supraoracles.com/)                |
+| Oracles             | Price Feeds, VRF      | [Binance Oracle](https://oracle.binance.com/), [Supra](https://supraoracles.com/) |
 | Storage             | Decentralized Storage | [BNB Greenfield](https://greenfield.bnbchain.org/en)         |
 | Security            |                       | [AvengerDAO](https://www.avengerdao.org/)                    |
 | Account Abstraction |                       | [Particle Network](https://wallet.particle.network/),[Biconomy](https://docs.biconomy.io/supportedchains/),[CyberConnect](https://cyberconnect.me/) |
 | MultiSig            |                       | [BNBChain Multi-Sig Wallet](https://docs.bnbchain.org/opbnb-docs/docs/build-on-opbnb/multisig-wallet) |
 | Data Analytics      |                       | [DefiLlama](https://defillama.com/chain/opBNB), [CoinGecko](https://www.coingecko.com/en/chains/opbnb), [DappBay](https://dappbay.bnbchain.org/ranking/chain/opbnb) |
-| Indexing            |                       | NodeReal’s opBNB Graph QL                                |
+| Indexing            |                       | NodeReal’s opBNB Graph QL                                    |
 | NFT                 | NFT Marketplace       | [Element’s NFT Marketplace](https://element.market/opbnb)    |
 
