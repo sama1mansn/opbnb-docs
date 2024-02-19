@@ -19,7 +19,7 @@ Developing on opBNB is nearly the same as building directly on BNB Smart Chain. 
 4. [Claim Faucet](./network-faucet.md)
 5. [Deposit Asset](./deposit-to-opbnb.md)
 6. [Withdraw Asset](./withdraw-from-opbnb.md)
-7. [FAQ](../faq/)
+7. [FAQ](../faq/build-on-opbnb-faqs.md)
 
 ### Advance (Developer)
 1. [Best Practice](./developer-cheat-sheet.md)
@@ -34,7 +34,7 @@ Developing on opBNB is nearly the same as building directly on BNB Smart Chain. 
 7. [Infra and Tooling](./developer-tools.md)
 
 ### Tutorial & SDK Resources (In depth)
-1. [Tutorials](../tutorials/)
+1. [Tutorials](../tutorials/full-stack-dapp.md)
 2. [OP Stack Client SDK](https://sdk.optimism.io/)
 The SDK provides a set of tools for interacting with opBNB and also for Interlayer communication. (_[OP Stack Client SDK](https://stack.optimism.io/docs/build/sdk/) is maintained by OP Stack_)
 
