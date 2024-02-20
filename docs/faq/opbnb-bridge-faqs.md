@@ -44,11 +44,11 @@ You might have forgotten to sign the proof in the transaction history. This is a
   style={{zoom:"48%"}}
 />
 
-### Why do I need sign the proof to start the 7 days challenge window?
+### Why do I need to sign the proof to start the 7 days challenge window?
 
 When you withdraw tokens from opBNB to BSC, you need to provide a proof withdrawal to verify that your transaction on L2 is valid and consistent with the world state of L2. This is because L1 does not have access to the full world state of L2, only the data availability (DA) data and periodic snapshots of the world state from L2. The DA data is a compressed representation of the transactions on L2, which can be used to reconstruct the world state of L2 if needed. However, this process is expensive and time-consuming, so it is not done for every withdrawal. Instead, you need to submit a proof withdrawal, which is a cryptographic proof that your transaction on L2 matches the world state of L2 at a certain point in time. This way, you can ensure that your withdrawal is secure and accurate, and that no one can cheat or double-spend on L2.
 
 
 :::info Don't see your question?
-We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
+We are improving the FAQ from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free to ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::
