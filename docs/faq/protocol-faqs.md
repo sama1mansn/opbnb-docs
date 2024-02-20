@@ -15,10 +15,10 @@ The TPS of opBNB can be estimated to be around **4,761** transactions per second
 Performance is important for games because gamers expect a highly responsive experience. Any lag, delay or choppiness can hamper enjoyment and immersion in the game. For blockchain games, fast transaction speeds and throughput are crucial to enable a seamless user experience. Gamers expect in-game assets and currencies to be transferred instantly, so the underlying blockchain network must be high performance
 
 ### What is the difference between opBNB and other Optimism based layer 2 solution, like Base?
-opBNB is the first layer 2 optimistic rollup on BSC, and BSC layer 1 cost is much lower than ETH, so the cost of layer 2 on BSC will give application developers a more affordable solution. Another difference is the opBNB will include the performance optimization techniques that has been used in BSC to have a much better performance.
+opBNB is the first layer 2 optimistic rollup on BSC, and BSC layer 1 cost is much lower than ETH, so the cost of layer 2 on BSC will give application developers a more affordable solution. Another difference is the opBNB will include the performance optimization techniques that have been used in BSC to have a much better performance.
 
 ### We already have the zkBNB as a scaling solution, why opBNB is needed? 
-zkBNB is not EVM-comptatible, which means it is more suitable for NFT and token transactions, not for generic dApps. opBNB`s programability is to support applications that need more flexibility.
+zkBNB is not EVM-comptatible, which means it is more suitable for NFT and token transactions, not for generic dApps. opBNB`s programmability is to support applications that need more flexibility.
 
 ### Is opBNB connected to the superchain or is unrelated? Can opBNB be considered as just optimistic rollups on the BNB Smart Chain?
 
@@ -116,5 +116,5 @@ For opBNB testnet, https://open-platform.nodereal.io/{{yourAPIkey}}/op-bnb-testn
 The difference between latest and finalized by more than 200 blocks is expected. This is the concept in the OP design. The latest is defined as the latest unsafe block. The finalized means that the L2 block has been committed to L1 and the corresponding L1 block is finalized (by fast finality or natural finality).
 
 :::info Don't see your question?
-We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
+We are improving the FAQ from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free to ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::
