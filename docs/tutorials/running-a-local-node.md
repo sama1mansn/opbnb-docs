@@ -294,3 +294,24 @@ Please make sure to use the latest code version. If the code version is incorrec
 You also need to check if the `genesis.json` and `rollup.json` files are up to date. 
 
 In the latest code, we hardcoded the configuration of rollup.json. Instead of using `--rollup.config=./rollup.json`, you just need to use `--network=opBNBTestnet` (for the mainnet network it is opBNBMainnet). This change ensures that the contents of rollup.json will not be incorrect.
+
+### Node block is stuck and op-geth log prints: Database compacting, degraded performance database=/data/geth/chaindata
+
+If your node suddenly gets stuck and cannot grow, and your op-geth log keeps printing: Database compacting, degraded performance database=/data/geth/chaindata, 
+then you need to consider upgrading your machine specifications, increasing CPU, memory, and disk maximum throughput.
+
+This is because the current OP Stack only supports the archive mode of geth, and the disk space usage increases over time. The leveldb that geth relies on requires more machine resources to complete the compact process.
+We are working hard to support full mode geth, and further support PBSS and pebble to completely solve this problem.
+
+If you don't want to upgrade your machine's specifications and you are an advanced player, you can also try to perform offline pruning on your nodes (note that this is a dangerous operation). You can follow these steps:
+1. Shut down your machine and make sure that op-geth prints the following log: "Blockchain stopped".
+2. Search for the keyword "Chain head was updated" in the logs to confirm the block height of the last inserted block before the node was shut down. For the sake of explanation, let's assume the block height is 16667495.
+3. Wait for 16667495 to become the final state on the chain, ensuring that no reorganization has occurred. You can go to the blockchain explorer (https://opbnbscan.com/) to query this block height,
+and compare the block height hash with the one in the log. If the hashes match and a long time has passed, then we believe that this block height will not be reorganized.
+4. Get the state root hash of this block height through json-rpc.
+5. To execute pruning, use the following command: `geth snapshot prune-state --datadir {yourDataDir} --triesInMemory=32 {targetBlockStateRootHash}`, 
+making sure to replace {yourDataDir} and {targetBlockStateRootHash} with your own values.
+6. Be patient and watch the logs, the whole process may take several hours.
+7. Restart your node after pruning is complete.
+
+**Reminder: Pruning is very dangerous and may damage the data of the node. This could result in having to rerun the new node. Please only perform this operation if you are familiar with the process.**
