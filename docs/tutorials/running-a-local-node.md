@@ -311,7 +311,7 @@ and compare the block height hash with the one in the log. If the hashes match a
 4. Get the state root hash of this block height through JSON-RPC.
 5. To execute pruning, use the following command: `geth snapshot prune-state --datadir {yourDataDir} --triesInMemory=32 {targetBlockStateRootHash}`, 
 making sure to replace {yourDataDir} and {targetBlockStateRootHash} with your own values.
-6. Be patient and watch the logs, the whole process may take several hours.
+6. Be patient and observe the logs. The entire process may take dozens of hours.
 7. Restart your node after pruning is complete.
 
 **Reminder: Pruning is very dangerous and may damage the data of the node. This could result in having to rerun the new node. Please only perform this operation if you are familiar with the process.**
