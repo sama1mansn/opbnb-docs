@@ -8,7 +8,7 @@ opBNB relies on a mechanism called "fraud proofs" to ensure data availability an
 
 ### Who is responsible for gathering and bundling off-chain transactions into bundles on opBNB network?
 
-Sequencers are responisble for the aggregation of transactions, computation of the state transitions and submission of these to the rollup contract on BSC.
+Sequencers are responsible for the aggregation of transactions, computation of the state transitions and submission of these to the rollup contract on BSC.
 
 ### What is the role of the aggregator in the opBNB network?
 
@@ -16,7 +16,7 @@ Aggregators are entities responsible for gathering and bundling off-chain transa
 
 ### Can opBNB handle smart contracts and complex computations like the main BNB Chain?
 
-The opBNB network is EVM compatible and works identical to BSC from a smart contract developer’s perspective. This means that developers can easily deploy their existing Ethereum or BSC smart contracts on opBNB with minimal changes.
+The opBNB network is EVM compatible and works identically to BSC from a smart contract developer’s perspective. This means that developers can easily deploy their existing Ethereum or BSC smart contracts on opBNB with minimal changes.
 
 ### How does opBNB handle cross-contract interactions and composability?
 
@@ -35,11 +35,11 @@ Yes, this is achieved through a set of smart contracts that enable the execution
 
 ### How to allow smart contract cross chain communication between L1 and L2?
 
-Directly interacting with smart contract functions that exists on L2(opBNB) from L1(BSC), is not possible as all smart contracts on L2 is isolated from L1.
+Directly interacting with smart contract functions that exist on L2(opBNB) from L1(BSC), is not possible as all smart contracts on L2 are isolated from L1.
 
 With that said, there is a way for developers to allow arbitrary message sending by writing their own contracts to build their required business logic. More details [here](https://community.optimism.io/docs/developers/bridge/messaging/#communication-basics-between-layers).
 
 
 :::info Don't see your question?
-We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
+We are improving the FAQ from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free to ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::

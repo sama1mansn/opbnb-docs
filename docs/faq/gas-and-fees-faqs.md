@@ -31,7 +31,7 @@ Yes, there is a _fixed overhead_ for L1 data fee is **2100**, and _dynamic_overh
 
 ### How are data storage fees for rollups calculated?
 
-The data storage fees for rollups is calculated using the following formula.
+The data storage fees for rollups are calculated using the following formula.
 
 ```math
 l1_data_fee = l1_gas_price * (tx_data_gas + fixed_overhead) * dynamic_overhead
@@ -116,8 +116,8 @@ We hope this helps you understand how opBNB works and why your wallet only shows
 
 A known issue that can cause irregularly high gas prices in opBNB transactions could be due to a high L1 gas price which is calculated by averaging block transaction gas prices using the formula:<br/>
 ```(Txn Fee = Gas Price * Gas + L1 Gas Price * L1 Gas Used * L1 Fee Scalar)```<br/>
-This means that if there is an L1 block with a unusual high gas price, it will cause the gas price to be higher for a specific L2 block. This will be fixed going forward by introducing a static L1 gas price.
+This means that if there is an L1 block with an unusual high gas price, it will cause the gas price to be higher for a specific L2 block. This will be fixed going forward by introducing a static L1 gas price.
 
 :::info Don't see your question?
-We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
+We are improving the FAQ from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free to ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::

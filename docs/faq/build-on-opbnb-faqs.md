@@ -37,13 +37,13 @@ The choice of L2 or L1 depends on the specific needs of the project. L2 offers b
 
 ### Is there a possibility of a shared sequencer/liquidity with other chains built on OPStack in the future?
 
-Unfortunatelly, no, in short term, this is BNB Chain team`s goal yet.
+Unfortunately, no, in short term, this is BNB Chain team`s goal yet.
 
 ### What programming language is used for the opBNB chain and contracts?
 
 The pre-deployed smart contracts are written in Solidity, and opBNB is built with OP Stack framework. For details, please refer to [official docs](https://docs.bnbchain.org/opbnb-docs/docs/core-concepts/why-opstack) for more details.
 
-### Are there any aidrops for opBNB?
+### Are there any airdrops for opBNB?
 
 We want to clarify that there is NO airdrop planned for opBNB as of now. Please be cautious and aware of any claims or messages suggesting otherwise. Protect yourself from potential scams by staying vigilant and verifying information from official sources.
 
@@ -67,7 +67,7 @@ The process of creating and storing NFTs on the opBNB is similar to other blockc
 
 ### Why my opBNB node is unable to catch up with current blocks?
 
-There is a possibility that the node's chain has been forked and different with other nodes.
+There is a possibility that the node's chain has been forked and is different from other nodes.
 
 In the event that the chain is forked due to a hard fork, it is recommended to reset the blockchain and synchronize it with the latest version of the program:
 
@@ -82,10 +82,10 @@ Follow the instructions here to re-sync the node: https://docs.bnbchain.org/opbn
 You can follow the instructions from How to verify a contract on [Etherscan/BscScan/PolygonScan](https://forum.openzeppelin.com/t/how-to-verify-a-contract-on-etherscan-bscscan-polygonscan/14225#if-proxy-is-not-verified-10) to use the solc-input.json to verify the proxy.
 
 ### How to get proxy's constructor arguments for verification?
-To form _data agrument we need: 1) function name 2) owner address + agrument1 + argument2 + etc. Then copy "Encoded data", add "0x" at the beginning of the text and past it as _data (Bytes) argument. For details, please refer to [openzeppelin docs](https://forum.openzeppelin.com/t/how-to-verify-upgradeable-contract-on-opbnb-testnet-by-hardhat/39495/6?u=serghd).
+To form _data argument we need: 1) function name 2) owner address + argument1 + argument2 + etc. Then copy "Encoded data", add "0x" at the beginning of the text and past it as _data (Bytes) argument. For details, please refer to [openzeppelin docs](https://forum.openzeppelin.com/t/how-to-verify-upgradeable-contract-on-opbnb-testnet-by-hardhat/39495/6?u=serghd).
 
 An easier way is to look at the input data of the creation transaction for your proxy: https://testnet.opbnbscan.com/tx/0xa287b0b69472cb4961c528b16e799136a520f700b5407595314c3cdd0a21f8d6?tab=overview 3. You can see that the encoded constructor arguments are at the last portion of the bytecode.
 
 :::info Don't see your question?
-We are improving FAQ with from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
+We are improving the FAQ from time to time, to include latest questions from the community and partners, bookmark this page! However, if you don't see your question, please feel free to ask in the [BNB forum](https://forum.bnbchain.org/) and [Discord](https://discord.com/invite/bnbchain support channel
 :::
