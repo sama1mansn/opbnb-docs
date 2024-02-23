@@ -1,1 +1,1 @@
-# The sequencer and censorship resistence mechnism
+# The sequencer and censorship resistance mechanism

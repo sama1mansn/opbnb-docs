@@ -8,28 +8,28 @@ This is the GitHub repo of the official documentation for opBNB. This app is bui
 
 ### Prerequisites
 
-  - **Node** _version >= 16 or above_
-    - _node -v_
-      - v16.14.0
+- **Node** _version >= 16 or above_
 
-  - **Yarn** _version >= 1.5 _
-    - _yarn --version_
-      - 1.22.19
+  - _node -v_
+    - v16.14.0
+
+- **Yarn** _version >= 1.5 _
+  - _yarn --version_
+    - 1.22.19
 
 ### How to Run Locally
 
-Clone the reository and run the following commands.
+Clone the repository and run the following commands.
 
 ### Installing Dependencies
 
-* Install the packages.
+- Install the packages.
 
 ```bash
 $ yarn install
 ```
 
-* Start local development server
-
+- Start local development server
 
 ```bash
 $ yarn start
@@ -38,6 +38,7 @@ $ yarn start
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ### Build
+
 We recommend to use the yarn package for building and deploying this website.
 
 ```bash
@@ -49,7 +50,7 @@ This command generates static content into the `build` directory and can be serv
 ### Build and Serve locally
 
 ```bash
-$ yarn start 
+$ yarn start
 ```
 
 ### Serve Locally after build is created

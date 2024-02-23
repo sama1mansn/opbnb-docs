@@ -12,8 +12,6 @@ opBNBScan provides a convenient and user-friendly platform for developers to ver
 3. And create your API key by clicking the **create new key** button.
 4. Copy your API key to your clipboard and and use it as your key of smart verification contract APIs.
 
-
-
 ## **Hardhat**
 
 You can use the [hardhat-verify](https://hardhat.org/hardhat-runner/docs/guides/verifying) plugin to verify your deployed smart contract. You can follow the steps in the hardhat document. Below is an example of how to configure your hardhat.config.js. Pay attention to the network's configuration settings, and replace the corresponding settings that meet your requirements.
@@ -24,37 +22,38 @@ require("@nomicfoundation/hardhat-verify");
 /** @type import('hardhat/config').HardhatUserConfig */
 
 module.exports = {
-solidity: "0.8.19", //replace your own solidity compiler version
-networks: {
- opbnb: {
-  url: "https://opbnb-testnet-rpc.bnbchain.org/", 
-  chainId: 5611, // Replace with the correct chainId for the "opbnb" network
-  accounts: ["{{YOUR-PRVIATE-KEY}}"], // Add private keys or mnemonics of accounts to use 
-  gasPrice: 20000000000,
- },
-},
-etherscan: {
- apiKey: {
-  opbnb: "{{YOUR-NODEREAL-API-KEY}}",//replace your nodereal API key
- },
-
-customChains: [
- {
-  network: "opbnb",
-  chainId: 5611, // Replace with the correct chainId for the "opbnb" network
-  urls: {
-    apiURL:  "https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-testnet/contract/",
-    browserURL: "https://testnet.opbnbscan.com/",
+  solidity: "0.8.19", //replace your own solidity compiler version
+  networks: {
+    opbnb: {
+      url: "https://opbnb-testnet-rpc.bnbchain.org/",
+      chainId: 5611, // Replace with the correct chainId for the "opbnb" network
+      accounts: ["{{YOUR-PRIVATE-KEY}}"], // Add private keys or mnemonics of accounts to use
+      gasPrice: 20000000000,
+    },
   },
- },
-],
-},
+  etherscan: {
+    apiKey: {
+      opbnb: "{{YOUR-NODEREAL-API-KEY}}", //replace your nodereal API key
+    },
+
+    customChains: [
+      {
+        network: "opbnb",
+        chainId: 5611, // Replace with the correct chainId for the "opbnb" network
+        urls: {
+          apiURL:
+            "https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-testnet/contract/",
+          browserURL: "https://testnet.opbnbscan.com/",
+        },
+      },
+    ],
+  },
 };
 ```
 
 ## **Truffle**
 
-You can also use truffle to verify your smart contract on opBNBScan. 
+You can also use truffle to verify your smart contract on opBNBScan.
 
 Please make sure the truffle-plugin-verify is installed correctly, and in the plugin, add the 'truffle-plugin-verify'
 
@@ -63,7 +62,7 @@ module.exports = {
  plugins: [
   'truffle-plugin-verify'
  ],
- networks: 
+ networks:
  {
   development: {
   	host: "127.0.0.1", // Localhost (default: none)
@@ -73,7 +72,7 @@ module.exports = {
  	dashboard: {
   	verify: {
   	apiUrl: 'https://open-platform.nodereal.io/{{YOUR-NODEREAL-API-KEY}}/op-bnb-testnet/contract/',
-  	apiKey: '{{YOUR-NODEREAL-API-KEY}}', 
+  	apiKey: '{{YOUR-NODEREAL-API-KEY}}',
   	explorerUrl: 'https://testnet.opbnbscan.com/',
  		},
  			host: "127.0.0.1",
@@ -93,13 +92,13 @@ compilers: {
 },
 ```
 
-Make sure your smart contract is deployed first. I am using the dashboard to avoid saving your private credentials to your local machine. 
+Make sure your smart contract is deployed first. I am using the dashboard to avoid saving your private credentials to your local machine.
 
 ```shell
 npx truffle migrate –network dashboard
 ```
 
-And then you can verify your smart contract by specifying your contract name 
+And then you can verify your smart contract by specifying your contract name
 
 ```shell
 npx truffle run verify {{Your-Contract-Name}} --network dashboard

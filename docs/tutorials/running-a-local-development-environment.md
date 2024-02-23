@@ -1,7 +1,8 @@
 ---
-sidebar_label: Run Local Dev Enviroment
+sidebar_label: Run Local Dev Environment
 description: Guide to running a local development environment
 ---
+
 # Running a local development environment
 
 Install and start the entire opbnb system locally, including L1 (BNB Smart Chain) and L2 development nodes. Running a local development environment is a great way to test the behavior of your code and contracts.
@@ -9,9 +10,10 @@ Install and start the entire opbnb system locally, including L1 (BNB Smart Chain
 ## How to do it
 
 1. Make sure the following software is installed: golang, node 16+, yarn, make, python2, python3, docker, foundry.  
-    Tips:
+   Tips:
 
-    Install Foundry by following [the instructions located here](https://getfoundry.sh/).
+   Install Foundry by following [the instructions located here](https://getfoundry.sh/).
+
 2. Clone opbnb monorepo:
 
 ```shell
@@ -32,6 +34,7 @@ To clean everything, run (in the root directory of the monorepo) `make devnet-cl
 To view logs, run `make devnet-logs`
 
 # Notes
+
 1. If you encounter a ValueError: invalid mode: 'rU' while trying to load binding.gyp error when executing `yarn`, this may be caused by python3 installed on your computer but Npm requires python 2.7. You need to install python 2.7 and configure the environment variable to specify the python version to use: `export npm_config_python=/path/to/executable/python`.
 2. When executing for the first time, please be patient if you see the message "wait L1 up...", as the BSC network takes time to initialize.
 3. If you encounter an error during the "Deploying contracts" step, please try again as it usually recovers.
@@ -42,10 +45,12 @@ To view logs, run `make devnet-logs`
 L1 chain ID is `714`.  
 L2 chain ID is `901`.
 
-L1 test account:  
+L1 test account:
+
 - address: `0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266`
 - Private key: `ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80`
 
-L2 test account:  
+L2 test account:
+
 - Address: `0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266`
 - Private key: `ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80`

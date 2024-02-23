@@ -1,5 +1,5 @@
 ---
-title: Set Gas Price 
+title: Set Gas Price
 description: How to set the base price and priority price for opBNB transactions
 icon: code
 index: yes
@@ -7,11 +7,11 @@ dir:
   order: 2
 ---
 
-:::caution 
-This is a living document and is susceptible to changes. 
+:::caution
+This is a living document and is susceptible to changes.
 :::
 
-This document shows you how to set the priority price and base price for opBNB transactions in wallet. These prices determine how much you are willing to pay for your transaction to be included in the next block(Prioirty Gas Price) and how much you are willing to pay for the gas used by your transaction. Setting these prices correctly can help you save money and avoid delays.
+This document shows you how to set the priority price and base price for opBNB transactions in wallet. These prices determine how much you are willing to pay for your transaction to be included in the next block (Priority Gas Price) and how much you are willing to pay for the gas used by your transaction. Setting these prices correctly can help you save money and avoid delays.
 
 To set the priority price and base price, follow these steps:
 
@@ -24,23 +24,19 @@ Metamask:
 3. Before you confirm your transaction, click on the **advanced->edit** button next to the gas fee section.
 
    <img
-     src={require('../../static/img/gas-price-setting.png').default}
-     alt="opBNB-bridge"
-     style={{zoom:"48%"}}
+   src={require('../../static/img/gas-price-setting.png').default}
+   alt="opBNB-bridge"
+   style={{zoom:"48%"}}
    />
 
-
-4. You will see two sliders: one for the **Max base fee(Gwei)** price and one for the **Priority Fee(Gwei)**. The priority price is the amount of opBNB you are willing to pay per unit of gas for your transaction to be included in the next block. The base price is the amount of opBNB you are willing to pay per unit of gas for the gas used by your transaction. The total gas fee is the sum of these two prices multiplied by the gas consumed. The base fee for opBNB transactions is dynamic and depends on the demand for block space. The minimum possible base fee is 0.000000008 gwei. The priority fee, which is paid to the sequencer who includes the transaction in a block, can also be as low as 0.000000001 gwei. However, these fees may vary depending on the network congestion and the urgency of the transaction. 
+4. You will see two sliders: one for the **Max base fee(Gwei)** price and one for the **Priority Fee(Gwei)**. The priority price is the amount of opBNB you are willing to pay per unit of gas for your transaction to be included in the next block. The base price is the amount of opBNB you are willing to pay per unit of gas for the gas used by your transaction. The total gas fee is the sum of these two prices multiplied by the gas consumed. The base fee for opBNB transactions is dynamic and depends on the demand for block space. The minimum possible base fee is 0.000000008 gwei. The priority fee, which is paid to the sequencer who includes the transaction in a block, can also be as low as 0.000000001 gwei. However, these fees may vary depending on the network congestion and the urgency of the transaction.
 
    <img
-     src={require('../../static/img/advanced-setting.png').default}
-     alt="opBNB-bridge"
-     style={{zoom:"48%"}}
+   src={require('../../static/img/advanced-setting.png').default}
+   alt="opBNB-bridge"
+   style={{zoom:"48%"}}
    />
-
-   
 
 5. You can adjust the sliders according to your preferences. The higher the priority price, the faster your transaction will be confirmed, but the more expensive it will be. The lower the base price, the cheaper your transaction will be, but the more likely it will fail if the gas limit is too low.
 
 6. Once you are satisfied with your settings, click on save and then confirm your transaction.
-
