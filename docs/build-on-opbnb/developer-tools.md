@@ -25,11 +25,17 @@ On **Account Abstraction(AA)**, [CyberConnect](https://cyberconnect.me/), [Parti
 
 **MultiSig** wallet BNB Chain has provided its own [Safe Multi-Sig Wallet](https://docs.bnbchain.org/opbnb-docs/docs/build-on-opbnb/multisig-wallet). 
 
-**Wallet as a Service**
+Wallet as a Service[WaaS]
 
 Wallet-as-a-Service (WaaS) streamlines the integration of digital wallets into applications, allowing businesses to manage cryptocurrencies and tokens effortlessly. By handling the complexities of wallet infrastructure, WaaS enables a secure and user-friendly experience for managing digital assets, fostering wider blockchain adoption and enhancing operational efficiency.
 
-[Particle](https://particle.network/), [Sequence.build](https://sequence.build/landing), and [Avatar](https://avatarwallet.io/) have supported Wallet-as-a-Service (WaaS) platforms on the BNB Smart Chain and opBNB, facilitating seamless integration of digital wallet functionalities into applications for managing opBNB and other assets. 
+Below wallet have supported Wallet-as-a-Service (WaaS) platforms on the BNB Smart Chain and opBNB, facilitating seamless integration of digital wallet functionalities into applications for managing opBNB and other assets.
+
+| **Project Name** | **Main Website**          | **WaaS Document**                                 |
+| ---------------- | ------------------------- | ------------------------------------------------- |
+| Particle Network | https://particle.network/ | https://particle.network/wallet-introduction.html |
+| Sequence.build   | https://sequence.xyz/     | https://sequence.build/landing                    |
+| Avatar Wallet    | https://avatarwallet.io/  | https://docs.avatarwallet.io/docs/introduction    |
 
 **Bridges** 
 
