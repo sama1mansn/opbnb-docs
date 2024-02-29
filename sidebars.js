@@ -41,6 +41,7 @@ const sidebars = {
         'core-concepts/cross-chain',
         'core-concepts/gas-and-fees',
         'core-concepts/account-abstraction-on-opbnb',
+        'core-concepts/raas',
       ],
     },
     {
