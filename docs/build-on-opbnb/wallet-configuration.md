@@ -7,15 +7,15 @@ dir:
   order: 4
 ---
 
-:::caution 
-This is a living document and is susceptible to changes. 
+:::caution
+This is a living document and is susceptible to changes.
 :::
 
 # Wallet configuration
 
-You can use any Etheruem or BSC wallet with opBNB. For instance, I will show you how to set up Metamask and Trustwallet for opBNB.
+You can use any Ethereum or BSC wallet with opBNB. For instance, I will show you how to set up Metamask and Trustwallet for opBNB.
 
-To configure your wallet to work with opBNB, you will need to add both the BNB smart chain(Layer 1) and the opBNB network(Layer 2). Follow these steps: 
+To configure your wallet to work with opBNB, you will need to add both the BNB smart chain(Layer 1) and the opBNB network(Layer 2). Follow these steps:
 
 1. Add the BNB smart chain to your wallet. This is the Layer 1 blockchain that opBNB is built on top of.
 
@@ -30,12 +30,12 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
    #### Mainnet
 
    - Network Name: BSC Mainnet
-   - RPC URL:  [https://bsc.nodereal.io](https://bsc.nodereal.io)
+   - RPC URL: [https://bsc.nodereal.io](https://bsc.nodereal.io)
    - ChainID: 56
    - Symbol: BNB
    - Explorer: [https://bscscan.com/](https://bscscan.com/)
 
-2. Add the opBNB network to your wallet. 
+2. Add the opBNB network to your wallet.
 
    #### Testnet
 
@@ -60,23 +60,23 @@ To configure your wallet to work with opBNB, you will need to add both the BNB s
 After you install the Trustwallet in your browser, you can go to settings->network.
 
 <img
-  src={require('../../static/img/add-bsc-trustwallet.png').default}
-  alt="opBNB-bridge"
-  style={{zoom:"48%"}}
+src={require('../../static/img/add-bsc-trustwallet.png').default}
+alt="opBNB-bridge"
+style={{zoom:"48%"}}
 />
 
 Select add custom network and enter the network information I mentioned above.
 
-*[Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)*
+_[Metamask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn)_
 
-After you install the metamask in your browser, you can go to settings -> networks -> add network page. 
+After you install the metamask in your browser, you can go to settings -> networks -> add network page.
 
 Select add manual network and enter the network information.
 
 <img
-  src={require('../../static/img/add-bsc-metamask.png').default}
-  alt="opBNB-bridge"
-  style={{zoom:"48%"}}
+src={require('../../static/img/add-bsc-metamask.png').default}
+alt="opBNB-bridge"
+style={{zoom:"48%"}}
 />
 
 :::info
