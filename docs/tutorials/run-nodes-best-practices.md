@@ -33,6 +33,16 @@ The variances between the modes and storage schemes are encapsulated as follows:
     - Archive node mode is only compatible with HBSS, whereas Full and Fast node modes support both HBSS and PBSS.
     - For further details, please consult the [PBSS document](./pbss-pebble.md).
 
+Comparative Analysis of Node Modes and Storage Schemes:
+
+| **Mode**                       | **Full Node (PBSS)** | **Full Node (HBSS)** | **Fast Node**                                            | **Archive Node** |
+|--------------------------------|----------------------|----------------------|----------------------------------------------------------|------------------|
+| **Preserve Trie Nodes**        | Latest 128 blocks    | Latest 128 blocks    | None                                                     | All              |
+| **Disk Consumption**           | Moderate-Low         | Moderate-High        | Lowest                                                   | Highest          |
+|**Auto Prune History Trie Data**| Yes                  | No                   | Not Applicable                                           | Not Applicable   |
+| **Performance**                | Moderate-High        | Moderate-Low         | Highest                                                  | Lowest           |
+| **Security**                   | High                 | High                 | Lower than others since it doesn't verify the state root | High             |
+
 ### Fast Node
 
 For most applications, operating a fast node is advisable. This mode maintains only the current state, sans trie data, making it suitable for tasks such as querying the current state and processing transactions.
