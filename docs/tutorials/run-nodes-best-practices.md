@@ -1,49 +1,49 @@
 ---
 sidebar_label: Best Practices for opBNB Node Configuration
-description: Guide on running an opBNB Node with best practices
+description: Comprehensive Manual for Operating an opBNB Node Utilizing Best Practices
 ---
 
 # Best Practices for opBNB Node Configuration
 
-This guide provides best practices for configuring and running an opBNB Node.
+This manual delineates Best practices for the configuration and operation of an opBNB Node.
 
-## Choosing the Right Mode and Storage Scheme
+## Selecting the Appropriate Mode and Storage Scheme
 
-opBNB supports different node modes: Full, Fast, and Archive.
-There are two storage schemes available: HBSS (Hash-Based Scheme Storage) and PBSS (Path-Based Scheme Storage).
+opBNB accommodates various node modes: Full, Fast, and Archive.
+Two storage schemes are available: HBSS (Hash-Based Scheme Storage) and PBSS (Path-Based Scheme Storage).
 
-The core differences between them are how they preserve history trie data.
+The principal distinctions between them lie in their methods of preserving history trie data.
 
-The Merkle Patricia Trie (MPT) is a data structure used to efficiently store and retrieve key-value pairs. It combines the concepts of a Patricia trie and a Merkle tree to provide a secure and immutable way to represent data stored in the Ethereum Virtual Machine (EVM).
+The Merkle Patricia Trie (MPT), an advanced data structure, is adept at storing and retrieving key-value pairs with efficiency. It amalgamates the principles of a Patricia trie and a Merkle tree to forge a secure and immutable representation of data within the Ethereum Virtual Machine (EVM).
 
-The MPT provides features like below
-- Get history data: It's possible to get the balance of specific account at specific block height, simulate call at specific block height, debug trace at specific block height, etc.
-- Proof of Inclusion and Non-Inclusion:
-MPT enables proofs of both inclusion and non-inclusion of key-value pairs. This feature is crucial for verifying transactions and maintaining the integrity of the blockchain.
+The MPT endows the following capabilities:
+- Access to historical data: Enables retrieval of an account's balance at a specified block height, simulation of calls, and debugging of traces at particular block heights, among others.
+- Verification of Inclusion and Exclusion:
+The MPT facilitates proofs of both inclusion and exclusion of key-value pairs, a pivotal feature for transaction verification and blockchain integrity maintenance.
 
-However, storing the entire history trie data on disk can be resource-intensive and may not be necessary for all use cases. opBNB provides different node modes and storage schemes to cater to various requirements.
+Nevertheless, the preservation of entire history trie data on disk can demand substantial resources and may be superfluous for certain applications. opBNB introduces diverse node modes and storage schemes to accommodate a range of requirements.
 
-The differences between the modes and storage schemes are as follows:
-- Archive node mode stores the entire history trie data. Full node stores the recent trie data(128 blocks), fast node only stores the current state without trie data.
-    - The requests like get blocks, transactions, receipts, logs, etc. are supported by all node modes. Since the block data is stored in the block database, it is not affected by the trie data storage scheme.
-    - The requests to get history state data differs by node mode. Archive node supports all history state data, full node and fast node support the recent 128 blocks state data.
-    - The requests which require trie data like eth_getProof, eth_getStorageAt, etc. Archive node supports all of them. Full node supports query of the recent 128 blocks, fast node does not support.
-- PBSS stores trie nodes on disk using the encoded path and a specific key prefix as the key. This approach allows PBSS's Merkle Patricia Trie (MPT) to overwrite older data due to the shared key between the account trie and storage trie. This
-feature not only enables **online pruning** but also significantly **reduces data redundancy**.
-    - Archive node only supports HBSS, full node and fast node support both HBSS and PBSS.
-    - Please refer to [PBSS document](./pbss-pebble.md) for more details.
+The variances between the modes and storage schemes are encapsulated as follows:
+- Archive node mode conserves the complete history trie data. Full node mode archives recent trie data (128 blocks), whereas the fast node mode retains only the current state, excluding trie data.
+    - Functions such as block, transaction, receipt, and log retrieval are supported across all node modes. Since block data is preserved in the block database, it remains unaffected by the trie data storage scheme.
+    - The capability to access historical state data varies by node mode. Archive nodes support comprehensive historical state data retrieval, whereas full and fast nodes facilitate access to recent 128 blocks' state data.
+    - Trie data-dependent functions like `eth_getProof`, `eth_getStorageAt`, etc., are fully supported by Archive nodes. Full nodes offer queries for recent 128 blocks, whereas fast nodes lack this support.
+    - Specifically, given that the transfer from Layer 2 to Layer 1 necessitates `eth_getProof` data corresponding to the most recent root hash height, we have implemented certain enhancements within the full node configuration to facilitate `eth_getProof` for the latest root hash height, irrespective of it surpassing the 128-block threshold. Should you require the utilization of your personal node for the assembly of withdrawal proof, the full node mode is at your disposal.
+- PBSS archives trie nodes on disk utilizing encoded paths and specific key prefixes as keys. This method permits PBSS's Merkle Patricia Trie (MPT) to supersede older data due to the shared key between the account trie and storage trie, enabling **online pruning** and significantly **diminishing data redundancy**.
+    - Archive node mode is only compatible with HBSS, whereas Full and Fast node modes support both HBSS and PBSS.
+    - For further details, please consult the [PBSS document](./pbss-pebble.md).
 
 ### Fast Node
 
-It's recommended to run a fast node for most use cases. Fast node only stores the current state without trie data. It's suitable for most use cases like querying the current state, sending transactions, etc.
+For most applications, operating a fast node is advisable. This mode maintains only the current state, sans trie data, making it suitable for tasks such as querying the current state and processing transactions.
 
-If you want to enable the fast node, you can add `--allow-insecure-no-tries` in the `op-geth` start command.
+To activate the fast node, include `--allow-insecure-no-tries` in the `op-geth` startup command.
 
 ```
  ./geth --config ./config.toml --datadir ./node --syncmode full  --allow-insecure-no-tries
 ```
 
-If you want to prune the MPT state(e.g. when you switch from full node to fast node), you can also prune the node:
+To prune the MPT state (e.g., when transitioning from a full to a fast node), prune the node as follows:
 
 ```
 ./geth snapshot insecure-prune-all --datadir ./datadir ./genesis.json
@@ -55,34 +55,34 @@ Once the Fast Node is running, there is no way to switch back to Full Node.
 Need to re-download snapshot data to restore it to Full Node.
 :::
 
-Please refer to [the PR](https://github.com/bnb-chain/op-geth/pull/75) for the implementation and more details.
+For implementation details and further information, refer to [the PR](https://github.com/bnb-chain/op-geth/pull/75).
 
 ### Full Node
 
-You can run a full node if you need
-- A higher level of security and reliability assurance. Full node executes all blocks and verifies locally.
-- The ability to query with the recent 128 blocks' trie data. E.g. get the balance of specific account at specific block height, simulate call at specific block height, debug trace at specific block height, etc.
+Operating a full node is recommended if you require:
+- Enhanced security and reliability assurances. The full node meticulously executes and locally verifies all blocks.
+- The facility to query trie data of the most recent 128 blocks, such as retrieving an account's balance at a specific block height, simulating calls, and debugging traces.
 
-If you want to enable the full node, you can set the syncmode flag to full(`--syncmode full`) in the `geth` command.
+To enable the full node, set the `--syncmode full` flag in the `geth` command.
 
-Specifically, it's recommended to run a full node with PBSS and pebble to reduce data redundancy and have a better performance.
+It is particularly advised to operate a full node with PBSS and pebble to minimize data redundancy and enhance performance.
 
 ```
 --state.scheme path --db.engine pebble
 ```
 
-Please refer to [PBSS document](./pbss-pebble.md) for more details.
+For comprehensive details, consult the [PBSS document](./pbss-pebble.md).
 
 ### Archive Node(with op-reth)
 
-Archive node stores the entire history trie data.
-It's suitable for use cases that require the entire history trie data, e.g. block explorer, analytics, etc.
+The Archive node mode archives the entirety of history trie data.
+This mode is apt for scenarios necessitating access to the complete history trie data, such as block explorers and analytics.
 
-The current history trie data is around 3TB (at the end of April, 2024).
-The op-geth implementation will have a significant performance issue when the history trie data is large.
-It's recommended to run the archive node with op-reth.
+The current volume of history trie data approximates 3TB (as of the end of April, 2024).
+Significant performance issues may arise in the op-geth implementation when managing extensive history trie data.
+Therefore, it is recommended to operate the archive node in conjunction with op-reth.
 
-The example command to run the archive node with op-reth is as follows:
+Below is an exemplary command for initiating the archive node with op-reth:
 
 ```
 export L2_RPC=https://opbnb-mainnet-rpc.bnbchain.org
@@ -104,10 +104,44 @@ op-reth node \
     --nat any
 ```
 
-You can refer to the [op-reth github repository](https://github.com/bnb-chain/reth) for more details.
+For further particulars, visit the [op-reth GitHub repository](https://github.com/bnb-chain/reth).
 
 ## Snapshots
 
-You can download the latest snapshot data from the [opbnb-snapshot](https://github.com/bnb-chain/opbnb-snapshot) repository.
+The latest snapshot data is accessible via the [opbnb-snapshot](https://github.com/bnb-chain/opbnb-snapshot) repository.
 
-Using the snapshot data can significantly reduce the time required to sync the node.
+Employing snapshot data can drastically curtail the time required for node synchronization.
+
+## Performance Optimization
+
+In order to enhance the performance of `op-geth`, it is crucial to configure the cache settings appropriately. Allocating approximately one-third of the physical memory to the cache is advisable. For instance, if the system has 64GB of physical memory, the cache setting can be configured as:
+
+```
+--cache 20000
+```
+
+This allocation ensures that the cache is optimized for efficient use of system resources, ultimately leading to improved performance of `op-geth`.
+
+## Running Server as a Daemon
+
+To ensure continuous operation, it is important to keep `op-node` and `op-geth` running at all times. One of the simplest and recommended solutions is to register them as systemd service. By doing so, they will automatically start upon system reboots and other relevant events, ensuring seamless operation without manual intervention.
+
+## Security
+
+### Securing Your Full Node RPC from Hackers
+
+It is imperative to safeguard your Full Node RPC endpoints from unauthorized access. Exposing RPC endpoints to the public network can pose security risks, making it essential to restrict access and implement appropriate security measures to prevent unauthorized intrusion.
+
+### Software Vulnerabilities
+
+To ensure the security of your node and assets, it is crucial to download software only from official sources. Additionally, it is important to consistently update the software to the latest, most secure version available. By adhering to these practices, you can mitigate the risk of potential vulnerabilities and safeguard your node and assets from security threats.
+
+## FAQ
+
+### Why does my node experience offline status or block height lag after an abrupt termination?
+
+After running a synchronized node for an extended period of time, abruptly terminating the node(op-geth process) can result in a period of offline status upon restart. Specifically, only archived nodes are expected to quickly re-synchronize after such an event.
+
+The reason for this behavior lies in the nature of Geth's functionality. When Geth experiences a crash or is not shut down gracefully, the recent state that was held in memory is lost and must be regenerated. As a result, it can take Geth a considerable amount of time to restore these states.
+
+The root cause of this prolonged restoration process can be attributed to the fact that Geth does flush the state trie periodically. The frequency of this flushing is defined by the trieTimeout parameter in the configuration file (config.toml). This periodic flushing is intended to maintain consistency and integrity within the node's state, but it also contributes to the time required for state regeneration in the event of an abrupt shutdown.
