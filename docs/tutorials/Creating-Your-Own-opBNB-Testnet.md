@@ -101,14 +101,6 @@ You can choose the appropriate version according to your needs. The develop bran
 git checkout develop
 ```
 
-### Check your dependencies
-
-Run the following script and double check that you have all of the required versions installed. If you don't have the correct versions installed, you may run into unexpected errors.
-
-```
-./packages/contracts-bedrock/scripts/getting-started/versions.sh
-```
-
 ### Install dependencies
 
 ```
@@ -127,6 +119,13 @@ pnpm build
 ```
 cd ~
 git clone https://github.com/bnb-chain/op-geth.git
+```
+
+### Check out the correct branch
+
+You can choose the appropriate version according to your needs. The develop branch has the latest features.
+```
+git checkout develop
 ```
 
 ### Enter op-geth
@@ -159,7 +158,7 @@ Open up the environment variable file and fill out the following variables:
 | Variable Name |                                                 Description                                                  |
 |:----------:|:------------------------------------------------------------------------------------------------------------:|
 |    L1_RPC_URL    |                                             URL for your L1 node                                             |
-|     L1_RPC_KIND     | Kind of L1 RPC you're connecting to, used to inform optimal transactions receipts fetching. Recommend using `l1.rpckind=bsc_fullnode` |
+|     L1_RPC_KIND     | Kind of L1 RPC you're connecting to, used to inform optimal transactions receipts fetching.|
 
 # Generate Addresses
 You'll need four addresses and their private keys when setting up the chain:
@@ -183,21 +182,22 @@ cd ~/opbnb
 Make sure that you see output that looks something like the following:
 ```
 Copy the following into your .envrc file:
-  
-# Admin address
-export GS_ADMIN_ADDRESS=0x9625B9aF7C42b4Ab7f2C437dbc4ee749d52E19FC
-export GS_ADMIN_PRIVATE_KEY=0xbb93a75f64c57c6f464fd259ea37c2d4694110df57b2e293db8226a502b30a34
-# Batcher address
-export GS_BATCHER_ADDRESS=0xa1AEF4C07AB21E39c37F05466b872094edcf9cB1
-export GS_BATCHER_PRIVATE_KEY=0xe4d9cd91a3e53853b7ea0dad275efdb5173666720b1100866fb2d89757ca9c5a
-  
-# Proposer address
-export GS_PROPOSER_ADDRESS=0x40E805e252D0Ee3D587b68736544dEfB419F351b
-export GS_PROPOSER_PRIVATE_KEY=0x2d1f265683ebe37d960c67df03a378f79a7859038c6d634a61e40776d561f8a2
-  
-# Sequencer address
-export GS_SEQUENCER_ADDRESS=0xC06566E8Ec6cF81B4B26376880dB620d83d50Dfb
-export GS_SEQUENCER_PRIVATE_KEY=0x2a0290473f3838dbd083a5e17783e3cc33c905539c0121f9c76614dda8a38dca
+
+# Admin account
+export GS_ADMIN_ADDRESS=0xC18e23D98F121c48a56E19302D1B7FB9b82A0F2E
+export GS_ADMIN_PRIVATE_KEY=0x5d5e555305c69711eb31dd24dd1530b137489c54ddc83afd421f581c3fbf6c67
+
+# Batcher account
+export GS_BATCHER_ADDRESS=0x7527Cc2860B71E654a98235c8CF5D8Ca792040FE
+export GS_BATCHER_PRIVATE_KEY=0xf6c2a7cf909a41fc227b03cf6474c66eaff5e05b36a89394f5a5129598fa8d13
+
+# Proposer account
+export GS_PROPOSER_ADDRESS=0xeE7579518904123AE4b3BaB729A4B9c9c08D5658
+export GS_PROPOSER_PRIVATE_KEY=0x95176e9e67c1b97b4b7aaedf66e0b34b446f8683d545b44214240f6f1cfa6891
+
+# Sequencer account
+export GS_SEQUENCER_ADDRESS=0xeCF961D156a2ce02E98Ad26E79De62BcFd403cfd
+export GS_SEQUENCER_PRIVATE_KEY=0xbb019ddc5f081b2be0c1c9406f89887ba90f4c8efbe5c4073ee067e56d3107ea
 ```
 
 ## Save the addresses
@@ -206,7 +206,7 @@ Copy the output from the previous step and paste it into your `.envrc` file as d
 ## Fund the addresses
 You will need to send BNB to the Admin, Proposer, and Batcher addresses. The exact amount of BNB required depends on the L1 network being used. You do not need to send any BNB to the Sequencer address as it does not send transactions.
 
-It's recommended to fund the addresses with the following amounts when using Sepolia:
+It's recommended to fund the addresses with the following amounts when using BSC testnet:
 
 * Admin — 1 BNB
 * Proposer — 0.5 BNB
@@ -302,10 +302,6 @@ forge script scripts/Deploy.s.sol:Deploy --private-key $GS_ADMIN_PRIVATE_KEY --b
 ```
 If you see a nondescript error that includes `EvmError: Revert` and `Script failed` then you likely need to change the `IMPL_SALT` environment variable. This variable determines the addresses of various smart contracts that are deployed via [CREATE2](https://eips.ethereum.org/EIPS/eip-1014). If the same `IMPL_SALT` is used to deploy the same contracts twice, the second deployment will fail. You can generate a new `IMPL_SALT` by running `direnv` allow anywhere in the opbnb.
 
-## Generate contract artifacts
-``` 
-forge script scripts/Deploy.s.sol:Deploy --sig 'sync()' --rpc-url $L1_RPC_URL
-```
 
 ## Generate the L2 config files
 
@@ -327,7 +323,7 @@ Now you'll generate the `genesis.json` and `rollup.json` files within the op-nod
 ```
 go run cmd/main.go genesis l2 \
   --deploy-config ../packages/contracts-bedrock/deploy-config/getting-started.json \
-  --deployment-dir ../packages/contracts-bedrock/deployments/getting-started/ \
+  --l1-deployments ../packages/contracts-bedrock/deployments/getting-started/.deploy \
   --outfile.l2 genesis.json \
   --outfile.rollup rollup.json \
   --l1-rpc $L1_RPC_URL
@@ -496,7 +492,7 @@ cd ~/opbnb/op-proposer
   --poll-interval=1s \
   --rpc.port=8560 \
   --rollup-rpc=http://localhost:8547 \
-  --l2oo-address=$(cat ../packages/contracts-bedrock/deployments/getting-started/L2OutputOracleProxy.json | jq -r .address) \
+  --l2oo-address=$(cat ../packages/contracts-bedrock/deployments/getting-started/.deploy | jq -r .L2OutputOracleProxy) \
   --private-key=$GS_PROPOSER_PRIVATE_KEY \
   --l1-eth-rpc=$L1_RPC_URL
 ```
@@ -505,7 +501,7 @@ cd ~/opbnb/op-proposer
 
 You now have a fully functioning opBNB with a Sequencer node running on http://localhost:8545. You can connect your wallet to this chain the same way you'd connect your wallet to any other EVM chain.
 
-# Get ETH On Your Chain
+# Get BNB On Your Chain
 
 Once you've connected your wallet, you'll probably notice that you don't have any BNB to pay for gas on your chain. The easiest way to deposit BNB into your chain is to send BNB directly to the `L1StandardBridge` contract.
 
@@ -516,7 +512,7 @@ cd ~/opbnb/packages/contracts-bedrock
 
 ## Get the address of the L1StandardBridgeProxy contract
 ```
-cat deployments/getting-started/L1StandardBridgeProxy.json | jq -r .address
+cat deployments/getting-started/.deploy | jq -r .L1StandardBridgeProxy
 ```
 
 ## Send some BNB to the L1StandardBridgeProxy contract
