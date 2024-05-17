@@ -1,33 +1,33 @@
 ---
-sidebar_label: Creating Your Own opBNB Testnet
-description: Guide to creating your own opBNB Testnet
+sidebar_label: Creating Your Own L2 Rollup Testnet
+description: Guide to creating your own l2 rollup Testnet
 ---
 
-# Creating Your Own opBNB Testnet
+# Creating Your Own L2 Rollup Testnet
 
-This tutorial is designed for developers who want to learn about the opBNB by creating opBNB testnet chain. You'll walk through the full deployment process and teach you all of the components that make up the opBNB, and you'll end up with your own opBNB testnet.
+This tutorial is designed for developers who want to create l2 rollup testnet chain. You'll walk through the full deployment process and teach you all of the components that make up the l2 rollup, and you'll end up with your own l2 rollup testnet.
 
 You can use this testnet to experiment and perform tests, or you can choose to modify the chain to adapt it to your own needs.
 
 # What You're Going to Deploy
 
-When deploying an opBNB chain, you'll be setting up four different components. It's useful to understand what each of these components does before you start deploying your chain.
+When deploying a l2 rollup chain, you'll be setting up four different components. It's useful to understand what each of these components does before you start deploying your chain.
 
 ## Smart Contracts
 
-The opBNB gives you the ability to deploy your own opBNB that use a Layer 1 blockchain to host and order transaction data. OpBNB use several smart contracts on the L1 blockchain to manage aspects of the Rollup. You'll be using the L1 smart contracts found in the [contracts-bedrock package](https://github.com/bnb-chain/opbnb/tree/develop/packages/contracts-bedrock) within the [opbnb](https://github.com/bnb-chain/opbnb).
+The l2 rollup gives you the ability to deploy your own l2 rollup that use a Layer 1 blockchain to host and order transaction data. The l2 rollup uses several smart contracts on the L1 blockchain to manage aspects of the Rollup. You'll be using the L1 smart contracts found in the [contracts-bedrock package](https://github.com/bnb-chain/opbnb/tree/develop/packages/contracts-bedrock) within the [opbnb](https://github.com/bnb-chain/opbnb).
 
 ## Sequencer Node
 
-OpBNB uses Sequencer node to gather proposed transactions from users and publish them to the L1 blockchain.
+The l2 rollup uses Sequencer node to gather proposed transactions from users and publish them to the L1 blockchain.
 
 ### Consensus Client
 
-OpBNB has a consensus client. The consensus client is responsible for determining the list and ordering of blocks and transactions that are part of your blockchain. In this tutorial you'll be using the [op-node](https://github.com/bnb-chain/opbnb/tree/develop/op-node) found within the [opbnb](https://github.com/bnb-chain/opbnb).
+The l2 rollup has a consensus client. The consensus client is responsible for determining the list and ordering of blocks and transactions that are part of your blockchain. In this tutorial you'll be using the [op-node](https://github.com/bnb-chain/opbnb/tree/develop/op-node) found within the [opbnb](https://github.com/bnb-chain/opbnb).
 
 ### Execution Client
 
-OpBNB has an execution client. The execution client is responsible for executing transactions and storing/updating the state of the blockchain. In this tutorial you'll be using the [op-geth](https://github.com/bnb-chain/op-geth) found within the [op-geth](https://github.com/bnb-chain/op-geth) repository.
+The l2 rollup has an execution client. The execution client is responsible for executing transactions and storing/updating the state of the blockchain. In this tutorial you'll be using the [op-geth](https://github.com/bnb-chain/op-geth) found within the [op-geth](https://github.com/bnb-chain/op-geth) repository.
 
 ## Batcher
 
@@ -61,7 +61,7 @@ We recommend using the latest LTS version of Node.js (currently v20). [nvm](http
 
 `foundry`
 
-It's recommended to use the scripts in the opbnb's package.json for managing foundry to ensure you're always working with the correct version. This approach simplifies the installation, update, and version checking process. Make sure to clone the opbnb locally before proceeding.
+It's recommended to use the scripts in the [opbnb's](https://github.com/bnb-chain/opbnb) package.json for managing foundry to ensure you're always working with the correct version. This approach simplifies the installation, update, and version checking process. Make sure to clone the [opbnb](https://github.com/bnb-chain/opbnb) locally before proceeding.
 
 `direnv`
 
@@ -71,15 +71,15 @@ After [installing direnv](https://direnv.net/docs/installation.html), you will n
 
 # Get Access to a BSC testnet Node
 
-You'll be deploying a opBNB that uses a Layer 1 blockchain to host and order transaction data.
+You'll be deploying a BSC l2 rollup that uses a Layer 1 blockchain to host and order transaction data.
 
 This guide uses the BSC testnet as an L1 chain. You can also use other EVM-compatible blockchains, but you may run into unexpected errors. If you want to use an alternative network, make sure to carefully review each command and replace any BSC testnet values with the values for your network.
 
-Since you're deploying your opBNB to BSC testnet, you'll need to have access to a BSC testnet node.
+Since you're deploying your l2 rollup on BSC testnet, you'll need to have access to a BSC testnet node.
 
 # Build the Source Code
 
-You're going to be creating your own opBNB directly from source code instead of using a container system like [Docker](https://www.docker.com/). Although this adds a few extra steps, it means you'll have an easier time modifying the behavior of the opBNB if you'd like to do so. If you want a summary of the various components you'll be using, take another look at the [What You're Going to Deploy](#what-youre-going-to-deploy) section above.
+You're going to be creating your own l2 rollup directly from source code instead of using a container system like [Docker](https://www.docker.com/). Although this adds a few extra steps, it means you'll have an easier time modifying the behavior of the l2 rollup if you'd like to do so. If you want a summary of the various components you'll be using, take another look at the [What You're Going to Deploy](#what-youre-going-to-deploy) section above.
 
 ## Build the opbnb
 
@@ -155,10 +155,10 @@ cp .envrc.example .envrc
 ### Fill out the environment variable file
 Open up the environment variable file and fill out the following variables:
 
-| Variable Name |                                                 Description                                                  |
-|:----------:|:------------------------------------------------------------------------------------------------------------:|
-|    L1_RPC_URL    |                                             URL for your L1 node                                             |
-|     L1_RPC_KIND     | Kind of L1 RPC you're connecting to, used to inform optimal transactions receipts fetching.|
+| Variable Name |                                              Description                                              |
+|:----------:|:-----------------------------------------------------------------------------------------------------:|
+|    L1_RPC_URL    |                                         URL for your L1 node                                          |
+|     L1_RPC_KIND     | Kind of L1 RPC you're connecting to, used to inform optimal transactions receipts fetching(Optional). |
 
 # Generate Addresses
 You'll need four addresses and their private keys when setting up the chain:
@@ -259,8 +259,11 @@ Run the following script to generate the `getting-started.json` configuration fi
 ./scripts/getting-started/config.sh
 ```
 
-## Review the configuration file (Optional)
-If you'd like, you can review the configuration file that was just generated by opening up `deploy-config/getting-started.json` in your favorite text editor. It's recommended to keep this file as-is for now so you don't run into any unexpected errors.
+## Review and change the configuration file (Optional)
+If you'd like, you can review the configuration file that was just generated by opening up `deploy-config/getting-started.json` in your favorite text editor. 
+You can change configuration values to fit your specific needs. Please refer the [Chain Configuration](./Chain-Configuration.md).
+It's recommended to keep this file as-is for now so you don't run into any unexpected errors.
+
 
 # Deploy the Create2 Factory (Optional)
 If you're deploying opBNB to a network other than BSC testnet, you may need to deploy a Create2 factory contract to the L1 chain. This factory contract is used to deploy opBNB smart contracts in a deterministic fashion.
@@ -391,7 +394,7 @@ It's important that you've already initialized the geth node at this point as pe
   --gcmode=archive \
   --nodiscover \
   --maxpeers=0 \
-  --networkid=42069 \
+  --networkid=901 \
   --authrpc.vhosts="*" \
   --authrpc.addr=0.0.0.0 \
   --authrpc.port=8551 \
@@ -499,7 +502,7 @@ cd ~/opbnb/op-proposer
 
 # Connect Your Wallet to Your Chain
 
-You now have a fully functioning opBNB with a Sequencer node running on http://localhost:8545. You can connect your wallet to this chain the same way you'd connect your wallet to any other EVM chain.
+You now have a fully functioning l2 rollup chain with a Sequencer node running on http://localhost:8545. You can connect your wallet to this chain the same way you'd connect your wallet to any other EVM chain.
 
 # Get BNB On Your Chain
 
@@ -516,9 +519,9 @@ cat deployments/getting-started/.deploy | jq -r .L1StandardBridgeProxy
 ```
 
 ## Send some BNB to the L1StandardBridgeProxy contract
-Grab the L1 bridge proxy contract address and, using the wallet that you want to have BNB on your opBNB, send that address a small amount of BNB on L1. This will trigger a deposit that will mint BNB into your wallet on L2. It may take up to some minutes for that BNB to appear in your wallet on L2.
+Grab the L1 bridge proxy contract address and, using the wallet that you want to have BNB on your l2 rollup chain, send that address a small amount of BNB on L1. This will trigger a deposit that will mint BNB into your wallet on L2. It may take up to some minutes for that BNB to appear in your wallet on L2.
 
 # See Your opBNB in Action
-You can interact with your opBNB the same way you'd interact with any other EVM chain. Send some transactions, deploy some contracts, and see what happens!
+You can interact with your l2 the same way you'd interact with any other EVM chain. Send some transactions, deploy some contracts, and see what happens!
 
 
