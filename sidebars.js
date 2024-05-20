@@ -88,6 +88,8 @@ const sidebars = {
         },
         "tutorials/full-stack-dapp",
         "tutorials/opbnbscan-verify-hardhat-truffle",
+        "tutorials/creating-your-own-l2-rollup-testnet",
+        "tutorials/chain-configuration",
       ],
     },
   ],
