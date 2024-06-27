@@ -1,7 +1,7 @@
 {
   "name": "opbnb-docs",
   "version": "0.1.0",
-  "private": true,
+  "private":FALSE,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
